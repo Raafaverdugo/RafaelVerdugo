@@ -1,0 +1,20 @@
+<?php
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $nombre = htmlspecialchars($_POST['nombre']);
+    $email = htmlspecialchars($_POST['email']);
+    $mensaje = htmlspecialchars($_POST['mensaje']);
+
+    $para = "tuemail@dominio.com"; // Cambia por tu email
+    $asunto = "Nuevo mensaje desde tu web";
+    $cuerpo = "Nombre: $nombre\nEmail: $email\nMensaje:\n$mensaje";
+    $cabeceras = "From: $email\r\n";
+
+    if(mail($para, $asunto, $cuerpo, $cabeceras)){
+        echo "<p>Mensaje enviado correctamente. Gracias por contactarme.</p>";
+    } else {
+        echo "<p>Error al enviar el mensaje. Intenta de nuevo más tarde.</p>";
+    }
+} else {
+    echo "<p>Acceso no permitido.</p>";
+}
+?>

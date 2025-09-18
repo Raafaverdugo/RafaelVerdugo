@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Rafael Verdugo - Desarrollador Web</title>
+    <meta name="description" content="Contacto con Rafael Verdugo, desarrollador web y emprendedor digital. Envía un mensaje o conéctate por redes sociales.">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h1>Contacto</h1>
+            <p>Si quieres trabajar conmigo o simplemente saludar, envíame un mensaje:</p>
+
+            <form action="../php/enviar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit" class="btn-primary">Enviar</button>
+            </form>
+
+            <p>O contáctame a través de mis redes sociales:</p>
+            <p>
+                <a href="#">LinkedIn</a> | 
+                <a href="#">Instagram</a> | 
+                <a href="#">GitHub</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rafael Verdugo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
