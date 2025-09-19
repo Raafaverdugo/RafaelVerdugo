@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #fafafa;
+    background-color: #80c0ff70;
     color: #1c1c1c;
     line-height: 1.6;
 }
@@ -126,8 +126,8 @@ section {
 
 /* Perfil */
 .profile-pic {
-    width: 150px;
-    border-radius: 50%;
+    width: 200px;
+    border-radius: 10%;
     display: block;
     margin: 1em auto;
 }
