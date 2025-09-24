@@ -61,3 +61,58 @@ faders.forEach(section => {
     section.classList.add('fade-section');
     appearOnScroll.observe(section);
 });
+
+
+// JavaScript para el menú hamburguesa
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const menuLinks = document.querySelectorAll('.menu-link');
+    
+    // Toggle del menú
+    function toggleMenu() {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        menuOverlay.classList.toggle('active');
+        
+        // Cambiar aria-label para accesibilidad
+        const isOpen = hamburger.classList.contains('active');
+        hamburger.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+        
+        // Prevenir scroll del body cuando el menú está abierto
+        document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+    }
+    
+    // Cerrar menú
+    function closeMenu() {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        menuOverlay.classList.remove('active');
+        hamburger.setAttribute('aria-label', 'Abrir menú');
+        document.body.style.overflow = 'auto';
+    }
+    
+    // Event listeners
+    hamburger.addEventListener('click', toggleMenu);
+    menuOverlay.addEventListener('click', closeMenu);
+    
+    // Cerrar menú al hacer click en un enlace
+    menuLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+    
+    // Cerrar menú con tecla ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+    
+    // Cerrar menú al redimensionar ventana
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768 && mobileMenu.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+});
