@@ -1,0 +1,34 @@
+# Activar motor de reescritura
+RewriteEngine On
+
+# ---- REDIRECCIONES 301 ----
+# Redirigir index.html a /
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Redirigir contacto.html a /contacto
+RewriteRule ^contacto\.html$ /contacto [R=301,L]
+
+# Redirigir sobre-mi.html a /sobre-mi
+RewriteRule ^sobre-mi\.html$ /sobre-mi [R=301,L]
+
+# Redirigir portfolio.html a /portfolio
+RewriteRule ^portfolio\.html$ /portfolio [R=301,L]
+
+# Redirigir servicios.html a /servicios
+RewriteRule ^servicios\.html$ /servicios [R=301,L]
+
+# Redirigir blog.html a /blog
+RewriteRule ^blog\.html$ /blog [R=301,L]
+
+# ---- URL AMIGABLE (quitar .html) ----
+# Si no existe archivo o carpeta, agregar .html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ $1.html [L]
+
+# ---- Otras buenas prácticas ----
+# Evitar listado de directorios
+Options -Indexes
+
+# Evitar errores 404 feos
+ErrorDocument 404 /404.html
