@@ -206,30 +206,30 @@ nav ul li a:hover {
     transform: translateY(-3px) scale(1.05);
 }
 
-/* ===== Botón Hamburguesa ===== */
+/* ===== Botón Hamburguesa Optimizado ===== */
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
     background: none;
     border: none;
-    padding: 10px;
+    padding: 8px;
     z-index: 1001;
     position: relative;
 }
 
 .hamburger span {
-    width: 25px;
-    height: 3px;
+    width: 22px;
+    height: 2px;
     background: var(--text-primary);
     border-radius: 2px;
-    margin: 3px 0;
+    margin: 2.5px 0;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transform-origin: center;
 }
 
 .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
+    transform: rotate(45deg) translate(5px, 5px);
     background: var(--accent-primary);
 }
 
@@ -239,26 +239,28 @@ nav ul li a:hover {
 }
 
 .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
+    transform: rotate(-45deg) translate(5px, -5px);
     background: var(--accent-primary);
 }
 
-/* ===== Menú Mobile ===== */
+/* ===== Menú Mobile Optimizado ===== */
 .mobile-menu {
     display: none;
     position: fixed;
     top: 70px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 70px);
+    height: auto;
+    max-height: 60vh;
     background: var(--bg-card);
     backdrop-filter: var(--blur-glass);
     border-bottom: var(--border-glass);
     z-index: 999;
-    padding: 2em;
+    padding: 1.5em 2em;
     opacity: 0;
     transform: translateY(-100%);
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border-radius: 0 0 20px 20px;
 }
 
 .mobile-menu.active {
@@ -272,15 +274,17 @@ nav ul li a:hover {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1.2em;
     width: 100%;
     align-items: center;
-    justify-content: center;
-    height: 60%;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
 }
 
 .mobile-menu ul li {
-    width: 100%;
+    width: 90%;
+    max-width: 300px;
     text-align: center;
     opacity: 0;
     transform: translateX(-50px);
@@ -292,32 +296,33 @@ nav ul li a:hover {
 .mobile-menu ul li:nth-child(3) { animation-delay: 0.3s; }
 .mobile-menu ul li:nth-child(4) { animation-delay: 0.4s; }
 .mobile-menu ul li:nth-child(5) { animation-delay: 0.5s; }
+.mobile-menu ul li:nth-child(6) { animation-delay: 0.6s; }
 
 .mobile-menu ul li a {
     display: block;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 1em 2em;
-    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.8em 1.5em;
+    border-radius: 15px;
     background: var(--bg-glass);
     border: var(--border-glass);
     backdrop-filter: var(--blur-glass);
     transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    text-transform: none;
+    letter-spacing: 0.5px;
 }
 
 .mobile-menu ul li a:hover {
     background: var(--accent-gradient);
     box-shadow: var(--shadow-glow);
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .mobile-menu ul li a::after {
     display: none;
 }
 
-/* ===== Overlay para cerrar menú ===== */
+/* ===== Overlay más sutil ===== */
 .menu-overlay {
     display: none;
     position: fixed;
@@ -325,7 +330,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     z-index: 998;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -709,6 +714,11 @@ footer::before {
     background: var(--accent-primary);
 }
 
+.contact{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 /* ===== Responsive avanzado ===== */
 @media (max-width: 768px) {
     /* Mostrar hamburguesa en móvil */
@@ -769,6 +779,27 @@ footer::before {
     }
 }
 
+/* ===== Ajustes responsive para móviles muy pequeños ===== */
+@media (max-width: 480px) {
+    .mobile-menu {
+        padding: 1em;
+        max-height: 50vh;
+    }
+    
+    .mobile-menu ul {
+        gap: 1em;
+    }
+    
+    .mobile-menu ul li {
+        width: 95%;
+    }
+    
+    .mobile-menu ul li a {
+        font-size: 1.1rem;
+        padding: 0.7em 1.2em;
+    }
+}
+
 /* ===== Tablet breakpoint ===== */
 @media (max-width: 1024px) and (min-width: 769px) {
     nav ul {
@@ -800,9 +831,4 @@ footer::before {
 .mobile-menu ul li a:focus {
     outline: 2px solid var(--accent-primary);
     outline-offset: 2px;
-}
-
-.contact{
-    font-size: 1.5rem;
-    text-align: center;
 }
