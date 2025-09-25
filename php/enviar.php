@@ -1,27 +1,48 @@
 <?php
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-    // Recoger y sanitizar datos del formulario
-    $nombre = htmlspecialchars($_POST['nombre']);
-    $email = htmlspecialchars($_POST['email']);
+// Importar PHPMailer
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require __DIR__ . '/PHPMailer/src/Exception.php';
+require __DIR__ . '/PHPMailer/src/PHPMailer.php';
+require __DIR__ . '/PHPMailer/src/SMTP.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Recoger datos del formulario
+    $nombre  = htmlspecialchars($_POST['nombre']);
+    $email   = htmlspecialchars($_POST['email']);
     $mensaje = htmlspecialchars($_POST['mensaje']);
 
-    // Destinatario (tu correo personal donde recibes los mensajes)
-    $para = "rafaelverdugoduran1@gmail.com"; 
-    $asunto = "Nuevo mensaje desde tu web";
-    $cuerpo = "Nombre: $nombre\nEmail: $email\nMensaje:\n$mensaje";
+    // Crear instancia de PHPMailer
+    $mail = new PHPMailer(true);
 
-    // Cabeceras
-    $cabeceras = "From: contacto@tudominio.com\r\n"; // tu correo corporativo en Hostinger
-    $cabeceras .= "Reply-To: $email\r\n"; // al responder, se dirige al cliente
+    try {
+        // Configuración SMTP de Hostinger
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.hostinger.com';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'contacto@rafaelverdugo.com';   // ⚡ tu correo corporativo Hostinger
+        $mail->Password   = 'Rafael170106.';            // ⚡ la contraseña de ese correo
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port       = 587;
 
-    if(mail($para, $asunto, $cuerpo, $cabeceras)){
+        // Remitente y destinatario
+        $mail->setFrom('contacto@rafaelverdugo.com', 'Web Rafael Verdugo');
+        $mail->addAddress('rafaelverdugoduran1@gmail.com'); // tu correo personal
+        $mail->addReplyTo($email, $nombre); // si respondes, va al cliente
+
+        // Contenido del correo
+        $mail->isHTML(false); // texto plano
+        $mail->Subject = 'Nuevo mensaje desde tu web';
+        $mail->Body    = "Nombre: $nombre\nEmail: $email\nMensaje:\n$mensaje";
+
+        // Enviar
+        $mail->send();
         echo "<p>Mensaje enviado correctamente. Gracias por contactarme.</p>";
-        // Redirigir al index después de 5 segundos
-        echo '<meta http-equiv="refresh" content="5;url=../index.html">';
-    } else {
-        echo "<p>Error al enviar el mensaje. Intenta de nuevo más tarde.</p>";
+        echo '<meta http-equiv="refresh" content="1;url=../index.html">';
+    } catch (Exception $e) {
+        echo "<p>Error al enviar: {$mail->ErrorInfo}</p>";
     }
 } else {
     echo "<p>Acceso no permitido.</p>";
 }
-?>
