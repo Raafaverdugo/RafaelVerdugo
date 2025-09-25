@@ -5,14 +5,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $email = htmlspecialchars($_POST['email']);
     $mensaje = htmlspecialchars($_POST['mensaje']);
 
-    // Destinatario
-    $para = "rafaelverdugoduran1@gmail.com"; // Tu email personal donde recibirás los mensajes
+    // Destinatario (tu correo personal donde recibes los mensajes)
+    $para = "rafaelverdugoduran1@gmail.com"; 
     $asunto = "Nuevo mensaje desde tu web";
     $cuerpo = "Nombre: $nombre\nEmail: $email\nMensaje:\n$mensaje";
 
     // Cabeceras
-    $cabeceras = "From: kemekeosinweb@gmail.com\r\n"; // Cambia por un email de tu hosting
-    $cabeceras .= "Reply-To: $email\r\n"; // Para que al responder vaya al usuario
+    $cabeceras = "From: contacto@tudominio.com\r\n"; // tu correo corporativo en Hostinger
+    $cabeceras .= "Reply-To: $email\r\n"; // al responder, se dirige al cliente
 
     if(mail($para, $asunto, $cuerpo, $cabeceras)){
         echo "<p>Mensaje enviado correctamente. Gracias por contactarme.</p>";
