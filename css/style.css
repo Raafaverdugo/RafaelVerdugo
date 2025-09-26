@@ -243,15 +243,14 @@ nav ul li a:hover {
     background: var(--accent-primary);
 }
 
-/* ===== Menú Mobile Optimizado ===== */
+/* ===== Menú Mobile Optimizado y Corregido ===== */
 .mobile-menu {
     display: none;
     position: fixed;
     top: 70px;
     left: 0;
     width: 100%;
-    height: auto;
-    max-height: 60vh;
+    height: auto; /* Altura automática para adaptarse al contenido */
     background: var(--bg-card);
     backdrop-filter: var(--blur-glass);
     border-bottom: var(--border-glass);
@@ -777,17 +776,17 @@ footer::before {
     form {
         padding: 2em 1.5em;
     }
+    
+    /* Mejorar menú móvil para pantallas pequeñas */
+    .mobile-menu {
+        padding: 1.5em 2em;
+    }
 }
 
 /* ===== Ajustes responsive para móviles muy pequeños ===== */
 @media (max-width: 480px) {
     .mobile-menu {
         padding: 1em;
-        max-height: 50vh;
-    }
-    
-    .mobile-menu ul {
-        gap: 1em;
     }
     
     .mobile-menu ul li {
