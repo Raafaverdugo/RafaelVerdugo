@@ -21,11 +21,11 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rafaelverdugo.com/blog/post1</loc>
+        <loc>https://rafaelverdugo.com/post/post1</loc>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://rafaelverdugo.com/blog/post2</loc>
+        <loc>https://rafaelverdugo.com/post/post2</loc>
         <priority>0.7</priority>
     </url>
     <url>
