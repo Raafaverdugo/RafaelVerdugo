@@ -1,6 +1,10 @@
 # Activar motor de reescritura
 RewriteEngine On
 
+# Redirigir www a sin www (versión canónica)
+RewriteCond %{HTTP_HOST} ^www\.rafaelverdugo\.com [NC]
+RewriteRule ^(.*)$ https://rafaelverdugo.com/$1 [L,R=301]
+
 # ---- REDIRECCIONES 301 ----
 # Redirigir index.html a /
 RewriteRule ^index\.html$ / [R=301,L]
