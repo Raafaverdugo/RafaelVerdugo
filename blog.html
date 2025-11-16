@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Rafael Verdugo - Desarrollo Web y Emprendedor</title>
-    <meta name="description" content="Blog de Rafael Verdugo, desarrollador web y emprendedor digital. Tips, tutoriales y experiencias sobre desarrollo web y emprendimiento.">
+    <title>Blog - Rafael Verdugo | Desarrollo Web y Emprendimiento Digital</title>
+    <meta name="description" content="Blog de Rafael Verdugo sobre desarrollo web, diseño web, emprendimiento digital y tecnología. Tips, tutoriales y experiencias profesionales.">
+    <meta name="keywords" content="blog desarrollo web, tutoriales desarrollo web, tips diseño web, emprendimiento digital, blog sevilla">
+    <meta name="author" content="Rafael Verdugo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rafaelverdugo.com/blog">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rafaelverdugo.com/blog">
+    <meta property="og:title" content="Blog - Desarrollo Web y Emprendimiento Digital | Rafael Verdugo">
+    <meta property="og:description" content="Blog sobre desarrollo web, diseño web, emprendimiento digital y tecnología. Tips, tutoriales y experiencias profesionales.">
+    <meta property="og:image" content="https://rafaelverdugo.com/img/Yo.webp">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rafaelverdugo.com/blog">
+    <meta property="twitter:title" content="Blog - Desarrollo Web y Emprendimiento Digital | Rafael Verdugo">
+    <meta property="twitter:description" content="Blog sobre desarrollo web, diseño web, emprendimiento digital y tecnología. Tips, tutoriales y experiencias profesionales.">
+    <meta property="twitter:image" content="https://rafaelverdugo.com/img/Yo.webp">
+    
     <link rel="stylesheet" href="css/style.css">
-    <!-- Canonical -->
-    <link rel="canonical" href="https://tudominio.com/blog">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Blog de Rafael Verdugo",
+        "description": "Blog sobre desarrollo web, diseño web, emprendimiento digital y tecnología",
+        "url": "https://rafaelverdugo.com/blog",
+        "author": {
+            "@type": "Person",
+            "name": "Rafael Verdugo"
+        }
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -20,15 +52,14 @@
                 <li><a href="/blog">Blog</a></li>
                 <li><a href="/contacto">Contacto</a></li>
             </ul>
-       <!-- Botón Hamburguesa -->
-            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+            
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </nav>
         
-        <!-- Menú Mobile -->
         <div class="mobile-menu" id="mobileMenu">
             <ul>
                 <li><a href="/" class="menu-link">Inicio</a></li>
@@ -44,25 +75,25 @@
     </header>
 
     <main>
-        <section class="blog">
+        <section class="blog-section">
             <h1>Blog</h1>
-            <p>Descubre artículos sobre desarrollo web y emprendimiento digital próximamente.</p>
-<!--
-            <div class="post-preview">
-                <h2><a href="/post/post1">Cómo crear tu primera página web profesional</a></h2>
-                <p>Aprende los pasos básicos para crear una web profesional, desde la planificación hasta la publicación.</p>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">Próximamente encontrarás artículos sobre desarrollo web, diseño, emprendimiento digital y las últimas tendencias en tecnología.</p>
+            
+            <div style="text-align: center; padding: 4rem 2rem; background: var(--bg-secondary); border-radius: 16px; border: 1px solid var(--border-light);">
+                <p style="font-size: 1.25rem; margin-bottom: 2rem;">El contenido está en desarrollo. Mientras tanto, sígueme en mis redes sociales para estar al día.</p>
+                <a href="/contacto" class="btn-primary">Contactar</a>
             </div>
-
-            <div class="post-preview">
-                <h2><a href="/post/post2">Errores comunes al emprender online y cómo evitarlos</a></h2>
-                <p>Descubre los errores más frecuentes que cometen los emprendedores digitales y cómo sortearlos.</p>
-            </div>
-        -->
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Rafael Verdugo. Todos los derechos reservados.</p>
+        <p>
+            Sígueme en 
+            <a href="https://www.linkedin.com/in/rafael-verdugo-dur%C3%A1n-b25a3831b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/rafael_verdugo17" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://github.com/Raafaverdugo" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
     </footer>
 
     <script src="js/main.js"></script>

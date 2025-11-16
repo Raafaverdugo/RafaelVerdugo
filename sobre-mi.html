@@ -3,16 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mí | Rafael Verdugo - Desarrollador Web y Emprendedor</title>
-    <meta name="description" content="Conoce a Rafael Verdugo, desarrollador web y emprendedor digital de Sevilla. Descubre su experiencia, habilidades y proyectos.">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Canonical -->
+    <title>Sobre Mí - Rafael Verdugo | Desarrollador Web Profesional en Sevilla</title>
+    <meta name="description" content="Conoce a Rafael Verdugo, desarrollador web profesional de 19 años en Sevilla. Especializado en diseño web, desarrollo de tiendas online y soluciones digitales para empresas.">
+    <meta name="keywords" content="sobre rafael verdugo, desarrollador web sevilla, experiencia desarrollo web, habilidades desarrollo web">
+    <meta name="author" content="Rafael Verdugo">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://rafaelverdugo.com/sobre-mi">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://rafaelverdugo.com/sobre-mi">
+    <meta property="og:title" content="Sobre Mí - Rafael Verdugo | Desarrollador Web Profesional">
+    <meta property="og:description" content="Conoce a Rafael Verdugo, desarrollador web profesional de 19 años en Sevilla. Especializado en diseño web y desarrollo de tiendas online.">
+    <meta property="og:image" content="https://rafaelverdugo.com/img/charla.webp">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rafaelverdugo.com/sobre-mi">
+    <meta property="twitter:title" content="Sobre Mí - Rafael Verdugo | Desarrollador Web Profesional">
+    <meta property="twitter:description" content="Conoce a Rafael Verdugo, desarrollador web profesional de 19 años en Sevilla. Especializado en diseño web y desarrollo de tiendas online.">
+    <meta property="twitter:image" content="https://rafaelverdugo.com/img/charla.webp">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rafael Verdugo",
+        "url": "https://rafaelverdugo.com",
+        "image": "https://rafaelverdugo.com/img/Yo.webp",
+        "jobTitle": "Desarrollador Web y Emprendedor Digital",
+        "description": "Desarrollador web profesional de 19 años, especializado en diseño web, desarrollo de tiendas online y soluciones digitales para empresas en Sevilla.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Sevilla",
+            "addressRegion": "Andalucía",
+            "addressCountry": "ES"
+        },
+        "knowsAbout": ["Desarrollo Web", "Diseño Web", "E-commerce", "SEO", "JavaScript", "HTML5", "CSS3"],
+        "sameAs": [
+            "https://www.linkedin.com/in/rafael-verdugo-dur%C3%A1n-b25a3831b/",
+            "https://www.instagram.com/rafael_verdugo17",
+            "https://github.com/Raafaverdugo"
+        ]
+    }
+    </script>
 </head>
 <body>
-<header>
+    <header>
         <nav>
-            <!-- Menú Desktop -->
             <ul>
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/sobre-mi">Sobre mí</a></li>
@@ -22,15 +63,13 @@
                 <li><a href="/contacto">Contacto</a></li>
             </ul>
             
-            <!-- Botón Hamburguesa -->
-            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </nav>
         
-        <!-- Menú Mobile -->
         <div class="mobile-menu" id="mobileMenu">
             <ul>
                 <li><a href="/" class="menu-link">Inicio</a></li>
@@ -46,37 +85,47 @@
     </header>
 
     <main>
-        <section class="portfolio">
-            <h1>Sobre mí</h1>
-            <img src="img/charla.webp" alt="Rafael Verdugo dando una charla" class="profile-pic">
-            <p>Hola, soy <strong>Rafael Verdugo</strong>, tengo 19 años y soy de Sevilla. Soy desarrollador web y emprendedor digital, apasionado por crear proyectos modernos y funcionales.</p>
-            <p>Desde pequeño me ha interesado la tecnología y el diseño, lo que me llevó a aprender desarrollo web y a trabajar en proyectos tanto personales como para clientes. Me encanta combinar creatividad con soluciones efectivas y enfocadas en resultados.</p>
+        <article class="about-section">
+            <h1>Sobre Mí</h1>
+            <img src="img/charla.webp" alt="Rafael Verdugo dando una charla sobre desarrollo web" class="profile-pic" width="300" height="300">
+            
+            <p>Hola, soy <strong>Rafael Verdugo</strong>, tengo <strong>19 años</strong> y soy de <strong>Sevilla</strong>. Soy desarrollador web profesional y emprendedor digital, apasionado por crear proyectos modernos y funcionales que generan resultados reales para las empresas.</p>
+            
+            <p>Desde pequeño me ha interesado la tecnología y el diseño, lo que me llevó a aprender desarrollo web de forma autodidacta y a trabajar en proyectos tanto personales como para clientes. Me encanta combinar <strong>creatividad con soluciones efectivas</strong> y enfocadas en resultados medibles.</p>
 
-            <h2>Habilidades</h2>
+            <p>Mi objetivo es ayudar a empresas y emprendedores a destacar en el mundo digital con páginas web profesionales que no solo se vean bien, sino que <strong>conviertan visitantes en clientes</strong>.</p>
+
+            <h2>Habilidades Técnicas</h2>
             <ul>
-                <li>HTML5, CSS3 y JavaScript</li>
-                <li>Desarrollo de páginas web responsivas</li>
-                <li>Optimización SEO básica</li>
-                <li>Diseño minimalista y funcional</li>
-            </ul><br>
+                <li><strong>HTML5, CSS3 y JavaScript</strong> - Desarrollo frontend moderno y responsivo</li>
+                <li><strong>Desarrollo de páginas web responsivas</strong> - Diseño adaptado a todos los dispositivos</li>
+                <li><strong>Optimización SEO</strong> - Posicionamiento en buscadores para más visibilidad</li>
+                <li><strong>Diseño minimalista y funcional</strong> - Interfaces intuitivas orientadas a conversión</li>
+                <li><strong>E-commerce y tiendas online</strong> - Plataformas de venta completas</li>
+            </ul>
 
             <h2>Experiencia</h2>
             <ul>
-                <li>Proyectos personales de desarrollo web y ecommerce</li>
-                <li>Creación de páginas web para clientes locales</li>
-                <li>Blog sobre desarrollo web y emprendimiento digital</li>
-            </ul><br>
+                <li><strong>Proyectos personales</strong> - Desarrollo de plataformas web y e-commerce innovadores</li>
+                <li><strong>Clientes locales</strong> - Creación de páginas web profesionales para empresas de Sevilla</li>
+                <li><strong>Blog y contenido</strong> - Compartir conocimiento sobre desarrollo web y emprendimiento digital</li>
+                <li><strong>Consultoría digital</strong> - Asesoramiento en estrategias digitales para negocios</li>
+            </ul>
 
-            <a href="/portfolio" class="btn-primary">Ver mi portfolio</a>
-        </section>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="/portfolio" class="btn-primary">Ver Mi Portfolio</a>
+                <a href="/contacto" class="btn-secondary" style="margin-left: 1rem;">Trabajemos Juntos</a>
+            </div>
+        </article>
     </main>
 
     <footer>
         <p>&copy; 2025 Rafael Verdugo. Todos los derechos reservados.</p>
-        <p>Sígueme en 
-            <a href="https://www.linkedin.com/in/rafael-verdugo-dur%C3%A1n-b25a3831b/">LinkedIn</a>
-            <a href="https://www.instagram.com/rafael_verdugo17">Instagram</a>
-            <a href="https://github.com/Raafaverdugo">GitHub</a>
+        <p>
+            Sígueme en 
+            <a href="https://www.linkedin.com/in/rafael-verdugo-dur%C3%A1n-b25a3831b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/rafael_verdugo17" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://github.com/Raafaverdugo" target="_blank" rel="noopener noreferrer">GitHub</a>
         </p>
     </footer>
 

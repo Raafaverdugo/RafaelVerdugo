@@ -1,6 +1,13 @@
 User-agent: *
+Allow: /
+Disallow: /php/
 Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /private/
 
+# Sitemap
 Sitemap: https://rafaelverdugo.com/sitemap.xml
+
+# Crawl-delay
+User-agent: *
+Crawl-delay: 1

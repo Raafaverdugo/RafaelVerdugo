@@ -3,11 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Rafael Verdugo - Desarrollador Web y Emprendedor</title>
-    <meta name="description" content="Contacto con Rafael Verdugo, desarrollador web y emprendedor digital. Envía un mensaje o conéctate por redes sociales.">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Canonical -->
+    <title>Contacto - Rafael Verdugo | Solicita tu Presupuesto Gratuito</title>
+    <meta name="description" content="Contacta con Rafael Verdugo para tu proyecto web. Desarrollo web profesional en Sevilla. Primera consulta gratuita y sin compromiso. Presupuesto personalizado.">
+    <meta name="keywords" content="contacto desarrollador web sevilla, presupuesto desarrollo web, contratar desarrollador web, consulta desarrollo web gratis">
+    <meta name="author" content="Rafael Verdugo">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://rafaelverdugo.com/contacto">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rafaelverdugo.com/contacto">
+    <meta property="og:title" content="Contacto - Solicita tu Presupuesto Gratuito | Rafael Verdugo">
+    <meta property="og:description" content="Contacta con Rafael Verdugo para tu proyecto web. Desarrollo web profesional en Sevilla. Primera consulta gratuita.">
+    <meta property="og:image" content="https://rafaelverdugo.com/img/Yo.webp">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rafaelverdugo.com/contacto">
+    <meta property="twitter:title" content="Contacto - Solicita tu Presupuesto Gratuito | Rafael Verdugo">
+    <meta property="twitter:description" content="Contacta con Rafael Verdugo para tu proyecto web. Desarrollo web profesional en Sevilla. Primera consulta gratuita.">
+    <meta property="twitter:image" content="https://rafaelverdugo.com/img/Yo.webp">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contacto - Rafael Verdugo",
+        "description": "Formulario de contacto para solicitar presupuesto de desarrollo web",
+        "url": "https://rafaelverdugo.com/contacto",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Rafael Verdugo",
+            "email": "contacto@rafaelverdugo.com",
+            "url": "https://rafaelverdugo.com"
+        }
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -20,15 +54,14 @@
                 <li><a href="/blog">Blog</a></li>
                 <li><a href="/contacto">Contacto</a></li>
             </ul>
-        <!-- Botón Hamburguesa -->
-            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+            
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </nav>
         
-        <!-- Menú Mobile -->
         <div class="mobile-menu" id="mobileMenu">
             <ul>
                 <li><a href="/" class="menu-link">Inicio</a></li>
@@ -44,34 +77,56 @@
     </header>
 
     <main>
-        <section class="contact">
-            <h1>Contacto</h1>
-            <p>Si quieres trabajar conmigo o simplemente saludar, envíame un mensaje:</p>
+        <section class="contact-section">
+            <h1>Hablemos de tu proyecto</h1>
+            <p>¿Listo para llevar tu negocio al siguiente nivel? Completa el formulario y te responderé en menos de 24 horas con un presupuesto personalizado. <strong>Primera consulta gratuita y sin compromiso.</strong></p>
 
-            <form action="/php/enviar.php" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+            <?php if(isset($_GET['success']) && $_GET['success'] == '1'): ?>
+            <div class="success-message" id="successMessage">
+                <strong>¡Mensaje enviado con éxito!</strong> Te responderé lo antes posible. Gracias por contactarme.
+            </div>
+            <?php endif; ?>
+            
+            <div class="success-message" id="successMessageJS" style="display: none;">
+                <strong>¡Mensaje enviado con éxito!</strong> Te responderé lo antes posible. Gracias por contactarme.
+            </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <form action="/php/enviar.php" method="post" id="contactForm">
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" required aria-required="true" placeholder="Tu nombre">
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required aria-required="true" placeholder="tu@email.com">
 
-                <button type="submit" class="btn-primary">Enviar</button>
+                <label for="mensaje">Cuéntame sobre tu proyecto *</label>
+                <textarea id="mensaje" name="mensaje" rows="6" required aria-required="true" placeholder="Describe tu proyecto, objetivos, presupuesto aproximado o cualquier detalle que consideres importante..."></textarea>
+
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 1rem; text-align: center;">
+                    * Todos los campos son obligatorios
+                </p>
             </form>
 
-            <p>O contáctame a través de mis redes sociales:</p>
-            <p>
-            <a href="https://www.linkedin.com/in/rafael-verdugo-dur%C3%A1n-b25a3831b/">LinkedIn</a> |
-            <a href="https://www.instagram.com/rafael_verdugo17">Instagram</a> |
-            <a href="https://github.com/Raafaverdugo">GitHub</a>
-            </p>
+            <div style="margin-top: 3rem; text-align: center; padding: 2rem; background: var(--bg-secondary); border-radius: 16px;">
+                <h2 style="margin-bottom: 1rem;">O contáctame directamente</h2>
+                <p style="margin-bottom: 1.5rem;">También puedes encontrarme en mis redes sociales:</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/rafael-verdugo-dur%C3%A1n-b25a3831b/" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="margin: 0.5rem;">LinkedIn</a>
+                    <a href="https://www.instagram.com/rafael_verdugo17" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="margin: 0.5rem;">Instagram</a>
+                    <a href="https://github.com/Raafaverdugo" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="margin: 0.5rem;">GitHub</a>
+                </p>
+            </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Rafael Verdugo. Todos los derechos reservados.</p>
+        <p>
+            Sígueme en 
+            <a href="https://www.linkedin.com/in/rafael-verdugo-dur%C3%A1n-b25a3831b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/rafael_verdugo17" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://github.com/Raafaverdugo" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
     </footer>
 
     <script src="js/main.js"></script>
