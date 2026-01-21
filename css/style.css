@@ -40,7 +40,12 @@ body {
 }
 
 /* ===== Tipografía ===== */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -78,7 +83,8 @@ a:hover {
     color: var(--accent-hover);
 }
 
-ul, ol {
+ul,
+ol {
     margin-left: 1.5rem;
     margin-bottom: 1.5rem;
 }
@@ -187,6 +193,7 @@ nav ul li a:hover {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -220,7 +227,7 @@ main {
 }
 
 section {
-    margin-bottom: 0;
+    margin-bottom: 2rem;
 }
 
 /* ===== Hero Section ===== */
@@ -259,10 +266,17 @@ section {
 .hero .btn-primary {
     font-size: 1.125rem;
     padding: 1rem 2.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hero .btn-secondary {
+    margin-bottom: 1rem;
 }
 
 /* ===== Botones ===== */
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
     display: inline-block;
     padding: 0.875rem 2rem;
     border-radius: 12px;
@@ -297,18 +311,33 @@ section {
     transform: translateY(-2px);
 }
 
+/* Espaciado entre botones cuando están juntos */
+.btn-primary+.btn-primary,
+.btn-primary+.btn-secondary,
+.btn-secondary+.btn-primary,
+.btn-secondary+.btn-secondary {
+    margin-left: 1rem;
+}
+
 /* ===== Cards y Secciones ===== */
-.about-preview, .services-preview, .blog-preview,
-.portfolio-section, .services-section, .blog-section,
-.contact-section, .about-section {
+.about-preview,
+.services-preview,
+.blog-preview,
+.portfolio-section,
+.services-section,
+.blog-section,
+.contact-section,
+.about-section {
     padding: 5rem 2rem;
 }
 
-.about-preview, .services-preview {
+.about-preview,
+.services-preview {
     background: var(--bg-secondary);
 }
 
-.portfolio-section, .services-section {
+.portfolio-section,
+.services-section {
     background: var(--bg-primary);
 }
 
@@ -385,6 +414,10 @@ section {
     padding: 2rem;
 }
 
+.project-content .btn-primary {
+    margin-top: 0.5rem;
+}
+
 .project h2 {
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
@@ -424,7 +457,7 @@ section {
     margin-bottom: 1rem;
 }
 
-.contact-section > p {
+.contact-section>p {
     text-align: center;
     margin-bottom: 3rem;
     font-size: 1.125rem;
@@ -448,7 +481,8 @@ form label {
     display: block;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 1rem;
     border-radius: 12px;
@@ -460,7 +494,8 @@ form input, form textarea {
     transition: var(--transition);
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
     outline: none;
     border-color: var(--accent);
     box-shadow: 0 0 0 4px var(--accent-light);
@@ -497,7 +532,9 @@ form button {
 .about-section .profile-pic {
     width: 300px;
     max-width: 100%;
+    height: auto;
     margin: 2rem auto;
+    object-fit: cover;
 }
 
 .about-section h2 {
@@ -606,6 +643,7 @@ footer a:hover {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -621,43 +659,64 @@ footer a:hover {
     .hamburger {
         display: flex;
     }
-    
+
     nav ul {
         display: none;
     }
-    
+
     .hero {
         padding: 4rem 1.5rem 3rem;
     }
-    
+
     .hero .profile-pic {
         width: 140px;
         height: 140px;
     }
-    
+
     main section {
         padding: 3rem 1.5rem !important;
     }
-    
+
     .services-grid,
     .portfolio-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
-    .service-card,
-    .project {
+
+    .service-card {
         padding: 1.5rem;
     }
-    
+
+    .project .project-content {
+        padding: 1.5rem;
+    }
+
     form {
         padding: 1.5rem;
     }
-    
-    .about-preview, .services-preview, .blog-preview,
-    .portfolio-section, .services-section, .blog-section,
-    .contact-section, .about-section {
+
+    .about-preview,
+    .services-preview,
+    .blog-preview,
+    .portfolio-section,
+    .services-section,
+    .blog-section,
+    .contact-section,
+    .about-section {
         padding: 3rem 1.5rem;
+    }
+
+    /* Botones en pantallas pequeñas */
+    .btn-primary,
+    .btn-secondary {
+        margin-bottom: 0.75rem;
+        margin-right: 0.5rem;
+    }
+
+    .hero .btn-primary,
+    .hero .btn-secondary {
+        display: inline-block;
+        margin: 0.5rem 0.5rem 0.5rem 0;
     }
 }
 
@@ -665,20 +724,21 @@ footer a:hover {
     nav {
         padding: 1rem;
     }
-    
+
     .mobile-menu {
         padding: 1rem;
     }
-    
+
     h1 {
         font-size: 2rem;
     }
-    
+
     h2 {
         font-size: 1.75rem;
     }
-    
-    .btn-primary, .btn-secondary {
+
+    .btn-primary,
+    .btn-secondary {
         padding: 0.75rem 1.5rem;
         font-size: 0.95rem;
     }
@@ -686,10 +746,14 @@ footer a:hover {
 
 /* ===== Print Styles ===== */
 @media print {
-    header, footer, .btn-primary, .btn-secondary {
+
+    header,
+    footer,
+    .btn-primary,
+    .btn-secondary {
         display: none;
     }
-    
+
     body {
         background: white;
         color: black;
