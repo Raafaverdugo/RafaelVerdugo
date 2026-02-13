@@ -1,7 +1,8 @@
 <?php
 // Activar reporte de errores (solo para debugging, desactívalo en producción)
-error_reporting(E_ALL);
 ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 // Importar PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
@@ -13,14 +14,14 @@ require __DIR__ . '/PHPMailer/PHPMailer-master/src/PHPMailer.php';
 require __DIR__ . '/PHPMailer/PHPMailer-master/src/SMTP.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Validar que los campos existen
+    // Validar que los campos existen (usando los nombres del formulario en contacto.html: nombre, email, mensaje)
     if (!isset($_POST['nombre']) || !isset($_POST['email']) || !isset($_POST['mensaje'])) {
         die("Error: Faltan campos obligatorios.");
     }
 
     // Recoger y sanitizar datos del formulario
-    $nombre  = trim(htmlspecialchars($_POST['nombre'], ENT_QUOTES, 'UTF-8'));
-    $email   = trim(htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8'));
+    $nombre = trim(htmlspecialchars($_POST['nombre'], ENT_QUOTES, 'UTF-8'));
+    $email = trim(htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8'));
     $mensaje = trim(htmlspecialchars($_POST['mensaje'], ENT_QUOTES, 'UTF-8'));
 
     // Validar email
@@ -37,37 +38,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer(true);
 
     try {
-        // Configuración SMTP de Hostinger
+        // Configuración SMTP de Gmail
         $mail->isSMTP();
-        $mail->Host       = 'smtp.hostinger.com';
-        $mail->SMTPAuth   = true;
-        $mail->Username   = 'contacto@rafaelverdugo.com';
-        $mail->Password   = 'Rafael170106.'; // ⚠️ NUNCA compartas esto públicamente
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'rafael17vdn@gmail.com';
+        $mail->Password = 'pngyoebixpirwggy'; // App Password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port       = 587;
-        
-        // Configuración adicional para evitar errores
-        $mail->SMTPOptions = array(
-            'ssl' => array(
-                'verify_peer' => false,
-                'verify_peer_name' => false,
-                'allow_self_signed' => true
-            )
-        );
+        $mail->Port = 587;
 
         // Configuración de caracteres
         $mail->CharSet = 'UTF-8';
         $mail->Encoding = 'base64';
 
         // Remitente y destinatario
-        $mail->setFrom('contacto@rafaelverdugo.com', 'Web Rafael Verdugo');
+        $mail->setFrom('rafael17vdn@gmail.com', 'Web Rafael Verdugo');
         $mail->addAddress('rafaelverdugoduran1@gmail.com');
         $mail->addReplyTo($email, $nombre);
 
-        // Contenido del correo
+        // Contenido del correo (Estilo visual de enviar.php)
         $mail->isHTML(true);
         $mail->Subject = 'Nuevo mensaje desde tu web - ' . $nombre;
-        
+
         // Cuerpo HTML
         $mail->Body = "
             <html>
@@ -105,21 +97,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </html>
         ";
 
-        // Versión texto plano (alternativa)
+        // Versión texto plano
         $mail->AltBody = "Nombre: {$nombre}\nEmail: {$email}\n\nMensaje:\n{$mensaje}";
 
         // Enviar
         $mail->send();
-        
+
         // Redirigir con mensaje de éxito
         header("Location: /contacto?success=1");
         exit();
-        
-    } catch (Exception $e) {
-        // Log del error (para debugging)
+
+    }
+    catch (Exception $e) {
+        // Log del error
         error_log("Error PHPMailer: " . $mail->ErrorInfo);
-        
-        // Mostrar error al usuario
+
+        // Mostrar error
         echo "<!DOCTYPE html>
         <html lang='es'>
         <head>
@@ -134,13 +127,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <body>
             <div class='error'>
                 <h2>Error al enviar el mensaje</h2>
-                <p>Lo siento, hubo un problema al enviar tu mensaje. Por favor, intenta nuevamente más tarde.</p>
+                <p>Lo siento, hubo un problema al enviar tu mensaje.</p>
+                <p>Error técnico: " . htmlspecialchars($mail->ErrorInfo) . "</p>
                 <p><a href='/contacto'>Volver al formulario</a></p>
             </div>
         </body>
         </html>";
     }
-} else {
+}
+else {
     header("Location: /contacto");
     exit();
 }

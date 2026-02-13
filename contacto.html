@@ -88,17 +88,11 @@
             <p>¿Listo para llevar tu negocio al siguiente nivel? Completa el formulario y te responderé en menos de 24
                 horas con un presupuesto personalizado. <strong>Primera consulta gratuita y sin compromiso.</strong></p>
 
-            <?php if(isset($_GET['success']) && $_GET['success'] == '1'): ?>
-            <div class="success-message" id="successMessage">
-                <strong>¡Mensaje enviado con éxito!</strong> Te responderé lo antes posible. Gracias por contactarme.
-            </div>
-            <?php endif; ?>
-
             <div class="success-message" id="successMessageJS" style="display: none;">
                 <strong>¡Mensaje enviado con éxito!</strong> Te responderé lo antes posible. Gracias por contactarme.
             </div>
 
-            <form action="/php/enviar.php" method="post" id="contactForm">
+            <form action="/php/send.php" method="post" id="contactForm">
                 <label for="nombre">Nombre completo *</label>
                 <input type="text" id="nombre" name="nombre" required aria-required="true" placeholder="Tu nombre">
 
