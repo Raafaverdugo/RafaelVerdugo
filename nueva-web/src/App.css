@@ -700,3 +700,104 @@
 .delay-3 { transition-delay: 300ms !important; }
 .delay-4 { transition-delay: 400ms !important; }
 
+/* ===================================================
+   SOFTWARES SECTION
+   =================================================== */
+
+.softwares-section {
+  /* Inherits .section padding */
+}
+
+.softwares-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 24px;
+}
+
+.software-card {
+  border: 1px solid rgba(37, 99, 235, 0.22);
+  border-radius: 32px;
+  background: rgba(13, 17, 26, 0.88);
+  box-shadow:
+    0 0 0 1px rgba(56, 189, 248, 0.06),
+    0 24px 56px rgba(0, 0, 0, 0.28);
+  overflow: hidden;
+  transition: border-color 240ms, transform 240ms, box-shadow 240ms;
+}
+
+.software-card:hover {
+  border-color: rgba(37, 99, 235, 0.52);
+  transform: translateY(-5px);
+  box-shadow:
+    0 0 0 1px rgba(56, 189, 248, 0.1),
+    0 32px 68px rgba(37, 99, 235, 0.15);
+}
+
+.software-card-inner {
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+}
+
+.software-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 32px 28px;
+  background:
+    linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(20, 30, 55, 0.92)),
+    radial-gradient(circle at top right, rgba(37, 99, 235, 0.18), transparent 55%);
+  border-bottom: 1px solid rgba(37, 99, 235, 0.14);
+}
+
+.software-logo {
+  height: 64px;
+  width: auto;
+  max-width: 240px;
+  object-fit: contain;
+}
+
+.software-body {
+  padding: 28px 32px 32px;
+}
+
+.software-body h3 {
+  margin: 0 0 10px;
+  color: var(--text-strong);
+  font-size: 1.35rem;
+  font-family: var(--font-display);
+}
+
+.software-body p {
+  margin: 0 0 22px;
+  color: var(--text-soft);
+  font-size: 0.97rem;
+  line-height: 1.65;
+}
+
+.software-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 11px 22px;
+  border-radius: 999px;
+  border: 1px solid rgba(37, 99, 235, 0.4);
+  background: rgba(37, 99, 235, 0.1);
+  color: #38BDF8;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background 200ms, border-color 200ms, transform 200ms;
+}
+
+.software-cta:hover {
+  background: rgba(37, 99, 235, 0.22);
+  border-color: rgba(37, 99, 235, 0.7);
+  transform: translateX(3px);
+}
+
+@media (max-width: 720px) {
+  .softwares-grid {
+    grid-template-columns: 1fr;
+  }
+}

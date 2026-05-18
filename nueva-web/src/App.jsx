@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './App.css'
 import { useScrollReveal, useStaggerReveal } from './hooks/useScrollReveal'
 
@@ -44,6 +45,15 @@ const translations = {
       eyebrow: 'Selección de proyectos',
       h2: 'Trabajos reales con enfoques distintos, pero el mismo nivel de detalle.',
       verProyecto: 'Ver proyecto',
+    },
+    softwares: {
+      eyebrow: 'Softwares',
+      h2: 'Herramientas que construyo para digitalizar negocios.',
+      p: 'Además de webs a medida, desarrollo soluciones de software propias orientadas a resolver problemas reales de gestión.',
+      appointdate: {
+        description: 'Sistema integral de gestión de reservas y citas para negocios. Agenda, clientes, facturación y portal de reserva público, todo en uno.',
+        cta: 'Saber más',
+      },
     },
     projects: [
       { title: 'Kemekeosinweb', image: '/images/Cap_Kemekeosinweb.webp', description: 'Web de agencia con una presencia visual fuerte, copy orientado a negocio y estructura enfocada en generar confianza.', url: 'https://kemekeosinweb.com/' },
@@ -129,6 +139,15 @@ const translations = {
       h2: 'Real work with different approaches, but the same level of detail.',
       verProyecto: 'View project',
     },
+    softwares: {
+      eyebrow: 'Software',
+      h2: 'Tools I build to help businesses go digital.',
+      p: 'Beyond custom websites, I develop my own software solutions designed to solve real management problems.',
+      appointdate: {
+        description: 'A complete appointment and booking management system for businesses. Schedule, clients, billing and a public booking portal, all in one.',
+        cta: 'Learn more',
+      },
+    },
     projects: [
       { title: 'Kemekeosinweb', image: '/images/Cap_Kemekeosinweb.webp', description: 'Agency website with a strong visual presence, business-oriented copy and a structure focused on building trust.', url: 'https://kemekeosinweb.com/' },
       { title: 'I.E.S. Margarita Salas', image: '/images/Cap_MargaritaSalas.png', description: 'Informational site for a school with a clear architecture, simple navigation and a focus on enrollment.', url: 'https://ies-margarita-salas.vercel.app/' },
@@ -192,10 +211,12 @@ function App() {
   const metricsGridRef   = useStaggerReveal(100)
   const servicesTitleRef = useScrollReveal()
   const servicesGridRef  = useStaggerReveal(120)
-  const portfolioTitleRef = useScrollReveal()
-  const projectsGridRef  = useStaggerReveal(130)
-  const processTitleRef  = useScrollReveal()
-  const processGridRef   = useStaggerReveal(110)
+  const portfolioTitleRef  = useScrollReveal()
+  const projectsGridRef    = useStaggerReveal(130)
+  const softwaresTitleRef  = useScrollReveal()
+  const softwaresGridRef   = useStaggerReveal(120)
+  const processTitleRef    = useScrollReveal()
+  const processGridRef     = useStaggerReveal(110)
   const aboutCopyRef     = useScrollReveal()
   const stackPanelRef    = useScrollReveal()
   const quotesRef        = useStaggerReveal(150)
@@ -365,6 +386,36 @@ function App() {
                 </div>
               </article>
             ))}
+          </div>
+        </section>
+
+        {/* ── Softwares ── */}
+        <section className="section softwares-section" id="softwares">
+          <div ref={softwaresTitleRef} className="section-heading reveal">
+            <p className="eyebrow">{t.softwares.eyebrow}</p>
+            <h2>{t.softwares.h2}</h2>
+            <p>{t.softwares.p}</p>
+          </div>
+
+          <div ref={softwaresGridRef} className="softwares-grid stagger-children">
+            <article className="software-card">
+              <div className="software-card-inner">
+                <div className="software-logo-wrap">
+                  <img
+                    src="/images/AppointDate.png"
+                    alt="AppointDate logo"
+                    className="software-logo"
+                  />
+                </div>
+                <div className="software-body">
+                  <h3>AppointDate</h3>
+                  <p>{t.softwares.appointdate.description}</p>
+                  <Link to="/AppointDate" className="software-cta">
+                    {t.softwares.appointdate.cta} →
+                  </Link>
+                </div>
+              </div>
+            </article>
           </div>
         </section>
 
