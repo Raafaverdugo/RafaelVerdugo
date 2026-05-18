@@ -1,0 +1,47 @@
+:root {
+  --bg: #070a11;
+  --bg-soft: #0c111b;
+  --text-strong: #f6efe6;
+  --text-soft: #a8a8b3;
+  --border: rgba(219, 185, 145, 0.14);
+  --accent: #d39b63;
+  --font-body: 'Manrope', sans-serif;
+  --font-display: 'Syne', sans-serif;
+  color: var(--text-soft);
+  background:
+    radial-gradient(circle at top left, rgba(214, 148, 82, 0.14), transparent 28%),
+    radial-gradient(circle at 82% 12%, rgba(43, 87, 126, 0.16), transparent 24%),
+    linear-gradient(180deg, #04070d 0%, #0a0f18 48%, #070b12 100%);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  font-weight: 500;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a,
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}

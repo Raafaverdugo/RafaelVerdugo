@@ -1,0 +1,17 @@
+{
+  "name": "Rafael Verdugo",
+  "short_name": "Rafael Verdugo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4ede4",
+  "theme_color": "#2e2117",
+  "description": "Web profesional de Rafael Verdugo, desarrollador web freelance en Sevilla.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
