@@ -1,0 +1,7 @@
+# Las credenciales SMTP nunca deben servirse por web
+<Files "config.php">
+  Require all denied
+</Files>
+<Files "mailer.php">
+  Require all denied
+</Files>

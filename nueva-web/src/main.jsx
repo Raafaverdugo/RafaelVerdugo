@@ -1,17 +1,22 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { createRoot, hydrateRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 import './index.css'
-import App from './App.jsx'
-import AppointDate from './pages/AppointDate.jsx'
+import AppRoutes from './AppRoutes.jsx'
 
-createRoot(document.getElementById('root')).render(
+const app = (
   <StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/AppointDate" element={<AppointDate />} />
-      </Routes>
+      <AppRoutes />
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 )
+
+const container = document.getElementById('root')
+
+// En producción el HTML viene pre-renderizado: se hidrata. En `vite dev` el root está vacío.
+if (container.firstElementChild) {
+  hydrateRoot(container, app)
+} else {
+  createRoot(container).render(app)
+}

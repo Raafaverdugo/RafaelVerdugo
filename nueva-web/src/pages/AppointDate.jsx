@@ -104,6 +104,7 @@ export default function AppointDate() {
   // Evita que mantenga el scroll de la página anterior
   useEffect(() => {
     window.scrollTo(0, 0)
+    document.title = 'AppointDate | Software de gestión de citas y reservas para negocios'
   }, [])
 
   const [service, setService] = useState('pack')

@@ -1,22 +1,35 @@
 Options -Indexes
+ErrorDocument 404 /404.html
 
 <IfModule mod_headers.c>
   Header set X-Content-Type-Options "nosniff"
   Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
 
-# ── SPA fallback: redirige todas las rutas al index.html ──────────────────────
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  # No reescribir ficheros/directorios reales ni el directorio php
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^php/ - [L]
+  # ── www → sin www (una sola versión de la web para Google) ──────────────────
+  # (/AppointDate/ tiene su propio .htaccess con la misma regla)
+  RewriteCond %{HTTP_HOST} ^www\.rafaelverdugo\.com$ [NC]
+  RewriteRule ^(.*)$ https://rafaelverdugo.com/$1 [L,R=301]
 
-  # Todo lo demás → index.html
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^ index.html [L]
+  # ── URLs de la web antigua → su sección equivalente ─────────────────────────
+  # index.html solo si se pide explícitamente (/ se sirve internamente con index.html)
+  RewriteCond %{THE_REQUEST} \s/+(html/)?index(\.html)?[\s?] [NC]
+  RewriteRule ^ / [L,R=301]
+  RewriteRule ^(html/)?contacto(\.html)?$ /#contacto [L,R=301,NE]
+  RewriteRule ^(html/)?portfolio(\.html)?$ /#proyectos [L,R=301,NE]
+  RewriteRule ^(html/)?servicios(\.html)?$ /#servicios [L,R=301,NE]
+  RewriteRule ^(html/)?sobre-mi(\.html)?$ / [L,R=301]
+  RewriteRule ^(html/)?(blog|post)(/.*|\.html)?$ / [L,R=301]
+
+  # ── AppointDate: una sola URL pública ───────────────────────────────────────
+  # appointdate.html es la versión pre-renderizada que sirve /AppointDate/
+  RewriteCond %{THE_REQUEST} \s/+appointdate\.html[\s?] [NC]
+  RewriteRule ^ /AppointDate/ [L,R=301]
+  RewriteRule ^appointdate/?$ /AppointDate/ [L,R=301]
+
+  # El resto de rutas inexistentes devuelven 404 real (ErrorDocument)
 </IfModule>

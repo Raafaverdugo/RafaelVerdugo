@@ -1,17 +1,18 @@
 <?php
+// Copia este archivo como config.php (en el servidor, dentro de /php/) y rellena la contraseña.
+// config.php NO se sube a GitHub (.gitignore) y el servidor bloquea su acceso desde el navegador.
 
 return [
-    'recipient_email' => 'tu-correo@dominio.com',
-    'from_email' => 'no-reply@tudominio.com',
-    'from_name' => 'Web Rafael Verdugo',
-    'success_redirect' => '/?success=1#contacto',
-    'error_redirect' => '/?error=1#contacto',
-    'use_smtp' => false,
     'smtp' => [
         'host' => 'smtp.hostinger.com',
-        'port' => 587,
-        'username' => 'tu-correo@dominio.com',
-        'password' => 'tu-password',
-        'secure' => 'tls',
+        'port' => 465,
+        'secure' => 'ssl',
+        'username' => 'rafa@rafaelverdugo.com',
+        'password' => 'CONTRASEÑA_DEL_BUZON_RAFA',
     ],
+    'from_email' => 'rafa@rafaelverdugo.com',
+    // Dónde llegan los mensajes del formulario de contacto
+    'recipient_email' => 'rafa@rafaelverdugo.com',
+    // Dónde llegan las solicitudes del formulario de AppointDate
+    'appointdate_recipient_email' => 'rafa@rafaelverdugo.com',
 ];

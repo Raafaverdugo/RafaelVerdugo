@@ -8,12 +8,7 @@ ini_set('display_errors', '0');
 error_reporting(E_ALL);
 header('Content-Type: application/json; charset=utf-8');
 
-use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\PHPMailer;
-
-require __DIR__ . '/PHPMailer/PHPMailer-master/src/Exception.php';
-require __DIR__ . '/PHPMailer/PHPMailer-master/src/PHPMailer.php';
-require __DIR__ . '/PHPMailer/PHPMailer-master/src/SMTP.php';
+require __DIR__ . '/mailer.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
@@ -40,24 +35,15 @@ if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
-$mail = new PHPMailer(true);
+$mail = null;
 
 try {
-    // Configuración SMTP idéntica a send.php
-    $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'rafael17vdn@gmail.com'; // Cuenta desde la que sale el correo
-    $mail->Password = 'pngyoebixpirwggy';       // App password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port = 587;
-    $mail->CharSet = 'UTF-8';
-    $mail->Encoding = 'base64';
+    // Configuración SMTP compartida con send.php (php/mailer.php + php/config.php)
+    $config = load_mail_config();
+    $mail = create_mailer($config, 'AppointDate Web');
 
-    $mail->setFrom('rafael17vdn@gmail.com', 'AppointDate Web');
-    
     // Aquí es DONDE LLEGA EL CORREO:
-    $mail->addAddress('appointdatesoftware@gmail.com');
+    $mail->addAddress($config['appointdate_recipient_email']);
     
     // Si quieres responder directamente, se enviará al cliente
     $mail->addReplyTo($email, $nombre);
@@ -110,8 +96,8 @@ try {
     http_response_code(200);
     echo json_encode(['ok' => true]);
 
-} catch (Exception $e) {
-    error_log('Error PHPMailer AppointDate: ' . $mail->ErrorInfo);
+} catch (Throwable $e) {
+    error_log('Error PHPMailer AppointDate: ' . ($mail ? $mail->ErrorInfo : '') . ' ' . $e->getMessage());
     http_response_code(500);
     echo json_encode(['ok' => false, 'error' => 'Error al enviar']);
 }

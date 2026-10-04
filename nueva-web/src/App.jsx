@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState, useSyncExternalStore } from 'react'
 import { Link } from 'react-router-dom'
 import './App.css'
 import { useScrollReveal, useStaggerReveal } from './hooks/useScrollReveal'
@@ -16,7 +16,7 @@ const translations = {
     },
     hero: {
       eyebrow: 'Desarrollador web freelance en Sevilla',
-      h1: 'Diseño webs con una estética potente y una base técnica seria.',
+      h1: 'Diseño web en Sevilla con una estética potente y una base técnica seria.',
       text: 'Creo páginas pensadas para vender mejor tu servicio, transmitir más nivel de marca y cargar rápido desde el primer clic. Todo en una web clara, elegante y lista para crecer contigo.',
       btnPrimary: 'Empezar proyecto',
       btnSecondary: 'Ver trabajos',
@@ -56,11 +56,11 @@ const translations = {
       },
     },
     projects: [
-      { title: 'Kemekeosinweb', image: '/images/Cap_Kemekeosinweb.webp', description: 'Web de agencia con una presencia visual fuerte, copy orientado a negocio y estructura enfocada en generar confianza.', url: 'https://kemekeosinweb.com/' },
-      { title: 'I.E.S. Margarita Salas', image: '/images/Cap_MargaritaSalas.png', description: 'Sitio informativo para un centro educativo con arquitectura clara, navegación sencilla y foco en la matriculación.', url: 'https://ies-margarita-salas.vercel.app/' },
-      { title: 'Licencia de Armas Fácil', image: '/images/Cap_licencia.png', description: 'Plataforma de formación y venta online con una propuesta visual directa y una experiencia pensada para convertir.', url: 'https://licenciadearmasfacil.es/' },
-      { title: 'FXPro Trading Course', image: '/images/Cap_fxpro.png', description: 'Proyecto comercial para un infoproducto con una estructura clara para presentar valor, autoridad y llamada a la acción.', url: 'https://programafxpro.infinityfreeapp.com/' },
-      { title: 'The Shelter', image: '/images/Cap_TheShelter.png', description: 'Plataforma completa para protectora con gestión de animales, solicitudes y panel de administración.', url: 'https://theshelter.es/' },
+      { title: 'Kemekeosinweb', image: '/images/Cap_Kemekeosinweb-800.webp', description: 'Web de agencia con una presencia visual fuerte, copy orientado a negocio y estructura enfocada en generar confianza.', url: 'https://kemekeosinweb.com/' },
+      { title: 'I.E.S. Margarita Salas', image: '/images/Cap_MargaritaSalas-800.webp', description: 'Sitio informativo para un centro educativo con arquitectura clara, navegación sencilla y foco en la matriculación.', url: 'https://ies-margarita-salas.vercel.app/' },
+      { title: 'Licencia de Armas Fácil', image: '/images/Cap_licencia-800.webp', description: 'Plataforma de formación y venta online con una propuesta visual directa y una experiencia pensada para convertir.', url: 'https://licenciadearmasfacil.es/' },
+      { title: 'FXPro Trading Course', image: '/images/Cap_fxpro-800.webp', description: 'Proyecto comercial para un infoproducto con una estructura clara para presentar valor, autoridad y llamada a la acción.', url: 'https://programafxpro.infinityfreeapp.com/' },
+      { title: 'The Shelter', image: '/images/Cap_TheShelter-800.webp', description: 'Plataforma completa para protectora con gestión de animales, solicitudes y panel de administración.', url: 'https://theshelter.es/' },
     ],
     proceso: {
       eyebrow: 'Proceso',
@@ -85,7 +85,7 @@ const translations = {
     contact: {
       eyebrow: 'Contacto',
       h2: 'Cuéntame qué quieres construir y te respondo con una propuesta real.',
-      p: 'El formulario queda preparado para enviar correos desde el hosting. Si prefieres, también puedes escribirme por redes o adaptar el envío a SMTP más adelante.',
+      p: 'Escríbeme por el formulario o directamente por email y te respondo con una propuesta adaptada a tu proyecto, sin compromiso.',
       labelNombre: 'Nombre',
       placeholderNombre: 'Tu nombre',
       labelEmail: 'Email',
@@ -149,11 +149,11 @@ const translations = {
       },
     },
     projects: [
-      { title: 'Kemekeosinweb', image: '/images/Cap_Kemekeosinweb.webp', description: 'Agency website with a strong visual presence, business-oriented copy and a structure focused on building trust.', url: 'https://kemekeosinweb.com/' },
-      { title: 'I.E.S. Margarita Salas', image: '/images/Cap_MargaritaSalas.png', description: 'Informational site for a school with a clear architecture, simple navigation and a focus on enrollment.', url: 'https://ies-margarita-salas.vercel.app/' },
-      { title: 'Licencia de Armas Fácil', image: '/images/Cap_licencia.png', description: 'Online training and sales platform with a direct visual proposal and an experience designed to convert.', url: 'https://licenciadearmasfacil.es/' },
-      { title: 'FXPro Trading Course', image: '/images/Cap_fxpro.png', description: 'Commercial project for a digital product with a clear structure to present value, authority and a call to action.', url: 'https://programafxpro.infinityfreeapp.com/' },
-      { title: 'The Shelter', image: '/images/Cap_TheShelter.png', description: 'Full platform for an animal shelter with animal management, applications and an admin panel.', url: 'https://theshelter.es/' },
+      { title: 'Kemekeosinweb', image: '/images/Cap_Kemekeosinweb-800.webp', description: 'Agency website with a strong visual presence, business-oriented copy and a structure focused on building trust.', url: 'https://kemekeosinweb.com/' },
+      { title: 'I.E.S. Margarita Salas', image: '/images/Cap_MargaritaSalas-800.webp', description: 'Informational site for a school with a clear architecture, simple navigation and a focus on enrollment.', url: 'https://ies-margarita-salas.vercel.app/' },
+      { title: 'Licencia de Armas Fácil', image: '/images/Cap_licencia-800.webp', description: 'Online training and sales platform with a direct visual proposal and an experience designed to convert.', url: 'https://licenciadearmasfacil.es/' },
+      { title: 'FXPro Trading Course', image: '/images/Cap_fxpro-800.webp', description: 'Commercial project for a digital product with a clear structure to present value, authority and a call to action.', url: 'https://programafxpro.infinityfreeapp.com/' },
+      { title: 'The Shelter', image: '/images/Cap_TheShelter-800.webp', description: 'Full platform for an animal shelter with animal management, applications and an admin panel.', url: 'https://theshelter.es/' },
     ],
     proceso: {
       eyebrow: 'Process',
@@ -178,7 +178,7 @@ const translations = {
     contact: {
       eyebrow: 'Contact',
       h2: "Tell me what you want to build and I'll get back to you with a real proposal.",
-      p: 'The form is set up to send emails from your hosting. If you prefer, you can also reach me on social media or switch to SMTP later.',
+      p: 'Write to me through the form or directly by email and I will reply with a proposal tailored to your project, with no commitment.',
       labelNombre: 'Name',
       placeholderNombre: 'Your name',
       labelEmail: 'Email',
@@ -193,6 +193,10 @@ const translations = {
   },
 }
 
+const subscribeNoop = () => () => {}
+const getSearch = () => window.location.search
+const getServerSearch = () => ''
+
 const stack = ['React', 'JavaScript', 'PHP', 'HTML', 'CSS', 'SEO On-Page', 'Vite', 'Responsive Design']
 
 function App() {
@@ -201,7 +205,14 @@ function App() {
 
   const t = translations[lang]
 
-  const params = new URLSearchParams(window.location.search)
+  useEffect(() => {
+    document.title = 'Diseño web en Sevilla | Rafael Verdugo, desarrollador web freelance'
+  }, [])
+
+  // La web se pre-renderiza en el build (sin window): en el servidor la query es
+  // vacía y React la actualiza tras hidratar, sin descuadres.
+  const search = useSyncExternalStore(subscribeNoop, getSearch, getServerSearch)
+  const params = new URLSearchParams(search)
   const success = params.get('success') === '1'
   const error = params.get('error') === '1'
 
@@ -234,7 +245,7 @@ function App() {
     <div className="site-shell">
       <header className="topbar">
         <a className="brand" href="#inicio" aria-label="Ir al inicio" onClick={() => setMenuOpen(false)}>
-          <img className="brand-photo" src="/images/Yo.webp" alt="Rafael Verdugo" />
+          <img className="brand-photo" src="/images/Yo.webp" alt="Rafael Verdugo" width="46" height="46" />
           <span className="brand-copy">
             <strong>Rafael Verdugo</strong>
             <small>{t.brandSubtitle}</small>
@@ -332,8 +343,11 @@ function App() {
             <div className="hero-image-wrap">
               <img
                 src="/images/Yo.webp"
-                alt="Rafael Verdugo, desarrollador web freelance"
+                alt="Rafael Verdugo, desarrollador web freelance en Sevilla"
                 className="hero-image"
+                width="967"
+                height="1290"
+                fetchPriority="high"
               />
             </div>
 
@@ -376,7 +390,14 @@ function App() {
           <div ref={projectsGridRef} className="project-grid stagger-children">
             {t.projects.map((project) => (
               <article className="project-card" key={project.title}>
-                <img src={project.image} alt={`Screenshot ${project.title}`} />
+                <img
+                  src={project.image}
+                  alt={`Captura de la web ${project.title} diseñada por Rafael Verdugo`}
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <div className="project-body">
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
@@ -402,15 +423,18 @@ function App() {
               <div className="software-card-inner">
                 <div className="software-logo-wrap">
                   <img
-                    src="/images/AppointDate.png"
-                    alt="AppointDate logo"
+                    src="/images/AppointDate.webp"
+                    alt="Logo de AppointDate, software de gestión de citas"
                     className="software-logo"
+                    width="677"
+                    height="369"
+                    loading="lazy"
                   />
                 </div>
                 <div className="software-body">
                   <h3>AppointDate</h3>
                   <p>{t.softwares.appointdate.description}</p>
-                  <Link to="/AppointDate" className="software-cta">
+                  <Link to="/AppointDate/" className="software-cta">
                     {t.softwares.appointdate.cta} →
                   </Link>
                 </div>
@@ -512,7 +536,7 @@ function App() {
 
             <aside className="contact-card">
               <p className="contact-kicker">{t.contact.cardKicker}</p>
-              <a href="mailto:rafaelverdugoduran1@gmail.com">rafaelverdugoduran1@gmail.com</a>
+              <a href="mailto:rafa@rafaelverdugo.com">rafa@rafaelverdugo.com</a>
               <p>{t.contact.city}</p>
               <div className="social-links">
                 <a

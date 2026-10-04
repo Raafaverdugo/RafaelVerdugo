@@ -23,3 +23,8 @@ public/php/config.php
 *.njsproj
 *.sln
 *.sw?
+
+# Proyecto Laravel de AppointDate (repo aparte), copias locales del hosting
+appointdate-saas/
+public_html/
+backup-hostinger-*/

@@ -1,15 +1,10 @@
 <?php
 
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
+ini_set('display_errors', '0');
+ini_set('display_startup_errors', '0');
 error_reporting(E_ALL);
 
-use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\PHPMailer;
-
-require __DIR__ . '/PHPMailer/PHPMailer-master/src/Exception.php';
-require __DIR__ . '/PHPMailer/PHPMailer-master/src/PHPMailer.php';
-require __DIR__ . '/PHPMailer/PHPMailer-master/src/SMTP.php';
+require __DIR__ . '/mailer.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: /#contacto');
@@ -35,21 +30,12 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL) || $nombre === '' || $mensaje ===
     exit();
 }
 
-$mail = new PHPMailer(true);
+$mail = null;
 
 try {
-    $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'rafael17vdn@gmail.com';
-    $mail->Password = 'pngyoebixpirwggy';
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port = 587;
-    $mail->CharSet = 'UTF-8';
-    $mail->Encoding = 'base64';
-
-    $mail->setFrom('rafael17vdn@gmail.com', 'Web Rafael Verdugo');
-    $mail->addAddress('rafaelverdugoduran1@gmail.com');
+    $config = load_mail_config();
+    $mail = create_mailer($config, 'Web Rafael Verdugo');
+    $mail->addAddress($config['recipient_email']);
     $mail->addReplyTo($email, $nombre);
 
     $mail->isHTML(true);
@@ -94,8 +80,8 @@ try {
     $mail->send();
     header('Location: /?success=1#contacto');
     exit();
-} catch (Exception $e) {
-    error_log('Error PHPMailer: ' . $mail->ErrorInfo);
+} catch (Throwable $e) {
+    error_log('Error formulario contacto: ' . ($mail ? $mail->ErrorInfo : '') . ' ' . $e->getMessage());
     header('Location: /?error=1#contacto');
     exit();
 }
