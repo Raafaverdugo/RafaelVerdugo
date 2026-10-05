@@ -468,3 +468,62 @@
   color: var(--accent);
   text-underline-offset: 3px;
 }
+
+/* ── /servicios/ ── */
+.services-index-grid {
+  padding-top: 32px;
+}
+
+.services-index-grid .service-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-index-grid .service-card h2 {
+  margin: 0 0 12px;
+  color: var(--text-strong);
+  font-size: 1.35rem;
+}
+
+.services-index-grid .card-link {
+  margin-top: auto;
+}
+
+.service-card-price {
+  margin: 4px 0 12px;
+  color: var(--text-strong) !important;
+  font-weight: 800;
+}
+
+.services-index-note {
+  max-width: 70ch;
+  margin: 24px 0 0;
+  font-size: 0.95rem;
+}
+
+.services-index-note a {
+  color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+/* ── /contacto/ ── */
+.contact-page-form {
+  padding-top: 32px;
+}
+
+/* ── Pie: datos de contacto en columna ── */
+.footer-brand {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+
+.footer-brand .footer-contact-link {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* ── Portada: llamada a la acción de contacto ── */
+.contact-cta-actions {
+  margin-top: 8px;
+}

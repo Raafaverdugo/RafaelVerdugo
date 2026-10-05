@@ -31,6 +31,32 @@ function create_mailer(array $config, string $fromName): PHPMailer
     $mail->Port = (int) $config['smtp']['port'];
     $mail->CharSet = 'UTF-8';
     $mail->Encoding = 'base64';
+    $mail->Timeout = 20;
     $mail->setFrom($config['from_email'], $fromName);
     return $mail;
+}
+
+// Error sin datos del visitante en php/mail-error.log (bloqueado por php/.htaccess)
+function log_mail_error(string $message): void
+{
+    error_log(date('c') . ' ' . $message . PHP_EOL, 3, __DIR__ . '/mail-error.log');
+}
+
+// Si el servidor SMTP falla puntualmente, se reintenta con una conexión nueva
+// antes de mostrar error al visitante.
+function send_with_retry(PHPMailer $mail, int $attempts = 3): void
+{
+    for ($i = 1; ; $i++) {
+        try {
+            $mail->send();
+            return;
+        } catch (Throwable $e) {
+            log_mail_error("Intento {$i}/{$attempts}: " . ($mail->ErrorInfo ?: $e->getMessage()));
+            if ($i >= $attempts) {
+                throw $e;
+            }
+            $mail->smtpClose();
+            sleep(2);
+        }
+    }
 }

@@ -25,7 +25,7 @@ export function ContactCta({ title = '¿Hablamos de tu proyecto?', text }) {
           'Cuéntame qué necesitas y te respondo con una propuesta clara: qué haría, en cuánto tiempo y cuánto costaría.'}
       </p>
       <div className="hero-actions">
-        <a className="button button-primary" href="/#contacto">
+        <a className="button button-primary" href="/contacto/">
           Pedir propuesta
         </a>
         <a className="button button-secondary" href="mailto:rafa@rafaelverdugo.com">

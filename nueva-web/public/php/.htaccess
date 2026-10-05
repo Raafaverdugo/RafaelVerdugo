@@ -2,6 +2,9 @@
 <Files "config.php">
   Require all denied
 </Files>
-<Files "mailer.php">
+<Files "smtp.php">
+  Require all denied
+</Files>
+<Files "mail-error.log">
   Require all denied
 </Files>

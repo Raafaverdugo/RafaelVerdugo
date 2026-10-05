@@ -11,7 +11,7 @@ export default function ServicePage({ service }) {
 
   return (
     <PageLayout>
-      <Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Servicios' }, { label: service.navLabel }]} />
+      <Breadcrumbs items={[{ label: 'Inicio', href: '/' }, { label: 'Servicios', href: '/servicios/' }, { label: service.navLabel }]} />
 
       <header className="content-hero">
         <p className="eyebrow">{service.eyebrow}</p>
@@ -24,7 +24,7 @@ export default function ServicePage({ service }) {
           </p>
         ) : null}
         <div className="hero-actions">
-          <a className="button button-primary" href="/#contacto">
+          <a className="button button-primary" href="/contacto/">
             Pedir propuesta
           </a>
           <a className="button button-secondary" href="/proyectos/">

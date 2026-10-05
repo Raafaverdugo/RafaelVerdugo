@@ -1,4 +1,4 @@
-import { useEffect, useState, useSyncExternalStore } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './App.css'
 import { useScrollReveal, useStaggerReveal } from './hooks/useScrollReveal'
@@ -11,7 +11,6 @@ const translations = {
     nav: {
       servicios: 'Servicios',
       proyectos: 'Proyectos',
-      proceso: 'Proceso',
       blog: 'Blog',
       contacto: 'Contacto',
       cta: 'Solicitar propuesta',
@@ -34,6 +33,7 @@ const translations = {
     },
     services: {
       saberMas: 'Saber más',
+      verTodos: 'Ver todos los servicios y precios',
       eyebrow: 'Servicios',
       h2: 'Una web atractiva no basta si no está construida con criterio.',
       p: 'La idea es combinar diseño, estructura y rendimiento para que el resultado tenga presencia y también sirva para captar oportunidades reales.',
@@ -68,6 +68,7 @@ const translations = {
     ],
     proceso: {
       eyebrow: 'Proceso',
+      cta: 'Empezar un proyecto',
       h2: 'Menos vueltas, más claridad.',
       steps: [
         { num: '01', title: 'Definimos enfoque', desc: 'Qué quieres vender, a quién y qué sensación debe transmitir la web.' },
@@ -88,20 +89,9 @@ const translations = {
     ],
     contact: {
       eyebrow: 'Contacto',
+      ctaForm: 'Ir al formulario de contacto',
       h2: 'Cuéntame qué quieres construir y te respondo con una propuesta real.',
       p: 'Escríbeme por el formulario o directamente por email y te respondo con una propuesta adaptada a tu proyecto, sin compromiso.',
-      labelNombre: 'Nombre',
-      placeholderNombre: 'Tu nombre',
-      labelEmail: 'Email',
-      labelMensaje: 'Proyecto',
-      placeholderMensaje: 'Cuéntame qué necesitas, qué estilo buscas y si ya tienes dominio u hosting.',
-      btnEnviar: 'Enviar mensaje',
-      privacyBefore: 'He leído y acepto la',
-      privacyLink: 'política de privacidad',
-      cardKicker: 'Contacto directo',
-      city: 'Sevilla, España',
-      successMsg: 'Tu mensaje se ha enviado correctamente.',
-      errorMsg: 'Hubo un problema al enviar el formulario.',
     },
   },
   en: {
@@ -109,7 +99,6 @@ const translations = {
     nav: {
       servicios: 'Services',
       proyectos: 'Projects',
-      proceso: 'Process',
       blog: 'Blog',
       contacto: 'Contact',
       cta: 'Request a proposal',
@@ -132,6 +121,7 @@ const translations = {
     },
     services: {
       saberMas: 'Learn more',
+      verTodos: 'See all services and prices',
       eyebrow: 'Services',
       h2: "An attractive website isn't enough if it's not built with purpose.",
       p: 'The goal is to combine design, structure and performance so the result has a strong presence and also works to capture real opportunities.',
@@ -166,6 +156,7 @@ const translations = {
     ],
     proceso: {
       eyebrow: 'Process',
+      cta: 'Start a project',
       h2: 'Less back and forth, more clarity.',
       steps: [
         { num: '01', title: 'We define the approach', desc: 'What you want to sell, who to and what feeling the website should convey.' },
@@ -186,27 +177,12 @@ const translations = {
     ],
     contact: {
       eyebrow: 'Contact',
+      ctaForm: 'Go to the contact form',
       h2: "Tell me what you want to build and I'll get back to you with a real proposal.",
       p: 'Write to me through the form or directly by email and I will reply with a proposal tailored to your project, with no commitment.',
-      labelNombre: 'Name',
-      placeholderNombre: 'Your name',
-      labelEmail: 'Email',
-      labelMensaje: 'Project',
-      placeholderMensaje: 'Tell me what you need, the style you are going for and if you already have a domain or hosting.',
-      btnEnviar: 'Send message',
-      privacyBefore: 'I have read and accept the',
-      privacyLink: 'privacy policy',
-      cardKicker: 'Direct contact',
-      city: 'Seville, Spain',
-      successMsg: 'Your message has been sent successfully.',
-      errorMsg: 'There was a problem submitting the form.',
     },
   },
 }
-
-const subscribeNoop = () => () => {}
-const getSearch = () => window.location.search
-const getServerSearch = () => ''
 
 const stack = ['React', 'JavaScript', 'PHP', 'HTML', 'CSS', 'SEO On-Page', 'Vite', 'Responsive Design']
 
@@ -219,13 +195,6 @@ function App() {
   useEffect(() => {
     document.title = 'Diseño web en Sevilla | Rafael Verdugo, desarrollador web freelance'
   }, [])
-
-  // La web se pre-renderiza en el build (sin window): en el servidor la query es
-  // vacía y React la actualiza tras hidratar, sin descuadres.
-  const search = useSyncExternalStore(subscribeNoop, getSearch, getServerSearch)
-  const params = new URLSearchParams(search)
-  const success = params.get('success') === '1'
-  const error = params.get('error') === '1'
 
   // ── Scroll reveal refs ──────────────────────────────
   const heroCopyRef      = useScrollReveal()
@@ -245,12 +214,12 @@ function App() {
   const contactTitleRef  = useScrollReveal()
   const contactLayoutRef = useScrollReveal()
 
+  // El menú lleva a páginas; la portada se lee haciendo scroll y cada sección enlaza a la suya
   const navItems = [
-    { href: '#servicios', label: t.nav.servicios },
-    { href: '#proyectos', label: t.nav.proyectos },
-    { href: '#proceso',   label: t.nav.proceso },
-    { href: '/blog/',     label: t.nav.blog },
-    { href: '#contacto',  label: t.nav.contacto },
+    { href: '/servicios/', label: t.nav.servicios },
+    { href: '/proyectos/', label: t.nav.proyectos },
+    { href: '/blog/',      label: t.nav.blog },
+    { href: '/contacto/',  label: t.nav.contacto },
   ]
 
   return (
@@ -285,7 +254,7 @@ function App() {
             <span className={lang === 'en' ? 'lang-active' : ''}>EN</span>
           </button>
 
-          <a className="nav-cta" href="#contacto">
+          <a className="nav-cta" href="/contacto/">
             {t.nav.cta}
           </a>
         </div>
@@ -308,7 +277,7 @@ function App() {
               {item.label}
             </a>
           ))}
-          <a className="button button-primary mobile-menu-cta" href="#contacto" onClick={() => setMenuOpen(false)}>
+          <a className="button button-primary mobile-menu-cta" href="/contacto/" onClick={() => setMenuOpen(false)}>
             {t.nav.cta}
           </a>
           {/* Lang toggle mobile */}
@@ -333,10 +302,10 @@ function App() {
             <p className="hero-text">{t.hero.text}</p>
 
             <div className="hero-actions">
-              <a className="button button-primary" href="#contacto">
+              <a className="button button-primary" href="/contacto/">
                 {t.hero.btnPrimary}
               </a>
-              <a className="button button-secondary" href="#proyectos">
+              <a className="button button-secondary" href="/proyectos/">
                 {t.hero.btnSecondary}
               </a>
             </div>
@@ -393,6 +362,10 @@ function App() {
               </article>
             ))}
           </div>
+
+          <p className="section-more">
+            <a href="/servicios/">{t.services.verTodos} →</a>
+          </p>
         </section>
 
         {/* ── Portfolio ── */}
@@ -481,6 +454,10 @@ function App() {
               </article>
             ))}
           </div>
+
+          <p className="section-more">
+            <a href="/contacto/">{t.proceso.cta} →</a>
+          </p>
         </section>
 
         {/* ── Sobre mí / Stack ── */}
@@ -519,74 +496,13 @@ function App() {
             <p>{t.contact.p}</p>
           </div>
 
-          {success ? (
-            <div className="form-alert success">{t.contact.successMsg}</div>
-          ) : null}
-          {error ? (
-            <div className="form-alert error">{t.contact.errorMsg}</div>
-          ) : null}
-
-          <div ref={contactLayoutRef} className="contact-layout reveal">
-            <form className="contact-form" action="/php/send.php" method="post">
-              <label htmlFor="nombre">{t.contact.labelNombre}</label>
-              <input id="nombre" name="nombre" type="text" placeholder={t.contact.placeholderNombre} required />
-
-              <label htmlFor="email">{t.contact.labelEmail}</label>
-              <input id="email" name="email" type="email" placeholder="tu@email.com" required />
-
-              <label htmlFor="mensaje">{t.contact.labelMensaje}</label>
-              <textarea
-                id="mensaje"
-                name="mensaje"
-                rows="6"
-                placeholder={t.contact.placeholderMensaje}
-                required
-              />
-
-              <input
-                className="hidden-field"
-                type="text"
-                name="company"
-                tabIndex="-1"
-                autoComplete="off"
-              />
-
-              <label className="privacy-check">
-                <input type="checkbox" name="privacidad" required />
-                <span>
-                  {t.contact.privacyBefore}{' '}
-                  <a href="/privacidad/" target="_blank" rel="noreferrer">
-                    {t.contact.privacyLink}
-                  </a>
-                  .
-                </span>
-              </label>
-
-              <button className="button button-primary" type="submit">
-                {t.contact.btnEnviar}
-              </button>
-            </form>
-
-            <aside className="contact-card">
-              <p className="contact-kicker">{t.contact.cardKicker}</p>
-              <a href="mailto:rafa@rafaelverdugo.com">rafa@rafaelverdugo.com</a>
-              <p>{t.contact.city}</p>
-              <div className="social-links">
-                <a
-                  href="https://www.linkedin.com/in/rafael-verdugo-dur%C3%A1n-b25a3831b/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  LinkedIn
-                </a>
-                <a href="https://www.instagram.com/rafael_verdugo17" target="_blank" rel="noreferrer">
-                  Instagram
-                </a>
-                <a href="https://github.com/Raafaverdugo" target="_blank" rel="noreferrer">
-                  GitHub
-                </a>
-              </div>
-            </aside>
+          <div ref={contactLayoutRef} className="hero-actions contact-cta-actions reveal">
+            <a className="button button-primary" href="/contacto/">
+              {t.contact.ctaForm}
+            </a>
+            <a className="button button-secondary" href="mailto:rafa@rafaelverdugo.com">
+              rafa@rafaelverdugo.com
+            </a>
           </div>
         </section>
       </main>

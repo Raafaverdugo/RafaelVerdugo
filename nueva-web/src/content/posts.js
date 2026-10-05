@@ -144,7 +144,7 @@ export const posts = [
         ],
       },
       {
-        p: 'Puedes ver en qué consiste cada servicio en [diseño web en Sevilla](/diseno-web-sevilla/) y [landing pages](/landing-pages/). Y si sigues con dudas, [escríbeme](/#contacto): te digo cuál encaja con tu caso, aunque al final no trabajemos juntos.',
+        p: 'Puedes ver en qué consiste cada servicio en [diseño web en Sevilla](/diseno-web-sevilla/) y [landing pages](/landing-pages/). Y si sigues con dudas, [escríbeme](/contacto/): te digo cuál encaja con tu caso, aunque al final no trabajemos juntos.',
       },
     ],
   },
@@ -270,7 +270,7 @@ export const posts = [
         p: 'Compares con quien compares, pregunta siempre qué incluye exactamente el precio, si el dominio y la web quedan a tu nombre, si la web se entrega preparada para Google o solo «publicada», y qué pasa si en el futuro quieres cambiar de proveedor. Si te interesa saber qué debería incluir, lo tienes en [qué debe tener la web de un negocio local](/blog/que-debe-tener-la-web-de-un-negocio-local/).',
       },
       {
-        p: 'Si quieres un precio cerrado para tu caso, [cuéntame tu proyecto](/#contacto) y te paso una propuesta sin compromiso.',
+        p: 'Si quieres un precio cerrado para tu caso, [cuéntame tu proyecto](/contacto/) y te paso una propuesta sin compromiso.',
       },
     ],
   },

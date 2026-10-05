@@ -3,12 +3,14 @@
 import App from './App.jsx'
 import AppointDate from './pages/AppointDate.jsx'
 import ServicePage from './pages/ServicePage.jsx'
+import ServicesIndex from './pages/ServicesIndex.jsx'
+import ContactPage from './pages/ContactPage.jsx'
 import ProjectsIndex from './pages/ProjectsIndex.jsx'
 import ProjectPage from './pages/ProjectPage.jsx'
 import BlogIndex from './pages/BlogIndex.jsx'
 import BlogPost from './pages/BlogPost.jsx'
 import LegalPage from './pages/LegalPage.jsx'
-import { services } from './content/services.js'
+import { services, extraServices } from './content/services.js'
 import { projects } from './content/projects.js'
 import { posts } from './content/posts.js'
 import { legalPages } from './content/legal.js'
@@ -56,6 +58,44 @@ export const routes = [
       }),
   },
 
+  {
+    path: '/servicios/',
+    file: fileFor('/servicios/'),
+    element: <ServicesIndex />,
+    lastmod: '2026-10-05',
+    head: () =>
+      buildHead({
+        title: 'Servicios de diseño web, tiendas online y SEO en Sevilla | Rafael Verdugo',
+        description:
+          'Diseño web, tiendas online, landing pages, SEO técnico, software a medida y automatizaciones en Sevilla. Precios de partida claros y trato directo con un desarrollador freelance.',
+        path: '/servicios/',
+        schema: [
+          {
+            '@type': 'OfferCatalog',
+            name: 'Servicios de Rafael Verdugo',
+            url: `${SITE}/servicios/`,
+            itemListElement: [
+              ...published(services).map((service) => ({
+                '@type': 'Offer',
+                itemOffered: { '@type': 'Service', name: service.navLabel, url: `${SITE}${service.path}` },
+                ...(service.priceFrom
+                  ? { priceSpecification: { '@type': 'PriceSpecification', minPrice: service.priceFrom, priceCurrency: 'EUR' } }
+                  : {}),
+              })),
+              ...extraServices.map((service) => ({
+                '@type': 'Offer',
+                itemOffered: { '@type': 'Service', name: service.name },
+                priceSpecification: { '@type': 'PriceSpecification', minPrice: service.priceFrom, priceCurrency: 'EUR' },
+              })),
+            ],
+          },
+          breadcrumbSchema([
+            { name: 'Inicio', path: '/' },
+            { name: 'Servicios', path: '/servicios/' },
+          ]),
+        ],
+      }),
+  },
   ...published(services).map((service) => ({
     path: service.path,
     file: fileFor(service.path),
@@ -80,6 +120,7 @@ export const routes = [
           },
           breadcrumbSchema([
             { name: 'Inicio', path: '/' },
+            { name: 'Servicios', path: '/servicios/' },
             { name: service.navLabel, path: service.path },
           ]),
         ],
@@ -193,6 +234,32 @@ export const routes = [
         ],
       }),
   })),
+
+  {
+    path: '/contacto/',
+    file: fileFor('/contacto/'),
+    element: <ContactPage />,
+    lastmod: '2026-10-05',
+    head: () =>
+      buildHead({
+        title: 'Contacto | Pide presupuesto para tu web | Rafael Verdugo',
+        description:
+          'Cuéntame tu proyecto y te respondo con una propuesta cerrada: qué incluye, plazo y precio. Diseño web, tiendas online y software a medida en Sevilla. rafa@rafaelverdugo.com',
+        path: '/contacto/',
+        schema: [
+          {
+            '@type': 'ContactPage',
+            name: 'Contacto',
+            url: `${SITE}/contacto/`,
+            about: { '@type': 'ProfessionalService', '@id': BUSINESS_ID, name: 'Rafael Verdugo · Diseño y desarrollo web', email: 'rafa@rafaelverdugo.com' },
+          },
+          breadcrumbSchema([
+            { name: 'Inicio', path: '/' },
+            { name: 'Contacto', path: '/contacto/' },
+          ]),
+        ],
+      }),
+  },
 
   ...published(legalPages).map((page) => ({
     path: page.path,

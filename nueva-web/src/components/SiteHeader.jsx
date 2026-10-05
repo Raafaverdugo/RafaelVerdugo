@@ -1,13 +1,13 @@
 import { useState } from 'react'
 
 const navItems = [
-  { href: '/diseno-web-sevilla/', label: 'Servicios' },
+  { href: '/servicios/', label: 'Servicios' },
   { href: '/proyectos/', label: 'Proyectos' },
   { href: '/blog/', label: 'Blog' },
-  { href: '/#contacto', label: 'Contacto' },
+  { href: '/contacto/', label: 'Contacto' },
 ]
 
-// Cabecera de las páginas interiores (la portada mantiene la suya con anclas y selector de idioma)
+// Cabecera de las páginas interiores (la portada tiene la suya, con el mismo menú y selector de idioma)
 export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -30,7 +30,7 @@ export default function SiteHeader() {
       </nav>
 
       <div className="topbar-right">
-        <a className="nav-cta" href="/#contacto">
+        <a className="nav-cta" href="/contacto/">
           Solicitar propuesta
         </a>
       </div>
@@ -53,7 +53,7 @@ export default function SiteHeader() {
             {item.label}
           </a>
         ))}
-        <a className="button button-primary mobile-menu-cta" href="/#contacto">
+        <a className="button button-primary mobile-menu-cta" href="/contacto/">
           Solicitar propuesta
         </a>
       </div>

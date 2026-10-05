@@ -4,6 +4,7 @@
 export const services = [
   {
     slug: 'diseno-web-sevilla',
+    priceFrom: 249,
     price: 'Web corporativa desde 249 €',
     path: '/diseno-web-sevilla/',
     navLabel: 'Diseño web en Sevilla',
@@ -83,6 +84,7 @@ export const services = [
   },
   {
     slug: 'tiendas-online-sevilla',
+    priceFrom: 299,
     price: 'Tienda online desde 299 €',
     path: '/tiendas-online-sevilla/',
     navLabel: 'Tiendas online',
@@ -147,6 +149,7 @@ export const services = [
   },
   {
     slug: 'landing-pages',
+    priceFrom: 199,
     price: 'Landing page desde 199 €',
     path: '/landing-pages/',
     navLabel: 'Landing pages',
@@ -272,5 +275,23 @@ export const services = [
     ],
     relatedProjects: ['ies-margarita-salas'],
     relatedPosts: ['por-que-mi-web-no-aparece-en-google', 'que-debe-tener-la-web-de-un-negocio-local'],
+  },
+]
+
+// Servicios sin página propia (por ahora): aparecen en /servicios/ y en el artículo de precios
+export const extraServices = [
+  {
+    name: 'Software a medida',
+    priceFrom: 99,
+    text: 'Herramientas web hechas para tu negocio: paneles de gestión, reservas, áreas privadas o cualquier proceso que hoy haces con hojas de cálculo. Un ejemplo es AppointDate, mi software de gestión de citas.',
+    href: '/AppointDate/',
+    linkLabel: 'Ver AppointDate',
+  },
+  {
+    name: 'Automatizaciones',
+    priceFrom: 79,
+    text: 'Elimina tareas repetitivas: avisos y emails automáticos, conexión entre las herramientas que ya usas, formularios que guardan los datos donde los necesitas.',
+    href: '/contacto/',
+    linkLabel: 'Cuéntame qué quieres automatizar',
   },
 ]

@@ -4,29 +4,29 @@ ini_set('display_errors', '0');
 ini_set('display_startup_errors', '0');
 error_reporting(E_ALL);
 
-require __DIR__ . '/mailer.php';
+require __DIR__ . '/smtp.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: /#contacto');
+    header('Location: /contacto/');
     exit();
 }
 
 if (!empty($_POST['company'])) {
-    header('Location: /?success=1#contacto');
+    header('Location: /contacto/?success=1');
     exit();
 }
 
 if (!isset($_POST['nombre'], $_POST['email'], $_POST['mensaje'])) {
-    header('Location: /?error=1#contacto');
+    header('Location: /contacto/?error=1');
     exit();
 }
 
-$nombre = trim(htmlspecialchars($_POST['nombre'], ENT_QUOTES, 'UTF-8'));
-$email = trim(htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8'));
-$mensaje = trim(htmlspecialchars($_POST['mensaje'], ENT_QUOTES, 'UTF-8'));
+$nombre = trim(htmlspecialchars($_POST['nombre'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'));
+$email = trim(htmlspecialchars($_POST['email'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'));
+$mensaje = trim(htmlspecialchars($_POST['mensaje'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'));
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL) || $nombre === '' || $mensaje === '') {
-    header('Location: /?error=1#contacto');
+    header('Location: /contacto/?error=1');
     exit();
 }
 
@@ -77,11 +77,11 @@ try {
     ";
     $mail->AltBody = "Nombre: {$nombre}\nEmail: {$email}\n\nMensaje:\n{$mensaje}";
 
-    $mail->send();
-    header('Location: /?success=1#contacto');
+    send_with_retry($mail);
+    header('Location: /contacto/?success=1');
     exit();
 } catch (Throwable $e) {
     error_log('Error formulario contacto: ' . ($mail ? $mail->ErrorInfo : '') . ' ' . $e->getMessage());
-    header('Location: /?error=1#contacto');
+    header('Location: /contacto/?error=1');
     exit();
 }

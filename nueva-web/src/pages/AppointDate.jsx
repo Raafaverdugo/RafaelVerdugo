@@ -339,7 +339,7 @@ export default function AppointDate() {
 
             <p className="ad-pricing-alt">
               ¿Esto no encaja contigo?{' '}
-              <a href="https://rafaelverdugo.com/#contacto" target="_blank" rel="noreferrer">
+              <a href="/contacto/">
                 Contáctame
               </a>
             </p>

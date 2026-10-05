@@ -8,7 +8,7 @@ ini_set('display_errors', '0');
 error_reporting(E_ALL);
 header('Content-Type: application/json; charset=utf-8');
 
-require __DIR__ . '/mailer.php';
+require __DIR__ . '/smtp.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
@@ -23,11 +23,11 @@ if (!empty($_POST['company'])) {
     exit;
 }
 
-$nombre   = htmlspecialchars(trim($_POST['nombre']   ?? ''), ENT_QUOTES, 'UTF-8');
+$nombre   = htmlspecialchars(trim($_POST['nombre']   ?? ''), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 $email    = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
-$telefono = htmlspecialchars(trim($_POST['telefono'] ?? ''), ENT_QUOTES, 'UTF-8');
-$plan     = htmlspecialchars(trim($_POST['plan']     ?? ''), ENT_QUOTES, 'UTF-8');
-$mensaje  = htmlspecialchars(trim($_POST['mensaje']  ?? ''), ENT_QUOTES, 'UTF-8');
+$telefono = htmlspecialchars(trim($_POST['telefono'] ?? ''), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$plan     = htmlspecialchars(trim($_POST['plan']     ?? ''), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$mensaje  = htmlspecialchars(trim($_POST['mensaje']  ?? ''), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 
 if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     http_response_code(400);
@@ -38,7 +38,7 @@ if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
 $mail = null;
 
 try {
-    // Configuración SMTP compartida con send.php (php/mailer.php + php/config.php)
+    // Configuración SMTP compartida con send.php (php/smtp.php + php/config.php)
     $config = load_mail_config();
     $mail = create_mailer($config, 'AppointDate Web');
 
@@ -92,7 +92,7 @@ try {
     
     $mail->AltBody = "Nombre: {$nombre}\nEmail: {$email}\nTeléfono: " . ($telefono ?: 'No indicado') . "\nPlan: {$plan}\n\nMensaje:\n{$mensaje}";
 
-    $mail->send();
+    send_with_retry($mail);
     http_response_code(200);
     echo json_encode(['ok' => true]);
 

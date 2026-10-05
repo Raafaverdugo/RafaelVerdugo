@@ -15,10 +15,12 @@ export default function SiteFooter() {
           <strong>Rafael Verdugo</strong>
           <p>Diseño y desarrollo web freelance en Sevilla. Webs rápidas, cuidadas y preparadas para Google.</p>
           <a href="mailto:rafa@rafaelverdugo.com">rafa@rafaelverdugo.com</a>
+          <a className="footer-contact-link" href="/contacto/">Pedir presupuesto →</a>
         </div>
 
         <nav aria-label="Servicios">
           <p className="footer-title">Servicios</p>
+          <a href="/servicios/">Todos los servicios</a>
           {published(services).map((service) => (
             <a key={service.slug} href={service.path}>
               {service.navLabel}
