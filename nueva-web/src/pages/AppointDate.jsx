@@ -83,7 +83,7 @@ const pricingPlans = {
     label: 'Solo Sistema',
     // Oferta actual: instalación gratis (antes 350 €)
     mensual: { setup: 0, setupBefore: 350, monthly: 69, badge: 'Instalación gratis' },
-    anual:   { total: 849 },
+    anual:   { total: 699 },
   },
   web: {
     key: 'web',
