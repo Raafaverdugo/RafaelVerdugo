@@ -1,5 +1,4 @@
-// Páginas legales. Aviso legal y privacidad necesitan los datos fiscales de Rafael
-// ([[PENDIENTE: …]]) y no se publican hasta tenerlos.
+// Páginas legales (LSSI-CE y RGPD). El domicilio completo puede ampliarse aquí si hace falta.
 
 const titular = 'Rafael Verdugo Durán'
 const email = 'rafa@rafaelverdugo.com'
@@ -9,7 +8,6 @@ export const legalPages = [
     slug: 'aviso-legal',
     path: '/aviso-legal/',
     navLabel: 'Aviso legal',
-    pending: true,
     title: 'Aviso legal',
     seo: {
       title: 'Aviso legal | Rafael Verdugo',
@@ -24,8 +22,8 @@ export const legalPages = [
       {
         ul: [
           `**Titular**: ${titular}`,
-          '**NIF**: [[PENDIENTE: NIF]]',
-          '**Domicilio**: [[PENDIENTE: dirección fiscal]]',
+          '**NIF**: 20095980Y',
+          '**Domicilio**: Sevilla (España)',
           `**Email**: ${email}`,
           '**Actividad**: diseño y desarrollo de páginas web y software.',
         ],
@@ -56,7 +54,6 @@ export const legalPages = [
     slug: 'privacidad',
     path: '/privacidad/',
     navLabel: 'Privacidad',
-    pending: true,
     title: 'Política de privacidad',
     seo: {
       title: 'Política de privacidad | Rafael Verdugo',
@@ -68,8 +65,8 @@ export const legalPages = [
       {
         ul: [
           `**Responsable**: ${titular}`,
-          '**NIF**: [[PENDIENTE: NIF]]',
-          '**Domicilio**: [[PENDIENTE: dirección fiscal]]',
+          '**NIF**: 20095980Y',
+          '**Domicilio**: Sevilla (España)',
           `**Email de contacto**: ${email}`,
         ],
       },

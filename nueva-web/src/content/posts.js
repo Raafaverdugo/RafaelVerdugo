@@ -1,5 +1,5 @@
-// Artículos del blog. `pending: true` = falta información de Rafael y no se publica.
-// Los textos marcados con [[PENDIENTE: …]] se sustituyen antes de publicar.
+// Artículos del blog. `pending: true` = falta información de Rafael y no se publica
+// (el build falla si una página publicada contiene [[PENDIENTE: …]]).
 
 export const posts = [
   {
@@ -217,53 +217,60 @@ export const posts = [
   {
     slug: 'cuanto-cuesta-una-pagina-web-en-sevilla',
     path: '/blog/cuanto-cuesta-una-pagina-web-en-sevilla/',
-    pending: true,
     title: '¿Cuánto cuesta una página web en Sevilla en 2026?',
     seo: {
-      title: '¿Cuánto cuesta una página web en Sevilla en 2026? Precios orientativos',
+      title: '¿Cuánto cuesta una página web en Sevilla en 2026? Precios desde 199 €',
       description:
-        'Cuánto cuesta una página web en Sevilla: precios orientativos de una landing page, una web corporativa y una tienda online, qué influye en el precio y qué gastos tiene mantenerla al año.',
+        'Precios de una página web en Sevilla: landing page desde 199 €, web corporativa desde 249 € y tienda online desde 299 €, más software a medida y automatizaciones. Qué incluye y qué influye en el precio.',
     },
     excerpt:
-      'Precios orientativos de una landing, una web corporativa y una tienda online, qué hace que suba o baje el precio y cuánto cuesta mantenerla.',
+      'Mis precios de partida para landing pages, webs corporativas, tiendas online, software a medida y automatizaciones, qué hace que suban y cómo funciona el mantenimiento.',
     datePublished: '2026-10-05',
-    readingMinutes: 6,
+    readingMinutes: 5,
     blocks: [
       {
-        p: '«¿Cuánto cuesta una web?» es como preguntar cuánto cuesta un coche: depende. Pero eso no ayuda a nadie a decidir, así que en este artículo te doy precios orientativos, te explico qué hace que suban o bajen y qué gastos tiene una web una vez publicada.',
+        p: '«¿Cuánto cuesta una web?» es como preguntar cuánto cuesta un coche: depende. Pero eso no ayuda a nadie a decidir, así que aquí tienes mis precios de partida, qué incluye cada uno y qué hace que un proyecto cueste más o menos.',
       },
-      { h2: 'Precios orientativos' },
+      { h2: 'Mis precios de partida' },
       {
         ul: [
-          '**Landing page**: desde [[PENDIENTE: precio landing]] €.',
-          '**Web corporativa** (4 a 6 páginas): desde [[PENDIENTE: precio web corporativa]] €.',
-          '**Tienda online**: desde [[PENDIENTE: precio tienda online]] €.',
+          '[Landing page](/landing-pages/): desde **199 €**.',
+          '[Web corporativa](/diseno-web-sevilla/): desde **249 €**.',
+          '[Tienda online](/tiendas-online-sevilla/): desde **299 €**.',
+          '**Software a medida**: desde **99 €**.',
+          '**Automatizaciones** (tareas repetitivas, conexiones entre herramientas, avisos automáticos…): desde **79 €**.',
         ],
       },
-      { h2: 'Qué influye en el precio' },
+      {
+        note: 'Todos los precios son en euros. Son precios de partida: el precio final depende de lo que necesite tu proyecto, y siempre te lo doy cerrado en la propuesta antes de empezar.',
+      },
+      { h2: 'Cómo funciona el mantenimiento' },
+      {
+        p: 'Cada proyecto lleva su **cuota mensual de mantenimiento**, y no hay una tarifa única porque cada mantenimiento es un mundo: no es lo mismo una landing page que una tienda online con pedidos diarios o un software a medida que usa tu equipo cada día. En la propuesta te detallo qué cubre la cuota de tu proyecto y cuánto es al mes.',
+      },
+      { h2: 'Qué hace que el precio suba' },
       {
         ul: [
           '**Número de páginas** y cuánto contenido hay que preparar.',
-          '**Diseño a medida o plantilla**: una plantilla es más barata, pero tu web se parecerá a muchas otras.',
-          '**Funcionalidades**: reservas, pagos, áreas privadas, integraciones con otros programas.',
+          '**Funcionalidades**: reservas, pagos, áreas privadas o integraciones con otros programas.',
           '**Textos e imágenes**: si los aportas tú o hay que crearlos.',
-          '**SEO**: si la web se entrega preparada para Google o solo «publicada».',
+          '**Diseño**: cuántas secciones distintas hay que diseñar desde cero.',
+          '**Plazos**: un proyecto urgente requiere reorganizar el resto del trabajo.',
         ],
       },
-      { h2: 'Gastos una vez publicada' },
+      { h2: 'Gastos aparte' },
       {
         ul: [
           '**Dominio**: unos 10–20 € al año para un .com o .es.',
-          '**Hosting**: desde unos pocos euros al mes para una web pequeña.',
-          '**Mantenimiento**: [[PENDIENTE: precio o condiciones de mantenimiento]].',
+          '**Hosting**: desde unos pocos euros al mes para una web pequeña. Si aún no lo tienes, te ayudo a contratarlo.',
         ],
       },
-      { h2: 'Cuidado con lo barato' },
+      { h2: 'Qué preguntar antes de contratar una web' },
       {
-        p: 'Una web muy barata suele salir cara después: plantillas pesadas que cargan lento, sin SEO, sin formulario que funcione o con un contrato que te ata al proveedor. Pregunta siempre qué incluye exactamente, si el dominio y la web quedan a tu nombre y qué pasa si quieres cambiar de proveedor.',
+        p: 'Compares con quien compares, pregunta siempre qué incluye exactamente el precio, si el dominio y la web quedan a tu nombre, si la web se entrega preparada para Google o solo «publicada», y qué pasa si en el futuro quieres cambiar de proveedor. Si te interesa saber qué debería incluir, lo tienes en [qué debe tener la web de un negocio local](/blog/que-debe-tener-la-web-de-un-negocio-local/).',
       },
       {
-        p: 'Si quieres un precio cerrado para tu caso, [cuéntame tu proyecto](/#contacto) y te paso una propuesta sin compromiso. Mira también qué incluye el servicio de [diseño web en Sevilla](/diseno-web-sevilla/).',
+        p: 'Si quieres un precio cerrado para tu caso, [cuéntame tu proyecto](/#contacto) y te paso una propuesta sin compromiso.',
       },
     ],
   },

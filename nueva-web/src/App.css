@@ -829,3 +829,42 @@
 .section-more {
   margin: 24px 0 0;
 }
+
+/* ── Casilla de aceptación de la política de privacidad (formularios) ── */
+.privacy-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 4px 0 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-soft);
+  cursor: pointer;
+}
+
+.contact-form .privacy-check input,
+.ad-contact-form .privacy-check input {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin: 2px 0 0;
+  padding: 0;
+  accent-color: var(--accent);
+}
+
+.privacy-check a {
+  color: var(--accent);
+}
+
+/* En AppointDate, con su paleta azul */
+.ad-contact-form .privacy-check {
+  color: var(--ad-text);
+}
+
+.ad-contact-form .privacy-check input {
+  accent-color: var(--ad-blue);
+}
+
+.ad-contact-form .privacy-check a {
+  color: var(--ad-blue);
+}

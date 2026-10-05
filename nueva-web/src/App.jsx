@@ -61,7 +61,6 @@ const translations = {
       },
     },
     projects: [
-      { title: 'Kemekeosinweb', image: '/images/Cap_Kemekeosinweb-800.webp', description: 'Web de agencia con una presencia visual fuerte, copy orientado a negocio y estructura enfocada en generar confianza.', url: 'https://kemekeosinweb.com/' },
       { title: 'I.E.S. Margarita Salas', image: '/images/Cap_MargaritaSalas-800.webp', description: 'Sitio informativo para un centro educativo con arquitectura clara, navegación sencilla y foco en la matriculación.', url: 'https://ies-margarita-salas.vercel.app/', caseStudy: '/proyectos/ies-margarita-salas/' },
       { title: 'Licencia de Armas Fácil', image: '/images/Cap_licencia-800.webp', description: 'Plataforma de formación y venta online con una propuesta visual directa y una experiencia pensada para convertir.', url: 'https://licenciadearmasfacil.es/', caseStudy: '/proyectos/licencia-de-armas-facil/' },
       { title: 'FXPro Trading Course', image: '/images/Cap_fxpro-800.webp', description: 'Proyecto comercial para un infoproducto con una estructura clara para presentar valor, autoridad y llamada a la acción.', url: 'https://programafxpro.infinityfreeapp.com/' },
@@ -97,6 +96,8 @@ const translations = {
       labelMensaje: 'Proyecto',
       placeholderMensaje: 'Cuéntame qué necesitas, qué estilo buscas y si ya tienes dominio u hosting.',
       btnEnviar: 'Enviar mensaje',
+      privacyBefore: 'He leído y acepto la',
+      privacyLink: 'política de privacidad',
       cardKicker: 'Contacto directo',
       city: 'Sevilla, España',
       successMsg: 'Tu mensaje se ha enviado correctamente.',
@@ -158,7 +159,6 @@ const translations = {
       },
     },
     projects: [
-      { title: 'Kemekeosinweb', image: '/images/Cap_Kemekeosinweb-800.webp', description: 'Agency website with a strong visual presence, business-oriented copy and a structure focused on building trust.', url: 'https://kemekeosinweb.com/' },
       { title: 'I.E.S. Margarita Salas', image: '/images/Cap_MargaritaSalas-800.webp', description: 'Informational site for a school with a clear architecture, simple navigation and a focus on enrollment.', url: 'https://ies-margarita-salas.vercel.app/', caseStudy: '/proyectos/ies-margarita-salas/' },
       { title: 'Licencia de Armas Fácil', image: '/images/Cap_licencia-800.webp', description: 'Online training and sales platform with a direct visual proposal and an experience designed to convert.', url: 'https://licenciadearmasfacil.es/', caseStudy: '/proyectos/licencia-de-armas-facil/' },
       { title: 'FXPro Trading Course', image: '/images/Cap_fxpro-800.webp', description: 'Commercial project for a digital product with a clear structure to present value, authority and a call to action.', url: 'https://programafxpro.infinityfreeapp.com/' },
@@ -194,6 +194,8 @@ const translations = {
       labelMensaje: 'Project',
       placeholderMensaje: 'Tell me what you need, the style you are going for and if you already have a domain or hosting.',
       btnEnviar: 'Send message',
+      privacyBefore: 'I have read and accept the',
+      privacyLink: 'privacy policy',
       cardKicker: 'Direct contact',
       city: 'Seville, Spain',
       successMsg: 'Your message has been sent successfully.',
@@ -548,6 +550,17 @@ function App() {
                 tabIndex="-1"
                 autoComplete="off"
               />
+
+              <label className="privacy-check">
+                <input type="checkbox" name="privacidad" required />
+                <span>
+                  {t.contact.privacyBefore}{' '}
+                  <a href="/privacidad/" target="_blank" rel="noreferrer">
+                    {t.contact.privacyLink}
+                  </a>
+                  .
+                </span>
+              </label>
 
               <button className="button button-primary" type="submit">
                 {t.contact.btnEnviar}

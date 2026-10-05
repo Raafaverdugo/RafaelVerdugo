@@ -4,6 +4,7 @@
 export const services = [
   {
     slug: 'diseno-web-sevilla',
+    price: 'Web corporativa desde 249 €',
     path: '/diseno-web-sevilla/',
     navLabel: 'Diseño web en Sevilla',
     serviceType: 'Diseño y desarrollo web',
@@ -78,10 +79,11 @@ export const services = [
       },
     ],
     relatedProjects: ['the-shelter', 'licencia-de-armas-facil', 'ies-margarita-salas'],
-    relatedPosts: ['por-que-mi-web-no-aparece-en-google', 'que-debe-tener-la-web-de-un-negocio-local'],
+    relatedPosts: ['cuanto-cuesta-una-pagina-web-en-sevilla', 'por-que-mi-web-no-aparece-en-google', 'que-debe-tener-la-web-de-un-negocio-local'],
   },
   {
     slug: 'tiendas-online-sevilla',
+    price: 'Tienda online desde 299 €',
     path: '/tiendas-online-sevilla/',
     navLabel: 'Tiendas online',
     serviceType: 'Desarrollo de tiendas online',
@@ -141,10 +143,11 @@ export const services = [
       },
     ],
     relatedProjects: ['licencia-de-armas-facil', 'the-shelter'],
-    relatedPosts: ['landing-page-o-web-corporativa'],
+    relatedPosts: ['cuanto-cuesta-una-pagina-web-en-sevilla', 'landing-page-o-web-corporativa'],
   },
   {
     slug: 'landing-pages',
+    price: 'Landing page desde 199 €',
     path: '/landing-pages/',
     navLabel: 'Landing pages',
     serviceType: 'Diseño de landing pages',
@@ -202,7 +205,7 @@ export const services = [
       },
     ],
     relatedProjects: ['licencia-de-armas-facil'],
-    relatedPosts: ['landing-page-o-web-corporativa'],
+    relatedPosts: ['cuanto-cuesta-una-pagina-web-en-sevilla', 'landing-page-o-web-corporativa'],
   },
   {
     slug: 'seo-sevilla',

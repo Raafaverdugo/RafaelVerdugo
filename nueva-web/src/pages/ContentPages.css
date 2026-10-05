@@ -449,3 +449,22 @@
   text-align: center;
   box-sizing: border-box;
 }
+
+.service-price {
+  display: inline-block;
+  margin: 22px 0 0;
+  padding: 10px 18px;
+  border: 1px solid rgba(211, 155, 99, 0.3);
+  border-radius: 999px;
+  background: rgba(211, 155, 99, 0.08);
+  font-size: 0.95rem;
+}
+
+.service-price strong {
+  color: var(--text-strong);
+}
+
+.service-price a {
+  color: var(--accent);
+  text-underline-offset: 3px;
+}

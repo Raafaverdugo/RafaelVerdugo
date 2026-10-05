@@ -436,6 +436,13 @@ export default function AppointDate() {
                 autoComplete="off"
               />
 
+              <label className="privacy-check">
+                <input type="checkbox" name="privacidad" required />
+                <span>
+                  He leído y acepto la <a href="/privacidad/" target="_blank" rel="noreferrer">política de privacidad</a>.
+                </span>
+              </label>
+
               <button className="ad-btn ad-btn-primary" type="submit" disabled={sending}>
                 {sending ? 'Enviando…' : 'Enviar mensaje'}
               </button>

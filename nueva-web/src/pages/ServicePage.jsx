@@ -17,6 +17,12 @@ export default function ServicePage({ service }) {
         <p className="eyebrow">{service.eyebrow}</p>
         <h1>{service.h1}</h1>
         <p className="content-lead">{service.intro}</p>
+        {service.price ? (
+          <p className="service-price">
+            <strong>{service.price}</strong> + cuota mensual de mantenimiento según el proyecto.{' '}
+            <a href="/blog/cuanto-cuesta-una-pagina-web-en-sevilla/">Ver precios</a>
+          </p>
+        ) : null}
         <div className="hero-actions">
           <a className="button button-primary" href="/#contacto">
             Pedir propuesta

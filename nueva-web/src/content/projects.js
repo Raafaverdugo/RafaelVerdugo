@@ -1,5 +1,5 @@
-// Casos de estudio. Solo se describe lo que se puede comprobar en cada web publicada;
-// los resultados y el contexto del cliente se añadirán cuando Rafael los confirme.
+// Casos de estudio. Los resultados son los que ha confirmado Rafael; las cifras
+// que se citan son las que publica la propia web del proyecto.
 
 export const projects = [
   {
@@ -43,8 +43,11 @@ export const projects = [
       {
         p: 'Una identidad cálida y con carácter, con tipografía grande y mensajes directos. La prioridad era que los animales fueran los protagonistas y que cualquier visitante supiera en pocos segundos cómo puede ayudar.',
       },
+      { h2: 'Resultado' },
+      {
+        p: 'Con la plataforma, las adopciones han aumentado y su gestión se ha vuelto mucho más sencilla: los animales tienen más visibilidad, las familias pueden solicitar la adopción desde la web y la protectora centraliza todas las solicitudes en un solo panel en lugar de gestionarlas a mano.',
+      },
     ],
-    pendingNotes: ['Resultados del proyecto (adopciones gestionadas, solicitudes recibidas…) si se pueden compartir.'],
   },
   {
     slug: 'licencia-de-armas-facil',
@@ -87,11 +90,14 @@ export const projects = [
       {
         p: 'Una propuesta visual directa, con el precio y la oferta bien visibles, y el examen gratuito siempre a mano. Todo el recorrido está pensado para llevar al visitante desde la duda hasta la compra en el menor número de pasos.',
       },
+      { h2: 'Resultado' },
+      {
+        p: 'La plataforma ha ayudado a muchos alumnos a prepararse y sacarse la licencia de armas: la propia web indica más de 2.000 alumnos aprobados. Todo el proceso, desde el examen de prueba hasta el pago y el estudio, funciona sin intervención manual.',
+      },
       {
         p: '¿Quieres algo parecido para tu negocio? Mira el servicio de [tiendas online y páginas de venta](/tiendas-online-sevilla/).',
       },
     ],
-    pendingNotes: ['Resultados: número de alumnos, conversión de la prueba gratuita a la compra…'],
   },
   {
     slug: 'ies-margarita-salas',
@@ -109,14 +115,14 @@ export const projects = [
     summary:
       'Web informativa para un instituto, con su oferta académica, programas de idiomas y proyectos de centro.',
     facts: [
-      { label: 'Tipo', value: 'Web informativa' },
+      { label: 'Tipo', value: 'Web informativa (encargo del centro)' },
       { label: 'Sector', value: 'Educación' },
       { label: 'Web', value: 'ies-margarita-salas.vercel.app' },
     ],
     blocks: [
       { h2: 'El proyecto' },
       {
-        p: 'Un centro educativo tiene mucha información que contar y públicos muy distintos: familias que comparan institutos antes de matricular, alumnos y profesorado. La web del IES Margarita Salas organiza todo ese contenido para que cada visitante encuentre rápido lo que busca.',
+        p: 'La web del IES Margarita Salas fue un encargo del propio centro. Un instituto tiene mucha información que contar y públicos muy distintos: familias que comparan centros antes de matricular, alumnos y profesorado. El objetivo era organizar todo ese contenido para que cada visitante encuentre rápido lo que busca.',
       },
       { h2: 'Qué construí' },
       {
@@ -132,6 +138,5 @@ export const projects = [
         p: 'Arquitectura de la información primero: secciones bien separadas, títulos claros y la información que más pesa en la decisión de matrícula en los primeros pasos del recorrido.',
       },
     ],
-    pendingNotes: ['Contexto del proyecto (¿encargo real del centro, propuesta o proyecto formativo?).'],
   },
 ]
