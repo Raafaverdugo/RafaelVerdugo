@@ -276,17 +276,89 @@ export const services = [
     relatedProjects: ['ies-margarita-salas'],
     relatedPosts: ['por-que-mi-web-no-aparece-en-google', 'que-debe-tener-la-web-de-un-negocio-local'],
   },
+  {
+    slug: 'software-a-medida',
+    priceFrom: 99,
+    price: 'Software a medida desde 99 €',
+    path: '/software-a-medida/',
+    navLabel: 'Software a medida',
+    serviceType: 'Desarrollo de software a medida',
+    seo: {
+      title: 'Software a medida en Sevilla | Aplicaciones web para negocios | Rafael Verdugo',
+      description:
+        'Desarrollo de software a medida en Sevilla: paneles de gestión, sistemas de reservas, áreas privadas y herramientas web adaptadas a cómo trabaja tu negocio. Desde 99 €.',
+    },
+    eyebrow: 'Software a medida',
+    h1: 'Software a medida para que tu negocio deje de depender de hojas de cálculo y procesos a mano.',
+    intro:
+      'Desarrollo aplicaciones web a medida para negocios: herramientas que se adaptan a cómo trabajas tú, y no al revés. Gestión de clientes, reservas, pedidos, paneles internos o portales para tus clientes, accesibles desde cualquier navegador y sin instalar nada.',
+    highlights: [
+      { title: 'Hecho para tu proceso', text: 'Partimos de cómo trabajas hoy y construimos solo lo que necesitas, sin pagar por funciones que no vas a usar.' },
+      { title: 'Desde cualquier dispositivo', text: 'Aplicaciones web que funcionan en ordenador, tablet y móvil, con acceso por usuario y contraseña.' },
+      { title: 'Crece contigo', text: 'Empezamos por lo esencial y añadimos funciones a medida que el negocio las necesita.' },
+    ],
+    featured: {
+      title: 'AppointDate: un ejemplo de software que he desarrollado',
+      text: 'AppointDate es mi sistema de gestión de citas y reservas para negocios: agenda, clientes, agenda de empleados, facturación y un portal para que tus clientes reserven online. Es el mejor ejemplo de lo que puedo construir para tu negocio, y también puedes usarlo tal cual.',
+      href: '/AppointDate/',
+      linkLabel: 'Conocer AppointDate',
+      image: '/images/AppointDate.webp',
+      imageAlt: 'Logo de AppointDate, software de gestión de citas',
+    },
+    blocks: [
+      { h2: 'Qué tipo de software desarrollo' },
+      {
+        ul: [
+          '**Paneles de gestión internos**: clientes, pedidos, inventario, presupuestos o cualquier dato que hoy está repartido en hojas de cálculo.',
+          '**Sistemas de reservas y citas** con disponibilidad en tiempo real, como [AppointDate](/AppointDate/).',
+          '**Áreas privadas y portales de clientes**: que tus clientes consulten su información, descarguen documentos o hagan solicitudes.',
+          '**Plataformas con panel de administración**, como la de [The Shelter](/proyectos/the-shelter/), donde la protectora gestiona animales y solicitudes de adopción.',
+          '**Integraciones** con las herramientas que ya usas: email, pagos, calendarios o facturación.',
+        ],
+      },
+      { h2: '¿Cuándo merece la pena un software a medida?' },
+      {
+        p: 'No siempre hace falta. Si existe una herramienta estándar que encaja con tu negocio, te lo diré. Un software a medida tiene sentido cuando:',
+      },
+      {
+        ul: [
+          'Pierdes horas cada semana en **tareas repetitivas** o copiando datos de un sitio a otro.',
+          'Las herramientas del mercado **te obligan a cambiar tu forma de trabajar** o te cobran por funciones que no usas.',
+          'Tu información está **repartida** entre hojas de cálculo, emails y notas, y nadie tiene una visión completa.',
+          'Quieres ofrecer a tus clientes algo que **te diferencie**, como reservar o consultar su información online.',
+        ],
+      },
+      {
+        p: 'Si lo que buscas es algo más pequeño, como enviar avisos automáticos o conectar dos herramientas, quizá te basta con una automatización (desde 79 €). Cuéntamelo y te digo qué encaja mejor.',
+      },
+      { h2: 'Cómo trabajamos' },
+      {
+        ol: [
+          '**Entendemos el proceso**: me cuentas cómo trabajas hoy y dónde se pierde el tiempo.',
+          '**Propuesta cerrada**: qué haría el software, qué quedaría para más adelante, plazo y precio.',
+          '**Desarrollo por fases**: te enseño avances en una versión de pruebas para que lo uses y lo ajustemos.',
+          '**Puesta en marcha**: lo publico y te enseño a usarlo.',
+          '**Mantenimiento**: una cuota mensual adaptada a cada proyecto, que te detallo en la propuesta.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: '¿Cuánto cuesta un software a medida?',
+        a: 'Desde 99 € para herramientas sencillas, más una cuota mensual de mantenimiento según el proyecto. Un sistema más completo cuesta más; siempre te paso un precio cerrado antes de empezar. Lo explico en [cuánto cuesta una página web](/blog/cuanto-cuesta-una-pagina-web-en-sevilla/).',
+      },
+      {
+        q: '¿Hace falta instalar algo?',
+        a: 'No. Son aplicaciones web: se usan desde el navegador del ordenador, la tablet o el móvil, con acceso por usuario y contraseña.',
+      },
+    ],
+    relatedProjects: ['the-shelter', 'licencia-de-armas-facil'],
+    relatedPosts: ['cuanto-cuesta-una-pagina-web-en-sevilla'],
+  },
 ]
 
 // Servicios sin página propia (por ahora): aparecen en /servicios/ y en el artículo de precios
 export const extraServices = [
-  {
-    name: 'Software a medida',
-    priceFrom: 99,
-    text: 'Herramientas web hechas para tu negocio: paneles de gestión, reservas, áreas privadas o cualquier proceso que hoy haces con hojas de cálculo. Un ejemplo es AppointDate, mi software de gestión de citas.',
-    href: '/AppointDate/',
-    linkLabel: 'Ver AppointDate',
-  },
   {
     name: 'Automatizaciones',
     priceFrom: 79,

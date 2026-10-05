@@ -237,7 +237,7 @@ export const posts = [
           '[Landing page](/landing-pages/): desde **199 €**.',
           '[Web corporativa](/diseno-web-sevilla/): desde **249 €**.',
           '[Tienda online](/tiendas-online-sevilla/): desde **299 €**.',
-          '**Software a medida**: desde **99 €**.',
+          '[Software a medida](/software-a-medida/): desde **99 €**. Si buscas un sistema de citas ya hecho, mira [AppointDate](/AppointDate/).',
           '**Automatizaciones** (tareas repetitivas, conexiones entre herramientas, avisos automáticos…): desde **79 €**.',
         ],
       },

@@ -73,14 +73,16 @@ const pricingPlans = {
     key: 'pack',
     shortLabel: 'Pack completo',
     label: 'Pack (Sistema + Web Informativa)',
-    mensual: { setup: 449, monthly: 69, badge: '2 mensualidades gratis' },
+    // Oferta actual: instalación del sistema gratis, solo se paga la web (antes 449 €)
+    mensual: { setup: 200, setupBefore: 449, monthly: 99, badge: 'Instalación del sistema gratis' },
     anual:   { total: 999 },
   },
   sistema: {
     key: 'sistema',
     shortLabel: 'Solo Sistema',
     label: 'Solo Sistema',
-    mensual: { setup: 350, monthly: 50 },
+    // Oferta actual: instalación gratis (antes 350 €)
+    mensual: { setup: 0, setupBefore: 350, monthly: 69, badge: 'Instalación gratis' },
     anual:   { total: 849 },
   },
   web: {
@@ -287,6 +289,11 @@ export default function AppointDate() {
                 {cycle === 'mensual' ? (
                   <div className="ad-price-monthly">
                     <div className="ad-price-row">
+                      {currentPrice.setupBefore ? (
+                        <s className="ad-price-before" aria-label={`Antes ${currentPrice.setupBefore} euros`}>
+                          {currentPrice.setupBefore}€
+                        </s>
+                      ) : null}
                       <span className="ad-price-amount">{currentPrice.setup}€</span>
                       <span className="ad-price-suffix">instalación</span>
                     </div>
@@ -297,7 +304,7 @@ export default function AppointDate() {
                     </div>
                     {currentPrice.badge && (
                       <div className="ad-free-badge">
-                        {currentPrice.badge} — solo en este plan
+                        {currentPrice.badge} — oferta actual
                       </div>
                     )}
                   </div>

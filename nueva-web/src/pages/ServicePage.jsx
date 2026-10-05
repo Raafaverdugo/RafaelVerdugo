@@ -42,6 +42,21 @@ export default function ServicePage({ service }) {
         ))}
       </div>
 
+      {service.featured ? (
+        <section className="featured-card">
+          <div className="featured-card-image">
+            <img src={service.featured.image} alt={service.featured.imageAlt} width="677" height="369" loading="lazy" />
+          </div>
+          <div>
+            <h2>{service.featured.title}</h2>
+            <p>{service.featured.text}</p>
+            <a className="button button-primary" href={service.featured.href}>
+              {service.featured.linkLabel}
+            </a>
+          </div>
+        </section>
+      ) : null}
+
       <article className="prose">
         <RichText blocks={service.blocks} />
       </article>

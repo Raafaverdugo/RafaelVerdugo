@@ -52,6 +52,7 @@ const translations = {
       verTodos: 'Ver todos los proyectos',
     },
     softwares: {
+      verMas: 'Ver software a medida',
       eyebrow: 'Softwares',
       h2: 'Herramientas que construyo para digitalizar negocios.',
       p: 'Además de webs a medida, desarrollo soluciones de software propias orientadas a resolver problemas reales de gestión.',
@@ -140,6 +141,7 @@ const translations = {
       verTodos: 'See all projects',
     },
     softwares: {
+      verMas: 'See custom software',
       eyebrow: 'Software',
       h2: 'Tools I build to help businesses go digital.',
       p: 'Beyond custom websites, I develop my own software solutions designed to solve real management problems.',
@@ -436,6 +438,9 @@ function App() {
               </div>
             </article>
           </div>
+          <p className="section-more">
+            <a href="/software-a-medida/">{t.softwares.verMas} →</a>
+          </p>
         </section>
 
         {/* ── Proceso ── */}

@@ -527,3 +527,45 @@
 .contact-cta-actions {
   margin-top: 8px;
 }
+
+/* ── Producto destacado dentro de una página de servicio (AppointDate en software a medida) ── */
+.featured-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 32px;
+  align-items: center;
+  margin-top: 40px;
+  padding: 28px;
+  border: 1px solid rgba(211, 155, 99, 0.3);
+  border-radius: 32px;
+  background: rgba(13, 17, 26, 0.9);
+}
+
+.featured-card-image {
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  border-radius: 24px;
+  background: #ffffff;
+}
+
+.featured-card-image img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+}
+
+.featured-card h2 {
+  margin: 0 0 12px;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: -0.03em;
+}
+
+@media (max-width: 720px) {
+  .featured-card {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+}
