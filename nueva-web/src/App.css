@@ -803,3 +803,29 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Enlaces a las páginas de servicio y casos de estudio ── */
+.card-link,
+.section-more a {
+  display: inline-block;
+  margin-top: 6px;
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card-link:hover,
+.section-more a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.section-more {
+  margin: 24px 0 0;
+}

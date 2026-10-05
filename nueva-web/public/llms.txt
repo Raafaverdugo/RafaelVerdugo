@@ -12,17 +12,22 @@ Zona: Sevilla y toda España (trabajo en remoto)
 
 ## Servicios
 
-- Webs corporativas a medida
-- Landing pages orientadas a captar contactos
-- Tiendas online y funnels de venta
-- Mejoras de SEO técnico y rendimiento web
+- [Diseño de páginas web en Sevilla](https://rafaelverdugo.com/diseno-web-sevilla/): webs corporativas a medida, rápidas y preparadas para Google.
+- [Tiendas online](https://rafaelverdugo.com/tiendas-online-sevilla/): e-commerce, venta de productos digitales y páginas de venta.
+- [Landing pages](https://rafaelverdugo.com/landing-pages/): páginas de un solo objetivo para campañas y lanzamientos.
+- [SEO técnico](https://rafaelverdugo.com/seo-sevilla/): auditorías, indexación, velocidad, datos estructurados y SEO local.
 
-## Proyectos
+## Proyectos (casos de estudio)
 
-- [Kemekeosinweb](https://kemekeosinweb.com/): web de agencia.
-- [I.E.S. Margarita Salas](https://ies-margarita-salas.vercel.app/): web informativa para un centro educativo.
-- [Licencia de Armas Fácil](https://licenciadearmasfacil.es/): plataforma de formación y venta online.
-- [The Shelter](https://theshelter.es/): plataforma para una protectora de animales con panel de administración.
+- [The Shelter](https://rafaelverdugo.com/proyectos/the-shelter/): plataforma de adopción de animales con panel de administración.
+- [Licencia de Armas Fácil](https://rafaelverdugo.com/proyectos/licencia-de-armas-facil/): plataforma de formación con venta online y área de alumnos.
+- [I.E.S. Margarita Salas](https://rafaelverdugo.com/proyectos/ies-margarita-salas/): web informativa para un centro educativo.
+
+## Blog
+
+- [¿Por qué mi web no aparece en Google?](https://rafaelverdugo.com/blog/por-que-mi-web-no-aparece-en-google/)
+- [Landing page o web corporativa: ¿qué necesita tu negocio?](https://rafaelverdugo.com/blog/landing-page-o-web-corporativa/)
+- [Qué debe tener la web de un negocio local](https://rafaelverdugo.com/blog/que-debe-tener-la-web-de-un-negocio-local/)
 
 ## Perfiles
 

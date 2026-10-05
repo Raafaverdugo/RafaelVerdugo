@@ -20,10 +20,13 @@ ErrorDocument 404 /404.html
   RewriteCond %{THE_REQUEST} \s/+(html/)?index(\.html)?[\s?] [NC]
   RewriteRule ^ / [L,R=301]
   RewriteRule ^(html/)?contacto(\.html)?$ /#contacto [L,R=301,NE]
-  RewriteRule ^(html/)?portfolio(\.html)?$ /#proyectos [L,R=301,NE]
+  RewriteRule ^(html/)?portfolio(\.html)?$ /proyectos/ [L,R=301]
   RewriteRule ^(html/)?servicios(\.html)?$ /#servicios [L,R=301,NE]
   RewriteRule ^(html/)?sobre-mi(\.html)?$ / [L,R=301]
-  RewriteRule ^(html/)?(blog|post)(/.*|\.html)?$ / [L,R=301]
+  # Blog antiguo (blog.html, blog/post1.html, post/post2…) → blog nuevo
+  RewriteRule ^(html/)?blog\.html$ /blog/ [L,R=301]
+  RewriteRule ^(html/)?(blog|post)/post[0-9]+(\.html)?$ /blog/ [L,R=301]
+  RewriteRule ^(html/)?post/?$ /blog/ [L,R=301]
 
   # ── AppointDate: una sola URL pública ───────────────────────────────────────
   # appointdate.html es la versión pre-renderizada que sirve /AppointDate/

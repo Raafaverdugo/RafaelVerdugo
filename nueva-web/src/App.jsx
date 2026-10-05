@@ -2,6 +2,7 @@ import { useEffect, useState, useSyncExternalStore } from 'react'
 import { Link } from 'react-router-dom'
 import './App.css'
 import { useScrollReveal, useStaggerReveal } from './hooks/useScrollReveal'
+import SiteFooter from './components/SiteFooter.jsx'
 
 // ── Traducciones ──────────────────────────────────────────────────────────────
 const translations = {
@@ -11,6 +12,7 @@ const translations = {
       servicios: 'Servicios',
       proyectos: 'Proyectos',
       proceso: 'Proceso',
+      blog: 'Blog',
       contacto: 'Contacto',
       cta: 'Solicitar propuesta',
     },
@@ -31,20 +33,23 @@ const translations = {
       items: ['Diseño visual más premium', 'Contenido ordenado para vender mejor', 'SEO técnico listo para indexación'],
     },
     services: {
+      saberMas: 'Saber más',
       eyebrow: 'Servicios',
       h2: 'Una web atractiva no basta si no está construida con criterio.',
       p: 'La idea es combinar diseño, estructura y rendimiento para que el resultado tenga presencia y también sirva para captar oportunidades reales.',
       cards: [
-        { title: 'Web corporativa con presencia seria', description: 'Diseño y desarrollo de webs rápidas, elegantes y preparadas para transmitir confianza desde la primera visita.' },
-        { title: 'Landing pages que convierten', description: 'Páginas enfocadas en captar contactos, vender un servicio o validar una oferta sin ruido innecesario.' },
-        { title: 'Tiendas online y funnels', description: 'E-commerce y páginas de venta con una estructura clara, rendimiento sólido y foco en la conversión.' },
-        { title: 'Mejoras SEO y rendimiento', description: 'Optimización de estructura, metadatos, velocidad, imágenes e indexación para que Google entienda mejor tu proyecto.' },
+        { href: '/diseno-web-sevilla/', title: 'Web corporativa con presencia seria', description: 'Diseño y desarrollo de webs rápidas, elegantes y preparadas para transmitir confianza desde la primera visita.' },
+        { href: '/landing-pages/', title: 'Landing pages que convierten', description: 'Páginas enfocadas en captar contactos, vender un servicio o validar una oferta sin ruido innecesario.' },
+        { href: '/tiendas-online-sevilla/', title: 'Tiendas online y funnels', description: 'E-commerce y páginas de venta con una estructura clara, rendimiento sólido y foco en la conversión.' },
+        { href: '/seo-sevilla/', title: 'Mejoras SEO y rendimiento', description: 'Optimización de estructura, metadatos, velocidad, imágenes e indexación para que Google entienda mejor tu proyecto.' },
       ],
     },
     portfolio: {
       eyebrow: 'Selección de proyectos',
       h2: 'Trabajos reales con enfoques distintos, pero el mismo nivel de detalle.',
-      verProyecto: 'Ver proyecto',
+      verProyecto: 'Ver web',
+      verCaso: 'Ver caso de estudio',
+      verTodos: 'Ver todos los proyectos',
     },
     softwares: {
       eyebrow: 'Softwares',
@@ -57,10 +62,10 @@ const translations = {
     },
     projects: [
       { title: 'Kemekeosinweb', image: '/images/Cap_Kemekeosinweb-800.webp', description: 'Web de agencia con una presencia visual fuerte, copy orientado a negocio y estructura enfocada en generar confianza.', url: 'https://kemekeosinweb.com/' },
-      { title: 'I.E.S. Margarita Salas', image: '/images/Cap_MargaritaSalas-800.webp', description: 'Sitio informativo para un centro educativo con arquitectura clara, navegación sencilla y foco en la matriculación.', url: 'https://ies-margarita-salas.vercel.app/' },
-      { title: 'Licencia de Armas Fácil', image: '/images/Cap_licencia-800.webp', description: 'Plataforma de formación y venta online con una propuesta visual directa y una experiencia pensada para convertir.', url: 'https://licenciadearmasfacil.es/' },
+      { title: 'I.E.S. Margarita Salas', image: '/images/Cap_MargaritaSalas-800.webp', description: 'Sitio informativo para un centro educativo con arquitectura clara, navegación sencilla y foco en la matriculación.', url: 'https://ies-margarita-salas.vercel.app/', caseStudy: '/proyectos/ies-margarita-salas/' },
+      { title: 'Licencia de Armas Fácil', image: '/images/Cap_licencia-800.webp', description: 'Plataforma de formación y venta online con una propuesta visual directa y una experiencia pensada para convertir.', url: 'https://licenciadearmasfacil.es/', caseStudy: '/proyectos/licencia-de-armas-facil/' },
       { title: 'FXPro Trading Course', image: '/images/Cap_fxpro-800.webp', description: 'Proyecto comercial para un infoproducto con una estructura clara para presentar valor, autoridad y llamada a la acción.', url: 'https://programafxpro.infinityfreeapp.com/' },
-      { title: 'The Shelter', image: '/images/Cap_TheShelter-800.webp', description: 'Plataforma completa para protectora con gestión de animales, solicitudes y panel de administración.', url: 'https://theshelter.es/' },
+      { title: 'The Shelter', image: '/images/Cap_TheShelter-800.webp', description: 'Plataforma completa para protectora con gestión de animales, solicitudes y panel de administración.', url: 'https://theshelter.es/', caseStudy: '/proyectos/the-shelter/' },
     ],
     proceso: {
       eyebrow: 'Proceso',
@@ -104,6 +109,7 @@ const translations = {
       servicios: 'Services',
       proyectos: 'Projects',
       proceso: 'Process',
+      blog: 'Blog',
       contacto: 'Contact',
       cta: 'Request a proposal',
     },
@@ -124,20 +130,23 @@ const translations = {
       items: ['More premium visual design', 'Structured content to sell better', 'Technical SEO ready for indexing'],
     },
     services: {
+      saberMas: 'Learn more',
       eyebrow: 'Services',
       h2: "An attractive website isn't enough if it's not built with purpose.",
       p: 'The goal is to combine design, structure and performance so the result has a strong presence and also works to capture real opportunities.',
       cards: [
-        { title: 'Corporate website with a serious presence', description: 'Design and development of fast, elegant websites built to convey trust from the very first visit.' },
-        { title: 'Landing pages that convert', description: 'Pages focused on capturing leads, selling a service or validating an offer without unnecessary noise.' },
-        { title: 'Online stores and funnels', description: 'E-commerce and sales pages with a clear structure, solid performance and a focus on conversion.' },
-        { title: 'SEO and performance improvements', description: 'Optimization of structure, metadata, speed, images and indexing so Google understands your project better.' },
+        { href: '/diseno-web-sevilla/', title: 'Corporate website with a serious presence', description: 'Design and development of fast, elegant websites built to convey trust from the very first visit.' },
+        { href: '/landing-pages/', title: 'Landing pages that convert', description: 'Pages focused on capturing leads, selling a service or validating an offer without unnecessary noise.' },
+        { href: '/tiendas-online-sevilla/', title: 'Online stores and funnels', description: 'E-commerce and sales pages with a clear structure, solid performance and a focus on conversion.' },
+        { href: '/seo-sevilla/', title: 'SEO and performance improvements', description: 'Optimization of structure, metadata, speed, images and indexing so Google understands your project better.' },
       ],
     },
     portfolio: {
       eyebrow: 'Selected projects',
       h2: 'Real work with different approaches, but the same level of detail.',
-      verProyecto: 'View project',
+      verProyecto: 'View site',
+      verCaso: 'Read case study',
+      verTodos: 'See all projects',
     },
     softwares: {
       eyebrow: 'Software',
@@ -150,10 +159,10 @@ const translations = {
     },
     projects: [
       { title: 'Kemekeosinweb', image: '/images/Cap_Kemekeosinweb-800.webp', description: 'Agency website with a strong visual presence, business-oriented copy and a structure focused on building trust.', url: 'https://kemekeosinweb.com/' },
-      { title: 'I.E.S. Margarita Salas', image: '/images/Cap_MargaritaSalas-800.webp', description: 'Informational site for a school with a clear architecture, simple navigation and a focus on enrollment.', url: 'https://ies-margarita-salas.vercel.app/' },
-      { title: 'Licencia de Armas Fácil', image: '/images/Cap_licencia-800.webp', description: 'Online training and sales platform with a direct visual proposal and an experience designed to convert.', url: 'https://licenciadearmasfacil.es/' },
+      { title: 'I.E.S. Margarita Salas', image: '/images/Cap_MargaritaSalas-800.webp', description: 'Informational site for a school with a clear architecture, simple navigation and a focus on enrollment.', url: 'https://ies-margarita-salas.vercel.app/', caseStudy: '/proyectos/ies-margarita-salas/' },
+      { title: 'Licencia de Armas Fácil', image: '/images/Cap_licencia-800.webp', description: 'Online training and sales platform with a direct visual proposal and an experience designed to convert.', url: 'https://licenciadearmasfacil.es/', caseStudy: '/proyectos/licencia-de-armas-facil/' },
       { title: 'FXPro Trading Course', image: '/images/Cap_fxpro-800.webp', description: 'Commercial project for a digital product with a clear structure to present value, authority and a call to action.', url: 'https://programafxpro.infinityfreeapp.com/' },
-      { title: 'The Shelter', image: '/images/Cap_TheShelter-800.webp', description: 'Full platform for an animal shelter with animal management, applications and an admin panel.', url: 'https://theshelter.es/' },
+      { title: 'The Shelter', image: '/images/Cap_TheShelter-800.webp', description: 'Full platform for an animal shelter with animal management, applications and an admin panel.', url: 'https://theshelter.es/', caseStudy: '/proyectos/the-shelter/' },
     ],
     proceso: {
       eyebrow: 'Process',
@@ -238,6 +247,7 @@ function App() {
     { href: '#servicios', label: t.nav.servicios },
     { href: '#proyectos', label: t.nav.proyectos },
     { href: '#proceso',   label: t.nav.proceso },
+    { href: '/blog/',     label: t.nav.blog },
     { href: '#contacto',  label: t.nav.contacto },
   ]
 
@@ -375,6 +385,9 @@ function App() {
               <article className="service-card" key={service.title}>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
+                <a className="card-link" href={service.href}>
+                  {t.services.saberMas} →
+                </a>
               </article>
             ))}
           </div>
@@ -401,14 +414,21 @@ function App() {
                 <div className="project-body">
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
-                  <a href={project.url} target="_blank" rel="noreferrer">
-                    {t.portfolio.verProyecto}
-                  </a>
+                  <div className="project-links">
+                    {project.caseStudy ? <a href={project.caseStudy}>{t.portfolio.verCaso}</a> : null}
+                    <a href={project.url} target="_blank" rel="noreferrer">
+                      {t.portfolio.verProyecto}
+                    </a>
+                  </div>
                 </div>
               </article>
             ))}
           </div>
         </section>
+
+        <p className="section-more">
+          <a href="/proyectos/">{t.portfolio.verTodos} →</a>
+        </p>
 
         {/* ── Softwares ── */}
         <section className="section softwares-section" id="softwares">
@@ -557,6 +577,7 @@ function App() {
           </div>
         </section>
       </main>
+      <SiteFooter />
     </div>
   )
 }

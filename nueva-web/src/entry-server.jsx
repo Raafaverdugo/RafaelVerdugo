@@ -3,6 +3,8 @@ import { renderToString } from 'react-dom/server'
 import { StaticRouter } from 'react-router-dom'
 import AppRoutes from './AppRoutes.jsx'
 
+export { routes } from './routes.jsx'
+
 // Usado solo en el build por scripts/prerender.mjs para generar HTML estático
 export function render(url) {
   return renderToString(
