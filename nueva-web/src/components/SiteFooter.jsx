@@ -15,6 +15,7 @@ export default function SiteFooter() {
           <strong>Rafael Verdugo</strong>
           <p>Diseño y desarrollo web freelance en Sevilla. Webs rápidas, cuidadas y preparadas para Google.</p>
           <a href="mailto:rafa@rafaelverdugo.com">rafa@rafaelverdugo.com</a>
+          <a href="tel:+34621000706">621 000 706 · teléfono y WhatsApp</a>
           <a className="footer-contact-link" href="/contacto/">Pedir presupuesto →</a>
         </div>
 

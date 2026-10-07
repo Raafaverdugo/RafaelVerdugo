@@ -251,7 +251,7 @@ export const routes = [
             '@type': 'ContactPage',
             name: 'Contacto',
             url: `${SITE}/contacto/`,
-            about: { '@type': 'ProfessionalService', '@id': BUSINESS_ID, name: 'Rafael Verdugo · Diseño y desarrollo web', email: 'rafa@rafaelverdugo.com' },
+            about: { '@type': 'ProfessionalService', '@id': BUSINESS_ID, name: 'Rafael Verdugo · Diseño y desarrollo web', email: 'rafa@rafaelverdugo.com', telephone: '+34621000706' },
           },
           breadcrumbSchema([
             { name: 'Inicio', path: '/' },

@@ -63,7 +63,13 @@ export default function ContactForm() {
         <aside className="contact-card">
           <p className="contact-kicker">Contacto directo</p>
           <a href="mailto:rafa@rafaelverdugo.com">rafa@rafaelverdugo.com</a>
-          <p>Sevilla, España · Trabajo con clientes de toda España</p>
+          <p>
+            <a href="tel:+34621000706">621 000 706</a> · llamadas y{' '}
+            <a href="https://wa.me/34621000706" target="_blank" rel="noreferrer">
+              WhatsApp
+            </a>
+          </p>
+          <p>Sevilla y alrededores · Trabajo con clientes de toda España</p>
           <div className="social-links">
             <a href="https://www.linkedin.com/in/rafael-verdugo-dur%C3%A1n-b25a3831b/" target="_blank" rel="noreferrer">
               LinkedIn

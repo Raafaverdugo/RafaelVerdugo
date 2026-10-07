@@ -91,6 +91,7 @@ const translations = {
     contact: {
       eyebrow: 'Contacto',
       ctaForm: 'Ir al formulario de contacto',
+      phoneLabel: 'También por teléfono:',
       h2: 'Cuéntame qué quieres construir y te respondo con una propuesta real.',
       p: 'Escríbeme por el formulario o directamente por email y te respondo con una propuesta adaptada a tu proyecto, sin compromiso.',
     },
@@ -180,6 +181,7 @@ const translations = {
     contact: {
       eyebrow: 'Contact',
       ctaForm: 'Go to the contact form',
+      phoneLabel: 'Or by phone:',
       h2: "Tell me what you want to build and I'll get back to you with a real proposal.",
       p: 'Write to me through the form or directly by email and I will reply with a proposal tailored to your project, with no commitment.',
     },
@@ -509,6 +511,13 @@ function App() {
               rafa@rafaelverdugo.com
             </a>
           </div>
+          <p className="section-more">
+            {t.contact.phoneLabel}{' '}
+            <a href="tel:+34621000706">621 000 706</a> ·{' '}
+            <a href="https://wa.me/34621000706" target="_blank" rel="noreferrer">
+              WhatsApp
+            </a>
+          </p>
         </section>
       </main>
       <SiteFooter />

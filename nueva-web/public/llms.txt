@@ -2,12 +2,12 @@
 
 > Rafael Verdugo Durán es desarrollador web freelance en Sevilla (España). Diseña y desarrolla webs corporativas, landing pages y tiendas online con estética cuidada, buen rendimiento y SEO técnico. También desarrolla AppointDate, un software de gestión de citas y reservas para negocios.
 
-Contacto: rafa@rafaelverdugo.com
-Zona: Sevilla y toda España (trabajo en remoto)
+Contacto: rafa@rafaelverdugo.com · Teléfono y WhatsApp: +34 621 000 706 (atención 24/7)
+Zona: Sevilla y alrededores (incluida Dos Hermanas) y toda España en remoto
 
 ## Páginas
 
-- [Inicio: diseño y desarrollo web en Sevilla](https://rafaelverdugo.com/): servicios, proyectos realizados, proceso de trabajo y formulario de contacto.
+- [Inicio: diseño y desarrollo web en Sevilla](https://rafaelverdugo.com/): resumen de servicios, proyectos realizados y proceso de trabajo.
 - [AppointDate](https://rafaelverdugo.com/AppointDate/): software de gestión de citas, clientes, empleados, facturación y reservas online, con planes y precios. Oferta actual: instalación del sistema gratis, desde 69 €/mes.
 
 ## Servicios
