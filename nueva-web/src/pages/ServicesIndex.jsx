@@ -29,7 +29,11 @@ export default function ServicesIndex() {
           <article className="service-card" key={service.slug}>
             <h2>{service.navLabel}</h2>
             <p>{service.seo.description}</p>
-            {service.priceFrom ? <p className="service-card-price">Desde {service.priceFrom} €</p> : null}
+            {service.priceFrom ? (
+              <p className="service-card-price">
+                Desde {service.priceFrom} € · mantenimiento desde {service.maintenanceFrom} €/mes
+              </p>
+            ) : null}
             <a className="card-link" href={service.path}>
               Ver {service.navLabel.toLowerCase()} →
             </a>
@@ -48,7 +52,7 @@ export default function ServicesIndex() {
       </div>
 
       <p className="services-index-note">
-        Precios de partida en euros. Cada proyecto lleva además una cuota mensual de mantenimiento según lo que necesite.{' '}
+        Precios de partida en euros. El mantenimiento mensual depende de lo que necesite cada proyecto.{' '}
         <a href="/blog/cuanto-cuesta-una-pagina-web-en-sevilla/">Ver cómo funcionan los precios</a>.
       </p>
 

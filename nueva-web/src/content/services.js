@@ -6,6 +6,7 @@ export const services = [
     slug: 'paginas-web-empresas-sevilla',
     priceFrom: 249,
     price: 'Web corporativa desde 249 €',
+    maintenanceFrom: 49,
     path: '/paginas-web-empresas-sevilla/',
     navLabel: 'Páginas web para empresas',
     serviceType: 'Diseño de páginas web para empresas',
@@ -86,6 +87,7 @@ export const services = [
     slug: 'tiendas-online-sevilla',
     priceFrom: 299,
     price: 'Tienda online desde 299 €',
+    maintenanceFrom: 69,
     path: '/tiendas-online-sevilla/',
     navLabel: 'Tiendas online',
     serviceType: 'Desarrollo de tiendas online',
@@ -151,6 +153,7 @@ export const services = [
     slug: 'landing-pages',
     priceFrom: 199,
     price: 'Landing page desde 199 €',
+    maintenanceFrom: 40,
     path: '/landing-pages/',
     navLabel: 'Landing pages',
     serviceType: 'Diseño de landing pages',
@@ -280,6 +283,7 @@ export const services = [
     slug: 'software-a-medida',
     priceFrom: 99,
     price: 'Software a medida desde 99 €',
+    maintenanceFrom: 69,
     path: '/software-a-medida/',
     navLabel: 'Software a medida',
     serviceType: 'Desarrollo de software a medida',
@@ -338,14 +342,14 @@ export const services = [
           '**Propuesta cerrada**: qué haría el software, qué quedaría para más adelante, plazo y precio.',
           '**Desarrollo por fases**: te enseño avances en una versión de pruebas para que lo uses y lo ajustemos.',
           '**Puesta en marcha**: lo publico y te enseño a usarlo.',
-          '**Mantenimiento**: una cuota mensual adaptada a cada proyecto, que te detallo en la propuesta.',
+          '**Mantenimiento**: desde 69 €/mes, adaptado a cada proyecto y detallado en la propuesta.',
         ],
       },
     ],
     faqs: [
       {
         q: '¿Cuánto cuesta un software a medida?',
-        a: 'Desde 99 € para herramientas sencillas, más una cuota mensual de mantenimiento según el proyecto. Un sistema más completo cuesta más; siempre te paso un precio cerrado antes de empezar. Lo explico en [cuánto cuesta una página web](/blog/cuanto-cuesta-una-pagina-web-en-sevilla/).',
+        a: 'Desde 99 € para herramientas sencillas, más un mantenimiento mensual desde 69 €/mes. Un sistema más completo cuesta más; siempre te paso un precio cerrado antes de empezar. Lo explico en [cuánto cuesta una página web](/blog/cuanto-cuesta-una-pagina-web-en-sevilla/).',
       },
       {
         q: '¿Hace falta instalar algo?',
@@ -353,7 +357,7 @@ export const services = [
       },
     ],
     relatedProjects: ['the-shelter', 'licencia-de-armas-facil'],
-    relatedPosts: ['cuanto-cuesta-una-pagina-web-en-sevilla'],
+    relatedPosts: ['cuanto-cuesta-una-pagina-web-en-sevilla', 'cuanto-cuesta-mantener-una-pagina-web'],
   },
 ]
 

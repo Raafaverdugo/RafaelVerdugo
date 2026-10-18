@@ -3,6 +3,82 @@
 
 export const posts = [
   {
+    slug: 'cuanto-cuesta-mantener-una-pagina-web',
+    path: '/blog/cuanto-cuesta-mantener-una-pagina-web/',
+    title: '¿Cuánto cuesta mantener una página web al mes?',
+    seo: {
+      title: '¿Cuánto cuesta mantener una página web al mes? (2026)',
+      description: 'Cuánto cuesta mantener una página web: mantenimiento desde 40 €/mes para una landing, desde 49 €/mes para una web y desde 69 €/mes para una tienda.',
+    },
+    excerpt:
+      'Mis cuotas de mantenimiento desde, qué suele incluir un mantenimiento web, qué gastos hay si lo haces tú y cuándo merece la pena.',
+    datePublished: '2026-10-18',
+    readingMinutes: 5,
+    blocks: [
+      {
+        p: 'Una web no termina el día que se publica. Hay que pagar el dominio y el alojamiento, mantenerla actualizada y segura, y hacer cambios de vez en cuando. Por eso, además del precio de crearla, conviene saber cuánto cuesta tenerla funcionando cada mes.',
+      },
+      { h2: 'Mis cuotas de mantenimiento' },
+      {
+        ul: [
+          '[Landing page](/landing-pages/): desde **40 €/mes**.',
+          '[Web corporativa](/paginas-web-empresas-sevilla/): desde **49 €/mes**.',
+          '[Tienda online](/tiendas-online-sevilla/): desde **69 €/mes**.',
+          '[Software a medida](/software-a-medida/): desde **69 €/mes**.',
+        ],
+      },
+      {
+        note: 'Son precios de partida, en euros. Cada mantenimiento es un mundo: no es lo mismo una landing que una tienda con pedidos diarios o un software que usa tu equipo cada día. En la propuesta te detallo qué cubre la cuota de tu proyecto y cuánto es al mes.',
+      },
+      { h2: 'Qué suele incluir un mantenimiento web' },
+      {
+        p: 'Cada profesional lo plantea a su manera, así que pregunta siempre qué entra exactamente. Lo habitual es que cubra parte de esto:',
+      },
+      {
+        ul: [
+          '**Alojamiento (hosting)** y, a veces, el dominio.',
+          '**Actualizaciones** del sistema, plugins o librerías, para que la web siga funcionando y sea segura.',
+          '**Copias de seguridad** para poder recuperar la web si algo falla.',
+          '**Vigilancia**: que la web siga en línea, que el formulario siga enviando y que no haya errores.',
+          '**Pequeños cambios**: textos, fotos, precios o una sección nueva.',
+          '**Soporte**: alguien a quien escribir cuando tienes una duda o algo no va bien.',
+        ],
+      },
+      {
+        cta: {
+          title: '¿Quieres saber cuánto te costaría a ti?',
+          text: 'Cuéntame qué web tienes o necesitas y te digo qué mantenimiento le hace falta y desde cuánto.',
+        },
+      },
+      { h2: '¿Y si lo hago yo?' },
+      {
+        p: 'Se puede, sobre todo con webs sencillas. En ese caso, los gastos mínimos son:',
+      },
+      {
+        ul: [
+          '**Dominio**: unos 10–20 € al año para un .com o .es.',
+          '**Hosting**: desde unos pocos euros al mes para una web pequeña.',
+          '**Tu tiempo**: actualizar, revisar que todo funcione y resolver los problemas cuando aparecen.',
+        ],
+      },
+      {
+        p: 'El riesgo no es el precio, sino el descuido: una web sin actualizar ni copias de seguridad puede dejar de funcionar o ser atacada justo cuando más la necesitas, y un formulario roto puede hacerte perder clientes durante semanas sin que te enteres.',
+      },
+      { h2: 'Cuándo merece la pena pagar un mantenimiento' },
+      {
+        ul: [
+          'Si **la web te trae clientes** y que se caiga te cuesta dinero.',
+          'Si tienes una **tienda online** o un **software** que se usa a diario.',
+          'Si **no tienes tiempo** o no quieres preocuparte de la parte técnica.',
+          'Si quieres que alguien haga los **cambios** por ti cuando los necesites.',
+        ],
+      },
+      {
+        p: 'Si todavía no tienes web, mira también [cuánto cuesta una página web](/blog/cuanto-cuesta-una-pagina-web-en-sevilla/): ahí tienes mis precios de partida para crearla.',
+      },
+    ],
+  },
+  {
     slug: 'como-aparecer-en-google-maps',
     path: '/blog/como-aparecer-en-google-maps/',
     title: 'Cómo aparecer en Google Maps con tu negocio: guía paso a paso',
@@ -122,7 +198,7 @@ export const posts = [
       },
       { h2: 'Mi precio: desde 199 €' },
       {
-        p: 'Diseño y desarrollo landing pages **desde 199 €**. Es un precio de partida: el precio final depende de lo que necesite tu página, y siempre te lo doy cerrado en la propuesta antes de empezar. Como el resto de mis proyectos, lleva además una **cuota mensual de mantenimiento**, que depende de lo que necesite cada página y que también te detallo en la propuesta.',
+        p: 'Diseño y desarrollo landing pages **desde 199 €**. Es un precio de partida: el precio final depende de lo que necesite tu página, y siempre te lo doy cerrado en la propuesta antes de empezar. Como el resto de mis proyectos, lleva además un **mantenimiento mensual desde 40 €/mes**, que te detallo en la propuesta. Lo explico en [cuánto cuesta mantener una página web](/blog/cuanto-cuesta-mantener-una-pagina-web/).',
       },
       { h2: 'Qué incluye una landing page conmigo' },
       {
@@ -422,7 +498,7 @@ export const posts = [
       },
       { h2: 'Cómo funciona el mantenimiento' },
       {
-        p: 'Cada proyecto lleva su **cuota mensual de mantenimiento**, y no hay una tarifa única porque cada mantenimiento es un mundo: no es lo mismo una landing page que una tienda online con pedidos diarios o un software a medida que usa tu equipo cada día. En la propuesta te detallo qué cubre la cuota de tu proyecto y cuánto es al mes.',
+        p: 'Cada proyecto lleva su **cuota mensual de mantenimiento**: desde **40 €/mes** para una landing page, desde **49 €/mes** para una web corporativa y desde **69 €/mes** para una tienda online o un software a medida. No hay una tarifa única porque cada mantenimiento es un mundo; en la propuesta te detallo qué cubre la cuota de tu proyecto. Lo explico con más detalle en [cuánto cuesta mantener una página web al mes](/blog/cuanto-cuesta-mantener-una-pagina-web/).',
       },
       { h2: 'Qué hace que el precio suba' },
       {

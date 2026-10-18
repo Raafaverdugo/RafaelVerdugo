@@ -578,3 +578,9 @@
 .prose .content-cta h2 {
   margin-top: 0;
 }
+
+/* El botón a ancho completo en móvil no debe sumar su padding al ancho */
+.featured-card .button {
+  box-sizing: border-box;
+  max-width: 100%;
+}
