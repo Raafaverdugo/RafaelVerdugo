@@ -3,21 +3,21 @@
 
 export const services = [
   {
-    slug: 'diseno-web-sevilla',
+    slug: 'paginas-web-empresas-sevilla',
     priceFrom: 249,
     price: 'Web corporativa desde 249 €',
-    path: '/diseno-web-sevilla/',
-    navLabel: 'Diseño web en Sevilla',
-    serviceType: 'Diseño y desarrollo web',
+    path: '/paginas-web-empresas-sevilla/',
+    navLabel: 'Páginas web para empresas',
+    serviceType: 'Diseño de páginas web para empresas',
     seo: {
-      title: 'Diseño de páginas web en Sevilla | Rafael Verdugo, diseñador web freelance',
+      title: 'Páginas web para empresas en Sevilla | Rafael Verdugo',
       description:
-        'Diseño de páginas web en Sevilla para negocios y profesionales: webs a medida, rápidas, adaptadas al móvil y preparadas para aparecer en Google. Trato directo, sin agencia.',
+        'Creo la web corporativa de tu empresa en Sevilla: diseño a medida, textos que venden, formulario y SEO incluido. Desde 249 €, con trato directo.',
     },
-    eyebrow: 'Diseño web en Sevilla',
-    h1: 'Diseño de páginas web en Sevilla para negocios que quieren clientes, no solo una web bonita.',
+    eyebrow: 'Páginas web para empresas',
+    h1: 'Páginas web para empresas de Sevilla que quieren clientes, no solo una web bonita.',
     intro:
-      'Soy Rafael Verdugo, diseñador y desarrollador web freelance en Sevilla. Diseño y programo webs a medida para negocios locales, profesionales y pequeñas empresas: rápidas, claras, adaptadas al móvil y preparadas desde el primer día para que Google las entienda.',
+      'Diseño y programo la página web de tu empresa o negocio: webs corporativas a medida para pymes, comercios y profesionales de Sevilla, rápidas, claras, adaptadas al móvil y preparadas desde el primer día para que Google las entienda.',
     highlights: [
       { title: 'Trato directo', text: 'Hablas siempre conmigo, de principio a fin. Sin intermediarios ni cuentas que pasan de mano en mano.' },
       { title: 'Diseño a medida', text: 'Nada de plantillas genéricas: la web se diseña alrededor de tu negocio y de lo que tus clientes necesitan ver.' },
@@ -179,7 +179,7 @@ export const services = [
         ],
       },
       {
-        p: 'Si lo que buscas es presentar tu negocio completo, con varias secciones y servicios, probablemente necesitas una [web corporativa](/diseno-web-sevilla/). Lo explico con más detalle en [landing page o web corporativa: qué necesita tu negocio](/blog/landing-page-o-web-corporativa/).',
+        p: 'Si lo que buscas es presentar tu negocio completo, con varias secciones y servicios, probablemente necesitas una [web corporativa](/paginas-web-empresas-sevilla/). Lo explico con más detalle en [landing page o web corporativa: qué necesita tu negocio](/blog/landing-page-o-web-corporativa/).',
       },
       { h2: 'Cómo construyo una landing que convierte' },
       {

@@ -38,7 +38,7 @@ const translations = {
       h2: 'Diseño web en Sevilla que se ve bien y además consigue clientes.',
       p: 'La idea es combinar diseño, estructura y rendimiento para que el resultado tenga presencia y también sirva para captar oportunidades reales.',
       cards: [
-        { href: '/diseno-web-sevilla/', title: 'Web corporativa con presencia seria', description: 'Diseño y desarrollo de webs rápidas, elegantes y preparadas para transmitir confianza desde la primera visita.' },
+        { href: '/paginas-web-empresas-sevilla/', title: 'Web corporativa con presencia seria', description: 'Diseño y desarrollo de webs rápidas, elegantes y preparadas para transmitir confianza desde la primera visita.' },
         { href: '/landing-pages/', title: 'Landing pages que convierten', description: 'Páginas enfocadas en captar contactos, vender un servicio o validar una oferta sin ruido innecesario.' },
         { href: '/tiendas-online-sevilla/', title: 'Tiendas online y funnels', description: 'E-commerce y páginas de venta con una estructura clara, rendimiento sólido y foco en la conversión.' },
         { href: '/seo-sevilla/', title: 'Mejoras SEO y rendimiento', description: 'Optimización de estructura, metadatos, velocidad, imágenes e indexación para que Google entienda mejor tu proyecto.' },
@@ -128,7 +128,7 @@ const translations = {
       h2: "An attractive website isn't enough if it's not built with purpose.",
       p: 'The goal is to combine design, structure and performance so the result has a strong presence and also works to capture real opportunities.',
       cards: [
-        { href: '/diseno-web-sevilla/', title: 'Corporate website with a serious presence', description: 'Design and development of fast, elegant websites built to convey trust from the very first visit.' },
+        { href: '/paginas-web-empresas-sevilla/', title: 'Corporate website with a serious presence', description: 'Design and development of fast, elegant websites built to convey trust from the very first visit.' },
         { href: '/landing-pages/', title: 'Landing pages that convert', description: 'Pages focused on capturing leads, selling a service or validating an offer without unnecessary noise.' },
         { href: '/tiendas-online-sevilla/', title: 'Online stores and funnels', description: 'E-commerce and sales pages with a clear structure, solid performance and a focus on conversion.' },
         { href: '/seo-sevilla/', title: 'SEO and performance improvements', description: 'Optimization of structure, metadata, speed, images and indexing so Google understands your project better.' },

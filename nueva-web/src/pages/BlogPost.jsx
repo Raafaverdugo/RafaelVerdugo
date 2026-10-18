@@ -26,7 +26,7 @@ export default function BlogPost({ post }) {
           <p className="author-name">Rafael Verdugo</p>
           <p>
             Diseñador y desarrollador web freelance en Sevilla. Construyo webs rápidas y preparadas para Google para negocios y
-            profesionales. <a href="/diseno-web-sevilla/">Ver servicios</a>.
+            profesionales. <a href="/servicios/">Ver servicios</a>.
           </p>
         </div>
       </aside>

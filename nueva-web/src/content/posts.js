@@ -150,7 +150,7 @@ export const posts = [
         ],
       },
       {
-        p: 'Puedes ver en qué consiste cada servicio en [diseño web en Sevilla](/diseno-web-sevilla/) y [landing pages](/landing-pages/). Y si sigues con dudas, [escríbeme](/contacto/): te digo cuál encaja con tu caso, aunque al final no trabajemos juntos.',
+        p: 'Puedes ver en qué consiste cada servicio en [páginas web para empresas](/paginas-web-empresas-sevilla/) y [landing pages](/landing-pages/). Y si sigues con dudas, [escríbeme](/contacto/): te digo cuál encaja con tu caso, aunque al final no trabajemos juntos.',
       },
     ],
   },
@@ -222,7 +222,7 @@ export const posts = [
       },
       { h2: '¿Te falta algo de la lista?' },
       {
-        p: 'Si has marcado menos de la mitad, tu web probablemente te esté haciendo perder clientes. Puedo ayudarte tanto a [diseñar una web nueva](/diseno-web-sevilla/) como a [mejorar la que ya tienes](/seo-sevilla/).',
+        p: 'Si has marcado menos de la mitad, tu web probablemente te esté haciendo perder clientes. Puedo ayudarte tanto a [diseñar una web nueva](/paginas-web-empresas-sevilla/) como a [mejorar la que ya tienes](/seo-sevilla/).',
       },
     ],
   },
@@ -247,7 +247,7 @@ export const posts = [
       {
         ul: [
           '[Landing page](/landing-pages/): desde **199 €**.',
-          '[Web corporativa](/diseno-web-sevilla/): desde **249 €**.',
+          '[Web corporativa](/paginas-web-empresas-sevilla/): desde **249 €**.',
           '[Tienda online](/tiendas-online-sevilla/): desde **299 €**.',
           '[Software a medida](/software-a-medida/): desde **99 €**. Si buscas un sistema de citas ya hecho, mira [AppointDate](/AppointDate/).',
           '**Automatizaciones** (tareas repetitivas, conexiones entre herramientas, avisos automáticos…): desde **79 €**.',

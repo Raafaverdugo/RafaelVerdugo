@@ -28,6 +28,10 @@ ErrorDocument 404 /404.html
   RewriteRule ^(html/)?(blog|post)/post[0-9]+(\.html)?$ /blog/ [L,R=301]
   RewriteRule ^(html/)?post/?$ /blog/ [L,R=301]
 
+  # ── Páginas renombradas ─────────────────────────────────────────────────────
+  # La home persigue "diseño web Sevilla"; esta página pasa a "páginas web para empresas"
+  RewriteRule ^diseno-web-sevilla/?$ /paginas-web-empresas-sevilla/ [L,R=301]
+
   # ── AppointDate: una sola URL pública ───────────────────────────────────────
   # appointdate.html es la versión pre-renderizada que sirve /AppointDate/
   RewriteCond %{THE_REQUEST} \s/+appointdate\.html[\s?] [NC]
