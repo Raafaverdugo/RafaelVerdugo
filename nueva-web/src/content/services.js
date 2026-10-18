@@ -90,12 +90,12 @@ export const services = [
     navLabel: 'Tiendas online',
     serviceType: 'Desarrollo de tiendas online',
     seo: {
-      title: 'Tiendas online en Sevilla | Creación de e-commerce a medida | Rafael Verdugo',
+      title: 'Diseño de tiendas online en Sevilla | Rafael Verdugo',
       description:
-        'Creación de tiendas online en Sevilla: catálogo, pasarela de pago, gestión de pedidos y páginas de venta rápidas y preparadas para convertir. Desarrollo a medida con trato directo.',
+        'Diseño y creación de tiendas online en Sevilla: catálogo, pago seguro y gestión de pedidos, rápidas y listas para vender. Desde 299 €.',
     },
-    eyebrow: 'Tiendas online y funnels',
-    h1: 'Tiendas online pensadas para vender, con una estructura clara y una compra sin fricciones.',
+    eyebrow: 'Tiendas online en Sevilla',
+    h1: 'Diseño de tiendas online en Sevilla pensadas para vender, con una compra sin fricciones.',
     intro:
       'Desarrollo tiendas online y páginas de venta para negocios que quieren vender por internet sin depender de una agencia. Me encargo del diseño, de la parte técnica y de que el proceso de compra sea rápido y fiable, desde el móvil y desde el ordenador.',
     highlights: [
@@ -155,11 +155,11 @@ export const services = [
     navLabel: 'Landing pages',
     serviceType: 'Diseño de landing pages',
     seo: {
-      title: 'Diseño de landing pages que convierten | Rafael Verdugo, Sevilla',
+      title: 'Diseño de landing pages que convierten | Rafael Verdugo',
       description:
-        'Diseño y desarrollo de landing pages para captar contactos, vender un servicio o lanzar una campaña. Páginas rápidas, enfocadas en un solo objetivo y medibles desde el primer día.',
+        'Diseño de landing pages para captar contactos, vender un servicio o lanzar una campaña: rápidas, con un solo objetivo y medibles. Desde 199 €.',
     },
-    eyebrow: 'Landing pages',
+    eyebrow: 'Diseño de landing pages',
     h1: 'Landing pages con un solo objetivo: que el visitante dé el siguiente paso.',
     intro:
       'Una landing page es una página diseñada para una única acción: pedir presupuesto, reservar, apuntarse o comprar. Las diseño y programo para que carguen rápido, se entiendan en segundos y conviertan las visitas de tus campañas en contactos reales.',
@@ -208,20 +208,20 @@ export const services = [
       },
     ],
     relatedProjects: ['licencia-de-armas-facil'],
-    relatedPosts: ['cuanto-cuesta-una-pagina-web-en-sevilla', 'landing-page-o-web-corporativa'],
+    relatedPosts: ['cuanto-cuesta-una-landing-page', 'cuanto-cuesta-una-pagina-web-en-sevilla', 'landing-page-o-web-corporativa'],
   },
   {
     slug: 'seo-sevilla',
     path: '/seo-sevilla/',
-    navLabel: 'SEO técnico',
-    serviceType: 'Posicionamiento SEO y optimización web',
+    navLabel: 'Posicionamiento web',
+    serviceType: 'Posicionamiento web y SEO local',
     seo: {
-      title: 'SEO técnico y posicionamiento web en Sevilla | Rafael Verdugo',
+      title: 'Posicionamiento web en Sevilla y SEO local | Rafael Verdugo',
       description:
-        'Mejoro el posicionamiento de tu web en Google: auditoría SEO técnica, velocidad, indexación, datos estructurados y SEO local para negocios de Sevilla. Informe claro y cambios aplicados.',
+        'Mejoro el posicionamiento web de tu negocio en Sevilla: auditoría SEO, indexación, velocidad y SEO local con Google Business. Cambios aplicados.',
     },
-    eyebrow: 'SEO y rendimiento',
-    h1: 'SEO técnico para que Google entienda tu web y la muestre a quien te está buscando.',
+    eyebrow: 'Posicionamiento web en Sevilla',
+    h1: 'Posicionamiento web en Sevilla para que Google te muestre a quien te está buscando.',
     intro:
       'Muchas webs no aparecen en Google por problemas técnicos que nadie ha revisado: páginas que no se indexan, títulos repetidos, contenido que solo existe tras ejecutar JavaScript o una velocidad que espanta a las visitas. Reviso tu web a fondo, te explico qué falla en lenguaje claro y lo arreglo.',
     highlights: [
@@ -274,7 +274,7 @@ export const services = [
       },
     ],
     relatedProjects: ['ies-margarita-salas'],
-    relatedPosts: ['por-que-mi-web-no-aparece-en-google', 'que-debe-tener-la-web-de-un-negocio-local'],
+    relatedPosts: ['como-aparecer-en-google-maps', 'por-que-mi-web-no-aparece-en-google', 'que-debe-tener-la-web-de-un-negocio-local'],
   },
   {
     slug: 'software-a-medida',
@@ -284,9 +284,9 @@ export const services = [
     navLabel: 'Software a medida',
     serviceType: 'Desarrollo de software a medida',
     seo: {
-      title: 'Software a medida en Sevilla | Aplicaciones web para negocios | Rafael Verdugo',
+      title: 'Software a medida en Sevilla para empresas | Rafael Verdugo',
       description:
-        'Desarrollo de software a medida en Sevilla: paneles de gestión, sistemas de reservas, áreas privadas y herramientas web adaptadas a cómo trabaja tu negocio. Desde 99 €.',
+        'Desarrollo de software a medida en Sevilla: paneles de gestión, reservas y áreas privadas adaptados a cómo trabaja tu negocio. Desde 99 €.',
     },
     eyebrow: 'Software a medida',
     h1: 'Software a medida para que tu negocio deje de depender de hojas de cálculo y procesos a mano.',

@@ -106,7 +106,7 @@ export default function AppointDate() {
   // Evita que mantenga el scroll de la página anterior
   useEffect(() => {
     window.scrollTo(0, 0)
-    document.title = 'AppointDate | Software de gestión de citas y reservas para negocios'
+    document.title = 'Software de gestión de citas y reservas | AppointDate'
   }, [])
 
   const [service, setService] = useState('pack')
@@ -197,7 +197,7 @@ export default function AppointDate() {
           <div ref={heroRef} className="ad-hero-inner reveal">
             <span className="ad-eyebrow">Software de gestión</span>
             <h1 className="ad-hero-title">
-              Tu negocio merece una gestión más inteligente.
+              Software de gestión de citas más inteligente.
             </h1>
             <p className="ad-hero-text">
               <strong>AppointDate</strong> es un sistema integral de gestión de reservas y citas

@@ -11,9 +11,9 @@ export const projects = [
     imageAlt: 'Página de inicio de The Shelter, plataforma de adopción de perros y gatos',
     category: 'Plataforma web a medida',
     seo: {
-      title: 'The Shelter: plataforma web para una protectora de animales | Caso de estudio',
+      title: 'The Shelter: web para una protectora de animales | Proyecto',
       description:
-        'Caso de estudio de The Shelter, plataforma de adopción responsable de perros y gatos con gestión de animales, solicitudes de adopción y panel de administración.',
+        'Caso de estudio de The Shelter: plataforma de adopción de perros y gatos con fichas de animales, solicitudes y panel de administración.',
     },
     summary:
       'Plataforma de adopción responsable de perros y gatos, con fichas de animales, solicitudes y panel de administración.',
@@ -58,9 +58,9 @@ export const projects = [
     imageAlt: 'Página de inicio de Licencia de Armas Fácil, plataforma para preparar el examen de licencia de armas D y E',
     category: 'Plataforma de formación y venta online',
     seo: {
-      title: 'Licencia de Armas Fácil: plataforma de formación con venta online | Caso de estudio',
+      title: 'Licencia de Armas Fácil: plataforma de formación online',
       description:
-        'Caso de estudio de Licencia de Armas Fácil, plataforma para preparar la licencia de armas D y E con tests, guía paso a paso, pago online y área de alumnos.',
+        'Caso de estudio de Licencia de Armas Fácil: plataforma para preparar la licencia de armas D y E con tests, pago online y área de alumnos.',
     },
     summary:
       'Plataforma para preparar el examen de la licencia de armas D y E, con examen gratuito, pago único y área privada de alumnos.',
@@ -108,9 +108,9 @@ export const projects = [
     imageAlt: 'Página de inicio de la web del Instituto Margarita Salas con su oferta académica',
     category: 'Web informativa para un centro educativo',
     seo: {
-      title: 'IES Margarita Salas: web informativa para un centro educativo | Caso de estudio',
+      title: 'IES Margarita Salas: web para un centro educativo',
       description:
-        'Caso de estudio de la web del IES Margarita Salas: oferta académica, plurilingüismo y proyectos de centro organizados con una navegación clara y enfocada en la matriculación.',
+        'Caso de estudio de la web del IES Margarita Salas: oferta académica, plurilingüismo y proyectos de centro con una navegación clara.',
     },
     summary:
       'Web informativa para un instituto, con su oferta académica, programas de idiomas y proyectos de centro.',

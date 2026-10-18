@@ -31,9 +31,9 @@ export const routes = [
     lastmod: '2026-10-04',
     head: () =>
       buildHead({
-        title: 'AppointDate | Software de gestión de citas y reservas para negocios',
+        title: 'Software de gestión de citas y reservas | AppointDate',
         description:
-          'AppointDate es un software de gestión de citas y reservas para negocios: agenda, clientes, empleados, facturación y portal de reserva online 24/7. Consulta planes y precios.',
+          'AppointDate, software de gestión de citas para negocios: agenda, clientes, facturación y reservas online 24/7. Instalación gratis, desde 69 €/mes.',
         path: '/AppointDate/',
         ogImage: '/images/AppointDate.png',
         schema: [
@@ -65,9 +65,9 @@ export const routes = [
     lastmod: '2026-10-05',
     head: () =>
       buildHead({
-        title: 'Servicios de diseño web, tiendas online y SEO en Sevilla | Rafael Verdugo',
+        title: 'Servicios y precios de desarrollo web | Rafael Verdugo',
         description:
-          'Diseño web, tiendas online, landing pages, SEO técnico, software a medida y automatizaciones en Sevilla. Precios de partida claros y trato directo con un desarrollador freelance.',
+          'Todos mis servicios con precios desde: webs para empresas desde 249 €, landing pages desde 199 €, tiendas online desde 299 € y software desde 99 €.',
         path: '/servicios/',
         schema: [
           {
@@ -244,7 +244,7 @@ export const routes = [
       buildHead({
         title: 'Contacto | Pide presupuesto para tu web | Rafael Verdugo',
         description:
-          'Cuéntame tu proyecto y te respondo con una propuesta cerrada: qué incluye, plazo y precio. Diseño web, tiendas online y software a medida en Sevilla. rafa@rafaelverdugo.com',
+          'Cuéntame tu proyecto y te respondo con una propuesta cerrada con precio y plazo. Webs, tiendas online y software a medida en Sevilla.',
         path: '/contacto/',
         schema: [
           {

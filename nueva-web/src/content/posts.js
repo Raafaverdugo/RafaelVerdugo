@@ -3,13 +3,177 @@
 
 export const posts = [
   {
+    slug: 'como-aparecer-en-google-maps',
+    path: '/blog/como-aparecer-en-google-maps/',
+    title: 'Cómo aparecer en Google Maps con tu negocio: guía paso a paso',
+    seo: {
+      title: 'Cómo aparecer en Google Maps con tu negocio (paso a paso)',
+      description: 'Guía para crear y verificar tu ficha de Google Business y aparecer en Google Maps: categoría, zona de servicio, fotos, reseñas y errores a evitar.',
+    },
+    excerpt:
+      'Cómo crear, verificar y completar tu ficha de Google Business para que tu negocio salga en Google Maps y en las búsquedas de tu zona.',
+    datePublished: '2026-10-18',
+    readingMinutes: 7,
+    blocks: [
+      {
+        p: 'Cuando alguien busca «servicio + ciudad» en Google, lo primero que ve muchas veces no son webs, sino un mapa con tres negocios. Esos resultados salen de **Google Business Profile**, la ficha gratuita de Google para empresas. Te explico cómo crearla y completarla paso a paso; es el mismo proceso que he seguido con mi propia ficha.',
+      },
+      { h2: 'Antes de empezar: ¿qué tipo de negocio eres?' },
+      {
+        p: 'Google distingue entre dos tipos de negocio y es importante elegir bien, porque cambia lo que se publica:',
+      },
+      {
+        ul: [
+          '**Con local abierto al público** (una tienda, una clínica, un restaurante): tu dirección aparece en el mapa y la gente puede ir.',
+          '**De servicios** (vas tú al cliente o trabajas en remoto, como un fontanero, un fotógrafo o un diseñador web): defines una **zona de servicio** y tu dirección no se muestra.',
+        ],
+      },
+      {
+        note: 'No marques que tienes local si trabajas desde casa. Google suspende fichas por indicar una dirección que los clientes no pueden visitar.',
+      },
+      { h2: '1. Crea la ficha' },
+      {
+        ol: [
+          'Entra en **business.google.com** con la cuenta de Google que quieras usar para el negocio.',
+          'Escribe el **nombre de tu negocio** tal y como lo usas en la vida real, sin añadir palabras clave.',
+          'Elige la **categoría principal**: la que mejor describe lo que haces. Es uno de los datos que más pesa para aparecer en las búsquedas.',
+          'Indica si tienes local o si eres un negocio de servicios, y en ese caso añade tu **zona de servicio** (ciudades o códigos postales).',
+          'Añade **teléfono** y **web**.',
+        ],
+      },
+      { h2: '2. Verifica la ficha' },
+      {
+        p: 'Hasta que Google no verifica que el negocio es real, la ficha no aparece. Lo habitual hoy es la verificación por **vídeo**: grabas un vídeo corto en el que se vea dónde trabajas, alguna herramienta de trabajo y algo que demuestre que el negocio es tuyo. Después Google lo revisa, y puede tardar **hasta cinco días**.',
+      },
+      {
+        p: 'Mientras está en revisión, **no cambies el nombre, la categoría ni la zona de servicio**: cualquier cambio en esos datos puede reiniciar la verificación.',
+      },
+      {
+        cta: {
+          title: '¿Prefieres que te ayude con la ficha?',
+          text: 'Te la dejo configurada y coherente con tu web para que Google te muestre en tu zona.',
+        },
+      },
+      { h2: '3. Completa todo lo que puedas' },
+      {
+        p: 'Una ficha a medias compite peor que una completa. Una vez verificada, rellena:',
+      },
+      {
+        ul: [
+          '**Descripción**: qué haces, para quién y dónde, en lenguaje natural. Sin URLs ni frases promocionales del tipo «¡oferta!».',
+          '**Servicios** y **productos**, con su descripción y, si quieres, su precio.',
+          '**Horario** real de atención.',
+          '**Fotos reales**: tu logo o una foto tuya, una portada y fotos de tu trabajo. Evita imágenes de bancos de fotos.',
+          '**Botón de chat**: puedes enlazar tu WhatsApp para que te escriban directamente desde la ficha.',
+        ],
+      },
+      { h2: '4. Consigue reseñas (y respóndelas)' },
+      {
+        p: 'Las reseñas son una de las señales que más influyen en el mapa. En el panel de tu ficha, el botón **«Pedir una reseña»** te da un enlace que puedes enviar por WhatsApp o email a tus clientes.',
+      },
+      {
+        ul: [
+          'Pídelas **solo a clientes reales** y sin ofrecer nada a cambio: Google penaliza las reseñas falsas o incentivadas.',
+          'Pídelas **justo después de terminar un trabajo**, que es cuando el cliente está más contento.',
+          '**Responde a todas**, también a las negativas, con educación y sin discutir.',
+        ],
+      },
+      { h2: '5. Que tu web y tu ficha digan lo mismo' },
+      {
+        p: 'Google cruza los datos de tu ficha con los de tu web y con los directorios en los que aparezcas. **Nombre, teléfono y zona** deben coincidir en todos los sitios. En tu web, además, conviene incluir esos datos en los datos estructurados (Schema.org) y enlazar la ficha.',
+      },
+      {
+        p: 'Si tu web tiene problemas para aparecer en Google, en [este artículo](/blog/por-que-mi-web-no-aparece-en-google/) repaso las causas más habituales.',
+      },
+      { h2: '6. Mantén la ficha viva' },
+      {
+        p: 'Publica de vez en cuando desde la sección **«Publicaciones»**: un trabajo terminado, una novedad o un artículo de tu blog. Sube fotos nuevas y revisa cada mes la sección **«Rendimiento»** para ver cuántas personas te encuentran, te llaman o visitan tu web desde la ficha.',
+      },
+      { h2: 'Errores que te pueden costar la ficha' },
+      {
+        ul: [
+          'Añadir palabras clave al nombre («Nombre + diseño web barato Sevilla») si no es tu nombre comercial real.',
+          'Indicar una dirección falsa o una oficina virtual en la que no atiendes.',
+          'Comprar reseñas o pedir a familiares que dejen opiniones como si fueran clientes.',
+          'Crear varias fichas para el mismo negocio.',
+        ],
+      },
+      { h2: '¿Cuánto tarda en notarse?' },
+      {
+        p: 'Que la ficha aparezca cuando te buscan por tu nombre suele llevar días o pocas semanas. Aparecer en el mapa para búsquedas competidas, como «servicio + ciudad», depende sobre todo de las reseñas, de lo completa que esté la ficha y de tu cercanía a quien busca, y suele llevar meses. Si quieres trabajarlo a fondo, mira el servicio de [posicionamiento web en Sevilla](/seo-sevilla/).',
+      },
+    ],
+  },
+  {
+    slug: 'cuanto-cuesta-una-landing-page',
+    path: '/blog/cuanto-cuesta-una-landing-page/',
+    title: '¿Cuánto cuesta el diseño de una landing page?',
+    seo: {
+      title: '¿Cuánto cuesta el diseño de una landing page? Desde 199 €',
+      description: 'Cuánto cuesta diseñar una landing page: precio desde 199 €, qué incluye, qué hace que suba el precio y qué gastos tiene después. Sin letra pequeña.',
+    },
+    excerpt:
+      'Mi precio de partida para una landing page, qué incluye, qué hace que el precio suba y qué gastos tiene una vez publicada.',
+    datePublished: '2026-10-18',
+    readingMinutes: 5,
+    blocks: [
+      {
+        p: 'Si vas a lanzar una campaña, un servicio nuevo o un evento, necesitas una página que convierta las visitas en contactos. Antes de pedir presupuestos, esto es lo que conviene saber sobre el precio de una landing page.',
+      },
+      { h2: 'Mi precio: desde 199 €' },
+      {
+        p: 'Diseño y desarrollo landing pages **desde 199 €**. Es un precio de partida: el precio final depende de lo que necesite tu página, y siempre te lo doy cerrado en la propuesta antes de empezar. Como el resto de mis proyectos, lleva además una **cuota mensual de mantenimiento**, que depende de lo que necesite cada página y que también te detallo en la propuesta.',
+      },
+      { h2: 'Qué incluye una landing page conmigo' },
+      {
+        ul: [
+          '**Diseño a medida**, pensado primero para móvil.',
+          '**Estructura orientada a la conversión**: un mensaje claro en la primera pantalla, beneficios, pruebas de confianza y una sola llamada a la acción.',
+          '**Formulario o botón de contacto** (también por WhatsApp) que te llega directamente.',
+          '**Carga rápida**: código ligero e imágenes optimizadas, importante si pagas por anuncios.',
+          '**Analítica** para saber cuántas visitas se convierten en contactos.',
+        ],
+      },
+      {
+        p: 'Puedes ver el servicio completo en [diseño de landing pages](/landing-pages/).',
+      },
+      {
+        cta: {
+          title: '¿Quieres un precio cerrado para tu landing?',
+          text: 'Cuéntame qué quieres conseguir y te paso una propuesta con precio y plazo, sin compromiso.',
+        },
+      },
+      { h2: 'Qué hace que el precio suba' },
+      {
+        ul: [
+          '**Textos**: si los aportas tú o hay que escribirlos desde cero.',
+          '**Secciones y contenido**: no es lo mismo una página corta para un evento que una larga para vender un servicio caro.',
+          '**Integraciones**: conectar el formulario con tu CRM, tu herramienta de email marketing o un sistema de pago.',
+          '**Varias versiones**: por ejemplo, una por campaña o por tipo de cliente.',
+          '**Plazos urgentes**.',
+        ],
+      },
+      { h2: 'Gastos aparte' },
+      {
+        ul: [
+          '**Dominio y hosting**, si la landing no va dentro de una web que ya tienes.',
+          '**Publicidad**: si vas a hacer anuncios en Google o en redes, el presupuesto de la campaña se paga aparte, directamente a la plataforma.',
+        ],
+      },
+      { h2: '¿Landing page o web completa?' },
+      {
+        p: 'Si lo que necesitas es presentar todo tu negocio y aparecer en Google por varios servicios, quizá te conviene más una web corporativa (desde 249 €). Lo explico en [landing page o web corporativa: ¿cuál necesitas?](/blog/landing-page-o-web-corporativa/), y tienes todos mis precios en [cuánto cuesta una página web](/blog/cuanto-cuesta-una-pagina-web-en-sevilla/).',
+      },
+    ],
+  },
+  {
     slug: 'por-que-mi-web-no-aparece-en-google',
     path: '/blog/por-que-mi-web-no-aparece-en-google/',
     title: '¿Por qué mi web no aparece en Google? 9 causas habituales y cómo solucionarlas',
     seo: {
-      title: '¿Por qué mi web no aparece en Google? 9 causas y cómo solucionarlas',
+      title: '¿Por qué mi web no aparece en Google? 9 causas',
       description:
-        'Si tu web no aparece en Google, casi siempre es por una de estas causas: no está indexada, bloquea a los buscadores, depende de JavaScript, es lenta o no responde a lo que busca la gente. Te explico cómo comprobarlo.',
+        'Si tu web no aparece en Google, casi siempre es por una de estas causas: no está indexada, bloquea a Google, depende de JavaScript o es lenta.',
     },
     excerpt:
       'Las causas técnicas y de contenido más habituales por las que una web no sale en Google, cómo comprobar cada una y qué hacer para solucionarlo.',
@@ -87,9 +251,9 @@ export const posts = [
     path: '/blog/landing-page-o-web-corporativa/',
     title: 'Landing page o web corporativa: ¿qué necesita tu negocio?',
     seo: {
-      title: 'Landing page o web corporativa: diferencias y cuál necesita tu negocio',
+      title: 'Landing page o web corporativa: ¿cuál necesitas?',
       description:
-        'Diferencias entre una landing page y una web corporativa, cuándo conviene cada una y por qué muchas veces la mejor opción es combinarlas. Guía práctica para decidir antes de invertir.',
+        'Diferencias entre una landing page y una web corporativa, cuándo conviene cada una y por qué muchas veces lo mejor es combinarlas.',
     },
     excerpt:
       'Qué es cada una, para qué sirve, cuándo te conviene y por qué muchas veces la respuesta es «las dos, pero no a la vez».',
@@ -159,9 +323,9 @@ export const posts = [
     path: '/blog/que-debe-tener-la-web-de-un-negocio-local/',
     title: 'Qué debe tener la web de un negocio local en 2026 (checklist)',
     seo: {
-      title: 'Qué debe tener la web de un negocio local: checklist para 2026',
+      title: 'Qué debe tener la web de un negocio local (checklist)',
       description:
-        'Checklist con lo imprescindible en la web de un negocio local: información de contacto visible, una página por servicio, velocidad en móvil, SEO local, Google Business Profile, reseñas y aspectos legales.',
+        'Checklist para la web de un negocio local: contacto visible, una página por servicio, velocidad en móvil, SEO local, reseñas y textos legales.',
     },
     excerpt:
       'Una lista práctica para revisar tu web: lo que tus clientes esperan encontrar, lo que necesita Google y lo que exige la ley.',
@@ -229,11 +393,11 @@ export const posts = [
   {
     slug: 'cuanto-cuesta-una-pagina-web-en-sevilla',
     path: '/blog/cuanto-cuesta-una-pagina-web-en-sevilla/',
-    title: '¿Cuánto cuesta una página web en Sevilla en 2026?',
+    title: '¿Cuánto cuesta una página web en 2026?',
     seo: {
-      title: '¿Cuánto cuesta una página web en Sevilla en 2026? Precios desde 199 €',
+      title: '¿Cuánto cuesta una página web en 2026? Precios desde 199 €',
       description:
-        'Precios de una página web en Sevilla: landing page desde 199 €, web corporativa desde 249 € y tienda online desde 299 €, más software a medida y automatizaciones. Qué incluye y qué influye en el precio.',
+        'Cuánto cuesta una página web: landing page desde 199 €, web corporativa desde 249 €, tienda online desde 299 €. Qué influye en el precio.',
     },
     excerpt:
       'Mis precios de partida para landing pages, webs corporativas, tiendas online, software a medida y automatizaciones, qué hace que suban y cómo funciona el mantenimiento.',

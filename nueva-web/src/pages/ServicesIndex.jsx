@@ -17,7 +17,7 @@ export default function ServicesIndex() {
 
       <header className="content-hero">
         <p className="eyebrow">Servicios</p>
-        <h1>Servicios de diseño web, desarrollo y SEO en Sevilla</h1>
+        <h1>Servicios y precios: webs, tiendas online, software y SEO</h1>
         <p className="content-lead">
           Webs, tiendas online, landing pages y software a medida para negocios y profesionales. Todo hecho por mí, con trato
           directo, precios claros y preparado desde el primer día para aparecer en Google.
