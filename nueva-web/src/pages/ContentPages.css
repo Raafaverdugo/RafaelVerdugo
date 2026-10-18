@@ -569,3 +569,12 @@
     padding: 22px;
   }
 }
+
+/* Bloque de contacto dentro del texto de un artículo */
+.prose .content-cta {
+  margin: 48px 0;
+}
+
+.prose .content-cta h2 {
+  margin-top: 0;
+}

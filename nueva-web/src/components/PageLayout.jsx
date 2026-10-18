@@ -1,5 +1,6 @@
 import SiteHeader from './SiteHeader.jsx'
 import SiteFooter from './SiteFooter.jsx'
+import { WHATSAPP_URL } from '../content/contact.js'
 import '../App.css'
 import '../pages/ContentPages.css'
 
@@ -28,8 +29,8 @@ export function ContactCta({ title = '¿Hablamos de tu proyecto?', text }) {
         <a className="button button-primary" href="/contacto/">
           Pedir propuesta
         </a>
-        <a className="button button-secondary" href="mailto:rafa@rafaelverdugo.com">
-          rafa@rafaelverdugo.com
+        <a className="button button-secondary" href={WHATSAPP_URL} target="_blank" rel="noreferrer">
+          Escríbeme por WhatsApp
         </a>
       </div>
     </section>

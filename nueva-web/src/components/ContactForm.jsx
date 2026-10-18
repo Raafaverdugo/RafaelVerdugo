@@ -1,4 +1,5 @@
 import { useSyncExternalStore } from 'react'
+import { GOOGLE_REVIEW_URL, WHATSAPP_URL } from '../content/contact.js'
 
 const subscribeNoop = () => () => {}
 const getSearch = () => window.location.search
@@ -65,11 +66,17 @@ export default function ContactForm() {
           <a href="mailto:rafa@rafaelverdugo.com">rafa@rafaelverdugo.com</a>
           <p>
             <a href="tel:+34621000706">621 000 706</a> · llamadas y{' '}
-            <a href="https://wa.me/34621000706" target="_blank" rel="noreferrer">
+            <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">
               WhatsApp
             </a>
           </p>
           <p>Sevilla y alrededores · Trabajo con clientes de toda España</p>
+          <p>
+            ¿Ya hemos trabajado juntos?{' '}
+            <a href={GOOGLE_REVIEW_URL} target="_blank" rel="noreferrer">
+              Déjame una reseña en Google
+            </a>
+          </p>
           <div className="social-links">
             <a href="https://www.linkedin.com/in/rafael-verdugo-dur%C3%A1n-b25a3831b/" target="_blank" rel="noreferrer">
               LinkedIn

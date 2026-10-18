@@ -58,6 +58,12 @@ export const posts = [
       {
         p: 'Puedes tener una web técnicamente perfecta y no aparecer porque no habla de lo que tus clientes escriben en Google. Si ofreces cinco servicios y todos están resumidos en una sola página, solo podrás competir por una búsqueda. Lo habitual es dedicar **una página a cada servicio importante**, con su propio título y contenido útil.',
       },
+      {
+        cta: {
+          title: '¿Prefieres que revise tu web yo?',
+          text: 'Te digo qué está frenando tu web en Google y cómo arreglarlo, en lenguaje claro.',
+        },
+      },
       { h2: '7. Es lenta, sobre todo en el móvil' },
       {
         p: 'Google usa la versión móvil de tu web para decidir cómo posicionarla, y la velocidad forma parte de la experiencia que evalúa. La causa más habitual de lentitud son las imágenes: fotos de varios megas mostradas en un hueco pequeño. Convertirlas a formatos como WebP y redimensionarlas suele reducir su peso más de un 90 %.',
@@ -192,6 +198,12 @@ export const posts = [
       {
         p: 'La mayoría de búsquedas locales se hacen desde el móvil, muchas veces con prisa y con mala cobertura. Tu web debe cargar rápido, leerse sin hacer zoom y tener los botones al alcance del pulgar. Revisa sobre todo el peso de las imágenes: es la causa número uno de webs lentas.',
       },
+      {
+        cta: {
+          title: '¿Tu web no cumple la lista?',
+          text: 'Cuéntame qué tienes ahora y te digo qué le falta para conseguir más clientes.',
+        },
+      },
       { h2: '4. Google Business Profile y reseñas' },
       {
         p: 'Para búsquedas como «fisioterapeuta Sevilla» o «academia de inglés cerca de mí», Google muestra primero un mapa con tres negocios. Esos resultados dependen de tu **ficha de Google Business**: categoría principal correcta, horario, fotos, servicios y, sobre todo, **reseñas**. Pide reseña a tus clientes satisfechos de forma sistemática y responde a todas, también a las negativas.',
@@ -257,6 +269,12 @@ export const posts = [
           '**Diseño**: cuántas secciones distintas hay que diseñar desde cero.',
           '**Plazos**: un proyecto urgente requiere reorganizar el resto del trabajo.',
         ],
+      },
+      {
+        cta: {
+          title: '¿Quieres un precio cerrado para tu proyecto?',
+          text: 'Cuéntame qué necesitas y te paso una propuesta con precio y plazo, sin compromiso.',
+        },
       },
       { h2: 'Gastos aparte' },
       {

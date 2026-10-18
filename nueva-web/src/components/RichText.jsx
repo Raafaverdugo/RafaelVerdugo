@@ -1,3 +1,5 @@
+import { ContactCta } from './PageLayout.jsx'
+
 // Renderiza texto con un marcado mínimo: [enlace](/ruta) y **negrita**.
 const TOKEN = /(\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*)/g
 
@@ -19,9 +21,10 @@ export function Inline({ text }) {
   })
 }
 
-// Bloques: { h2 }, { h3 }, { p }, { ul: [] }, { ol: [] }, { note }
+// Bloques: { h2 }, { h3 }, { p }, { ul: [] }, { ol: [] }, { note }, { cta: { title, text } }
 export default function RichText({ blocks }) {
   return blocks.map((block, i) => {
+    if (block.cta) return <ContactCta key={i} title={block.cta.title} text={block.cta.text} />
     if (block.h2) return <h2 key={i}>{block.h2}</h2>
     if (block.h3) return <h3 key={i}>{block.h3}</h3>
     if (block.ul || block.ol) {

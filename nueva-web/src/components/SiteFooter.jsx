@@ -1,5 +1,6 @@
 import CookieBanner from './CookieBanner.jsx'
 import { setConsent } from './consent.js'
+import { GOOGLE_REVIEW_URL } from '../content/contact.js'
 import '../pages/ContentPages.css'
 import { services } from '../content/services.js'
 import { projects } from '../content/projects.js'
@@ -16,6 +17,9 @@ export default function SiteFooter() {
           <p>Diseño y desarrollo web freelance en Sevilla. Webs rápidas, cuidadas y preparadas para Google.</p>
           <a href="mailto:rafa@rafaelverdugo.com">rafa@rafaelverdugo.com</a>
           <a href="tel:+34621000706">621 000 706 · teléfono y WhatsApp</a>
+          <a href={GOOGLE_REVIEW_URL} target="_blank" rel="noreferrer">
+            Déjame una reseña en Google
+          </a>
           <a className="footer-contact-link" href="/contacto/">Pedir presupuesto →</a>
         </div>
 
