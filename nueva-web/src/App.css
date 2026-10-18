@@ -279,7 +279,7 @@
   padding: 20px;
 }
 
-.metric-card h2 {
+.metric-card h3 {
   margin: 0 0 10px;
   color: var(--text-strong);
   font-size: 1.1rem;

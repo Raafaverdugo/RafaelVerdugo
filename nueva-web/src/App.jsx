@@ -35,7 +35,7 @@ const translations = {
       saberMas: 'Saber más',
       verTodos: 'Ver todos los servicios y precios',
       eyebrow: 'Servicios',
-      h2: 'Una web atractiva no basta si no está construida con criterio.',
+      h2: 'Diseño web en Sevilla que se ve bien y además consigue clientes.',
       p: 'La idea es combinar diseño, estructura y rendimiento para que el resultado tenga presencia y también sirva para captar oportunidades reales.',
       cards: [
         { href: '/diseno-web-sevilla/', title: 'Web corporativa con presencia seria', description: 'Diseño y desarrollo de webs rápidas, elegantes y preparadas para transmitir confianza desde la primera visita.' },
@@ -46,7 +46,7 @@ const translations = {
     },
     portfolio: {
       eyebrow: 'Selección de proyectos',
-      h2: 'Trabajos reales con enfoques distintos, pero el mismo nivel de detalle.',
+      h2: 'Proyectos de diseño web reales, con el mismo nivel de detalle.',
       verProyecto: 'Ver web',
       verCaso: 'Ver caso de estudio',
       verTodos: 'Ver todos los proyectos',
@@ -54,7 +54,7 @@ const translations = {
     softwares: {
       verMas: 'Ver software a medida',
       eyebrow: 'Softwares',
-      h2: 'Herramientas que construyo para digitalizar negocios.',
+      h2: 'Software a medida que construyo para digitalizar negocios.',
       p: 'Además de webs a medida, desarrollo soluciones de software propias orientadas a resolver problemas reales de gestión.',
       appointdate: {
         description: 'Sistema integral de gestión de reservas y citas para negocios. Agenda, clientes, facturación y portal de reserva público, todo en uno.',
@@ -80,7 +80,7 @@ const translations = {
     },
     about: {
       eyebrow: 'Perfil',
-      h2: 'Desarrollo web con mirada de negocio y gusto por los detalles visuales.',
+      h2: 'Diseñador web freelance en Sevilla con mirada de negocio.',
       p: 'No busco hacer una web genérica. Busco que cuando alguien entre, note que detrás hay una marca cuidada, una estructura pensada y una persona que sabe lo que hace.',
       stackLabel: 'Tecnologías y enfoque',
     },
@@ -197,7 +197,7 @@ function App() {
   const t = translations[lang]
 
   useEffect(() => {
-    document.title = 'Diseño web en Sevilla | Rafael Verdugo, desarrollador web freelance'
+    document.title = 'Diseño web en Sevilla | Rafael Verdugo, diseñador freelance'
   }, [])
 
   // ── Scroll reveal refs ──────────────────────────────
@@ -317,7 +317,7 @@ function App() {
             <div ref={metricsGridRef} className="metric-grid stagger-children">
               {t.metrics.map((item) => (
                 <article className="metric-card" key={item.value}>
-                  <h2>{item.value}</h2>
+                  <h3>{item.value}</h3>
                   <p>{item.label}</p>
                 </article>
               ))}
