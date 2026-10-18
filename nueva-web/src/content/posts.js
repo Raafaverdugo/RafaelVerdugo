@@ -3,6 +3,309 @@
 
 export const posts = [
   {
+    slug: 'como-elegir-software-gestion-citas',
+    path: '/blog/como-elegir-software-gestion-citas/',
+    title: 'Cómo elegir un software de gestión de citas para tu negocio',
+    seo: {
+      title: 'Cómo elegir un software de gestión de citas para tu negocio',
+      description: 'Qué debe tener un software de gestión de citas: reservas online 24/7, agenda por empleado, ficha de clientes, facturación y precio. Guía para elegir.',
+    },
+    excerpt:
+      'Las funciones que de verdad importan en un programa de citas para clínicas, centros de estética, peluquerías y cualquier negocio con cita previa.',
+    datePublished: '2026-10-18',
+    readingMinutes: 6,
+    blocks: [
+      {
+        p: 'Si tu negocio trabaja con cita previa, seguramente conoces el problema: la agenda en papel o en una hoja de cálculo, llamadas y WhatsApps a todas horas para reservar, citas que se solapan y clientes que no se presentan. Un software de gestión de citas resuelve buena parte de esto, pero no todos sirven para todos los negocios. Esto es lo que conviene mirar antes de elegir.',
+      },
+      {
+        note: 'Aviso: desarrollo mi propio software de citas, [AppointDate](/AppointDate/). Lo menciono al final, pero los criterios de esta guía sirven para comparar cualquier programa.',
+      },
+      { h2: '1. Reservas online sin intervención' },
+      {
+        p: 'Lo primero es que tus clientes puedan **reservar solos, a cualquier hora**, desde el móvil y sin descargar ninguna aplicación. Comprueba que el portal de reservas muestre solo los huecos realmente libres y que puedas compartirlo fácilmente: en tu web, en tu ficha de Google o por WhatsApp.',
+      },
+      { h2: '2. Disponibilidad automática' },
+      {
+        p: 'El sistema debe calcular los huecos libres teniendo en cuenta la duración de cada servicio, tu horario, tus vacaciones y los días especiales. Si tienes que bloquear huecos a mano, el programa no te está ahorrando trabajo.',
+      },
+      { h2: '3. Agenda por empleado' },
+      {
+        p: 'Si trabajáis varias personas, cada una necesita su agenda y su horario, y el cliente debería poder elegir con quién reserva o dejar que el sistema asigne a quien esté libre. Revisa también si puedes ver la agenda de todo el equipo de un vistazo.',
+      },
+      { h2: '4. Ficha de cliente con historial' },
+      {
+        p: 'Más allá de nombre y teléfono, es muy útil tener el **historial de citas**, notas y preferencias de cada cliente. En sectores como el sanitario o el estético, comprueba además que el programa permita guardar la información que necesitas para tu trabajo y que trate los datos personales con la seguridad que exige la ley.',
+      },
+      {
+        cta: {
+          title: '¿Quieres ver si AppointDate encaja en tu negocio?',
+          text: 'Cuéntame cómo trabajas hoy y te digo si te encaja o qué habría que adaptar.',
+        },
+      },
+      { h2: '5. Facturación integrada' },
+      {
+        p: 'Si al terminar cada cita tienes que pasar los datos a otro programa para facturar, perderás tiempo y cometerás errores. Un buen sistema genera la factura o el ticket a partir de la propia cita.',
+      },
+      { h2: '6. Avisos al cliente' },
+      {
+        p: 'Los recordatorios por email o mensaje antes de la cita reducen las ausencias. Comprueba qué tipo de avisos envía el programa y si puedes configurar cuándo se envían.',
+      },
+      { h2: '7. Precio, permanencia y soporte' },
+      {
+        ul: [
+          '**Cuota mensual** y si cambia según el número de empleados o de citas.',
+          '**Coste de alta o instalación**, si lo hay.',
+          '**Permanencia**: cuánto tiempo te comprometes.',
+          '**Soporte**: si hay una persona a la que escribir cuando algo no funciona, y en tu idioma.',
+          '**Tus datos**: si puedes exportarlos si un día decides cambiar de programa.',
+        ],
+      },
+      { h2: 'Programa estándar o hecho a medida' },
+      {
+        p: 'Para la mayoría de negocios, un programa estándar bien elegido es suficiente. Si tu forma de trabajar es muy particular, quizá te compense algo adaptado; lo explico en [software a medida o estándar](/blog/software-a-medida-o-estandar/).',
+      },
+      { h2: 'Mi propuesta: AppointDate' },
+      {
+        p: '[AppointDate](/AppointDate/) es el sistema que he desarrollado para negocios con cita previa: gestión de citas, ficha de clientes, agenda de empleados, disponibilidad automática, facturación y un portal para que tus clientes reserven online. Si quieres comprobar si cumple lo que necesitas, en su página tienes las funciones y los planes, y puedes escribirme para resolver cualquier duda.',
+      },
+    ],
+  },
+  {
+    slug: 'como-crear-una-tienda-online',
+    path: '/blog/como-crear-una-tienda-online/',
+    title: 'Cómo crear una tienda online: Shopify, WooCommerce o a medida',
+    seo: {
+      title: 'Crear una tienda online: Shopify, WooCommerce o a medida',
+      description: 'Cómo crear una tienda online paso a paso y qué opción elegir: Shopify, WooCommerce o una tienda a medida. Ventajas, inconvenientes y errores comunes.',
+    },
+    excerpt:
+      'Los pasos para montar una tienda online y cómo decidir entre Shopify, WooCommerce o una tienda a medida según tu negocio.',
+    datePublished: '2026-10-18',
+    readingMinutes: 7,
+    blocks: [
+      {
+        p: 'Vender por internet está al alcance de cualquier negocio, pero entre «tener una tienda online» y «vender con una tienda online» hay mucha distancia. En esta guía te explico los pasos y, sobre todo, cómo elegir la herramienta adecuada para tu caso.',
+      },
+      { h2: 'Antes de elegir herramienta: 4 preguntas' },
+      {
+        ol: [
+          '**¿Qué vendes?** Productos físicos con envío, productos digitales, cursos, reservas…',
+          '**¿Cuántos productos y variantes?** No es lo mismo vender 10 productos que 2.000 con tallas y colores.',
+          '**¿Cómo gestionas hoy el stock y los pedidos?** Si ya tienes un programa de gestión, la tienda debería conectarse con él.',
+          '**¿Quién va a mantenerla?** Si vas a hacerlo tú, prioriza la facilidad de uso.',
+        ],
+      },
+      { h2: 'Opción 1: Shopify' },
+      {
+        p: 'Es una plataforma «todo incluido»: pagas una cuota mensual y te olvidas del alojamiento, la seguridad y las actualizaciones.',
+      },
+      {
+        ul: [
+          '**A favor**: rápida de poner en marcha, estable y fácil de gestionar sin conocimientos técnicos.',
+          '**En contra**: cuota mensual fija, comisiones según el plan y la pasarela de pago, y muchas funciones extra dependen de aplicaciones de pago.',
+          '**Ideal para**: catálogos pequeños o medianos y quien quiere empezar rápido sin preocuparse de la parte técnica.',
+        ],
+      },
+      { h2: 'Opción 2: WooCommerce (WordPress)' },
+      {
+        p: 'Es un complemento gratuito que convierte una web WordPress en una tienda. Necesitas tu propio alojamiento y alguien que la mantenga actualizada.',
+      },
+      {
+        ul: [
+          '**A favor**: muy flexible, sin comisiones de la plataforma y con contenido y tienda en un mismo sitio, lo que ayuda al SEO.',
+          '**En contra**: requiere mantenimiento (actualizaciones, seguridad, copias de seguridad) y, si se llena de plugins, puede volverse lenta.',
+          '**Ideal para**: negocios que ya tienen web en WordPress o que quieren combinar tienda y contenido.',
+        ],
+      },
+      { h2: 'Opción 3: tienda a medida' },
+      {
+        p: 'Se programa para tu negocio concreto, sin las limitaciones de una plataforma genérica.',
+      },
+      {
+        ul: [
+          '**A favor**: control total del diseño, del proceso de compra y de las integraciones; muy rápida y sin pagar por funciones que no usas.',
+          '**En contra**: la inversión inicial es mayor y dependes de quien la desarrolla para los cambios.',
+          '**Ideal para**: procesos de venta particulares (por ejemplo, venta de cursos con área de alumnos) o integraciones que las plataformas no resuelven bien.',
+        ],
+      },
+      {
+        cta: {
+          title: '¿Quieres tu tienda online sin complicarte?',
+          text: 'Cuéntame qué vendes y te digo qué opción te conviene y cómo lo haría.',
+        },
+      },
+      { h2: 'Los pasos para crearla' },
+      {
+        ol: [
+          '**Dominio y plataforma**: elige el nombre y la opción que mejor encaje.',
+          '**Catálogo**: fotos propias y bien optimizadas, descripciones que respondan a las dudas del cliente y precios claros.',
+          '**Pagos**: tarjeta como mínimo; según tu público, PayPal o Bizum.',
+          '**Envíos y devoluciones**: tarifas, plazos y política de devoluciones visibles antes de pagar.',
+          '**Textos legales**: aviso legal, privacidad, cookies y condiciones de venta.',
+          '**SEO desde el principio**: URLs limpias, categorías bien pensadas y una ficha de producto por producto, no textos copiados del fabricante.',
+          '**Medición**: analítica para saber de dónde vienen las ventas.',
+        ],
+      },
+      { h2: 'Errores que más ventas cuestan' },
+      {
+        ul: [
+          'Obligar a registrarse para comprar.',
+          'Mostrar los gastos de envío solo al final del proceso.',
+          'Fotos pesadas que hacen la tienda lenta en el móvil.',
+          'No dejar claro cómo contactar si hay un problema con el pedido.',
+        ],
+      },
+      {
+        p: 'Si prefieres que me encargue yo, en [diseño de tiendas online en Sevilla](/tiendas-online-sevilla/) tienes cómo trabajo, y un ejemplo real de venta online en el caso de [Licencia de Armas Fácil](/proyectos/licencia-de-armas-facil/).',
+      },
+    ],
+  },
+  {
+    slug: 'software-a-medida-o-estandar',
+    path: '/blog/software-a-medida-o-estandar/',
+    title: 'Software a medida o estándar: cuándo merece la pena cada uno',
+    seo: {
+      title: 'Software a medida o estándar: ¿cuál te conviene?',
+      description: 'Diferencias entre un software a medida y uno estándar, ventajas e inconvenientes de cada uno y señales de que tu negocio necesita algo hecho a medida.',
+    },
+    excerpt:
+      'Cuándo basta con un programa del mercado y cuándo compensa uno hecho para tu negocio, explicado sin tecnicismos.',
+    datePublished: '2026-10-18',
+    readingMinutes: 5,
+    blocks: [
+      {
+        p: 'Tarde o temprano, casi todos los negocios se hacen la misma pregunta: ¿seguimos con hojas de cálculo, contratamos un programa del mercado o encargamos uno a medida? No hay una respuesta única, pero sí señales claras para decidir.',
+      },
+      { h2: 'Qué es cada uno' },
+      {
+        ul: [
+          '**Software estándar**: un programa hecho para muchos negocios a la vez (un CRM, un programa de facturación, una agenda de citas). Pagas una licencia o una cuota y lo usas tal y como está.',
+          '**Software a medida**: una herramienta diseñada para tu forma concreta de trabajar. Hace lo que necesitas y nada más.',
+        ],
+      },
+      { h2: 'Ventajas del software estándar' },
+      {
+        ul: [
+          'Lo tienes funcionando **en poco tiempo**.',
+          'La inversión inicial suele ser **menor**.',
+          'El fabricante se encarga de las **actualizaciones** y del soporte.',
+        ],
+      },
+      {
+        p: 'Su punto débil: **te adaptas tú al programa**. Si tu proceso no encaja, acabas con trucos, tareas manuales o pagando por funciones que no usas.',
+      },
+      { h2: 'Ventajas del software a medida' },
+      {
+        ul: [
+          'Se adapta **a cómo trabajas tú**, no al revés.',
+          'Solo incluye **lo que necesitas**, así que es más sencillo de usar.',
+          'Puede **conectarse** con las herramientas que ya utilizas.',
+          'Puede convertirse en una **ventaja frente a tu competencia**, por ejemplo un portal para tus clientes.',
+        ],
+      },
+      {
+        p: 'Su punto débil: requiere una **inversión inicial** y depender de quien lo desarrolla para las mejoras.',
+      },
+      {
+        cta: {
+          title: '¿No sabes qué opción te conviene?',
+          text: 'Cuéntame cómo trabajáis hoy y te digo con sinceridad si te basta un programa estándar.',
+        },
+      },
+      { h2: 'Señales de que te conviene algo a medida' },
+      {
+        ul: [
+          'Pierdes **horas cada semana** copiando datos de un sitio a otro.',
+          'Has probado varios programas y **ninguno encaja** con tu proceso.',
+          'Usas **tres o cuatro herramientas** distintas para algo que debería estar en una.',
+          'Tus datos están **repartidos** entre hojas de cálculo, emails y notas.',
+          'Quieres ofrecer a tus clientes algo que **te diferencie**.',
+        ],
+      },
+      { h2: 'Y señales de que te basta uno estándar' },
+      {
+        ul: [
+          'Tu proceso es **parecido al de la mayoría** de negocios de tu sector.',
+          'Existe un programa que cubre el **80 % de lo que necesitas** y el resto no es crítico.',
+          'Necesitas empezar **ya** y no puedes esperar a un desarrollo.',
+        ],
+      },
+      { h2: 'La opción intermedia' },
+      {
+        p: 'No siempre hay que elegir entre todo o nada. A veces lo más rentable es usar un programa estándar y **automatizar** las tareas que se le escapan, o empezar con una herramienta a medida pequeña e ir ampliándola. Un ejemplo de software que he desarrollado es [AppointDate](/AppointDate/), mi sistema de gestión de citas.',
+      },
+      {
+        p: 'Si quieres ver qué tipo de herramientas desarrollo, tienes ejemplos en [software a medida en Sevilla](/software-a-medida/) y en el caso de [The Shelter](/proyectos/the-shelter/).',
+      },
+    ],
+  },
+  {
+    slug: 'wordpress-o-web-a-medida',
+    path: '/blog/wordpress-o-web-a-medida/',
+    title: 'WordPress o web a medida: qué le conviene a tu negocio',
+    seo: {
+      title: 'WordPress o web a medida: qué le conviene a tu negocio',
+      description: 'WordPress o web programada a medida: ventajas, inconvenientes, velocidad, mantenimiento y SEO de cada opción para elegir la web de tu negocio.',
+    },
+    excerpt:
+      'Las diferencias reales entre una web en WordPress y una web a medida en velocidad, mantenimiento, autonomía y SEO.',
+    datePublished: '2026-10-18',
+    readingMinutes: 5,
+    blocks: [
+      {
+        p: 'Cuando pides presupuesto para una web, casi siempre aparece la misma duda: ¿WordPress o una web hecha a medida? Las dos opciones pueden dar muy buen resultado. La clave está en qué necesita tu negocio y en quién va a mantener la web.',
+      },
+      { h2: 'Qué es cada opción' },
+      {
+        ul: [
+          '**WordPress**: un gestor de contenidos muy extendido. La web se monta sobre una plantilla o un constructor visual y se amplía con plugins.',
+          '**Web a medida**: se diseña y se programa específicamente para tu negocio, sin plantilla de base.',
+        ],
+      },
+      { h2: 'WordPress: a favor y en contra' },
+      {
+        ul: [
+          '**Autonomía**: puedes editar textos, fotos y entradas del blog desde un panel.',
+          '**Ecosistema enorme**: hay plugins para casi todo.',
+          '**Pero**: las plantillas y los plugins añaden peso y la web puede volverse lenta.',
+          '**Pero**: necesita actualizaciones frecuentes; si se descuida, es un objetivo habitual de ataques.',
+          '**Pero**: muchas webs en WordPress se parecen entre sí.',
+        ],
+      },
+      { h2: 'Web a medida: a favor y en contra' },
+      {
+        ul: [
+          '**Velocidad**: solo lleva el código que necesita, así que carga muy rápido, algo que valoran tanto tus visitas como Google.',
+          '**Diseño único**: no parte de una plantilla, se construye alrededor de tu marca.',
+          '**Menos mantenimiento de seguridad**: sin plugins de terceros que actualizar.',
+          '**Pero**: para cambiar algo, dependes de quien la desarrolló, salvo que se prepare para que edites contenidos.',
+          '**Pero**: ampliarla con funciones nuevas requiere desarrollo.',
+        ],
+      },
+      {
+        cta: {
+          title: '¿Dudas entre una opción y otra?',
+          text: 'Cuéntame qué necesitas y te digo cuál te conviene, aunque al final no trabajemos juntos.',
+        },
+      },
+      { h2: '¿Y para el SEO, cuál es mejor?' },
+      {
+        p: 'Google no premia una tecnología concreta: premia webs **rápidas, bien estructuradas y con buen contenido**. Un WordPress bien optimizado puede posicionar muy bien, y una web a medida mal hecha puede no aparecer. Dicho esto, una web a medida parte con ventaja en velocidad y te da control total sobre títulos, datos estructurados y código. Lo que sí importa es comprobar que Google puede leer el contenido sin problemas, algo que repaso en [por qué mi web no aparece en Google](/blog/por-que-mi-web-no-aparece-en-google/).',
+      },
+      { h2: 'Cómo decidir' },
+      {
+        ul: [
+          '**Elige WordPress** si vas a publicar contenido a menudo y quieres hacerlo tú, o si necesitas funciones que ya resuelve un plugin conocido.',
+          '**Elige una web a medida** si te importan la velocidad y un diseño propio, si no quieres preocuparte de actualizaciones de plugins o si tu web necesita funciones particulares.',
+        ],
+      },
+      {
+        p: 'Esta misma web está hecha a medida. Puedes ver cómo trabajo en [páginas web para empresas en Sevilla](/paginas-web-empresas-sevilla/), y el coste de mantenerlas en [cuánto cuesta mantener una página web](/blog/cuanto-cuesta-mantener-una-pagina-web/).',
+      },
+    ],
+  },
+  {
     slug: 'cuanto-cuesta-mantener-una-pagina-web',
     path: '/blog/cuanto-cuesta-mantener-una-pagina-web/',
     title: '¿Cuánto cuesta mantener una página web al mes?',

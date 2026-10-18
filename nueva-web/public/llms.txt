@@ -37,6 +37,10 @@ Resumen y precios: [Servicios](https://rafaelverdugo.com/servicios/). Contacto y
 
 ## Blog
 
+- [Cómo elegir un software de gestión de citas](https://rafaelverdugo.com/blog/como-elegir-software-gestion-citas/)
+- [Cómo crear una tienda online: Shopify, WooCommerce o a medida](https://rafaelverdugo.com/blog/como-crear-una-tienda-online/)
+- [Software a medida o estándar](https://rafaelverdugo.com/blog/software-a-medida-o-estandar/)
+- [WordPress o web a medida](https://rafaelverdugo.com/blog/wordpress-o-web-a-medida/)
 - [¿Cuánto cuesta mantener una página web al mes?](https://rafaelverdugo.com/blog/cuanto-cuesta-mantener-una-pagina-web/)
 - [Cómo aparecer en Google Maps con tu negocio](https://rafaelverdugo.com/blog/como-aparecer-en-google-maps/)
 - [¿Cuánto cuesta el diseño de una landing page?](https://rafaelverdugo.com/blog/cuanto-cuesta-una-landing-page/)

@@ -81,7 +81,7 @@ export const services = [
       },
     ],
     relatedProjects: ['the-shelter', 'licencia-de-armas-facil', 'ies-margarita-salas'],
-    relatedPosts: ['cuanto-cuesta-una-pagina-web-en-sevilla', 'por-que-mi-web-no-aparece-en-google', 'que-debe-tener-la-web-de-un-negocio-local'],
+    relatedPosts: ['wordpress-o-web-a-medida', 'cuanto-cuesta-una-pagina-web-en-sevilla', 'por-que-mi-web-no-aparece-en-google', 'que-debe-tener-la-web-de-un-negocio-local'],
   },
   {
     slug: 'tiendas-online-sevilla',
@@ -147,7 +147,7 @@ export const services = [
       },
     ],
     relatedProjects: ['licencia-de-armas-facil', 'the-shelter'],
-    relatedPosts: ['cuanto-cuesta-una-pagina-web-en-sevilla', 'landing-page-o-web-corporativa'],
+    relatedPosts: ['como-crear-una-tienda-online', 'cuanto-cuesta-una-pagina-web-en-sevilla', 'landing-page-o-web-corporativa'],
   },
   {
     slug: 'landing-pages',
@@ -357,7 +357,7 @@ export const services = [
       },
     ],
     relatedProjects: ['the-shelter', 'licencia-de-armas-facil'],
-    relatedPosts: ['cuanto-cuesta-una-pagina-web-en-sevilla', 'cuanto-cuesta-mantener-una-pagina-web'],
+    relatedPosts: ['software-a-medida-o-estandar', 'cuanto-cuesta-una-pagina-web-en-sevilla', 'cuanto-cuesta-mantener-una-pagina-web'],
   },
 ]
 
