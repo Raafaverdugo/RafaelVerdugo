@@ -9,6 +9,7 @@ import {
   Globe,
   Info,
   Lock,
+  Gift,
 } from 'lucide-react'
 import { useScrollReveal, useStaggerReveal } from '../hooks/useScrollReveal'
 import './AppointDate.css'
@@ -74,6 +75,7 @@ const pricingPlans = {
     shortLabel: 'Pack completo',
     label: 'Pack (Sistema + Web Informativa)',
     // Oferta actual: instalación del sistema gratis, solo se paga la web (antes 449 €)
+    trial: true,
     mensual: { setup: 200, setupBefore: 449, monthly: 99, badge: 'Instalación del sistema gratis' },
     anual:   { total: 999 },
   },
@@ -82,6 +84,7 @@ const pricingPlans = {
     shortLabel: 'Solo Sistema',
     label: 'Solo Sistema',
     // Oferta actual: instalación gratis (antes 350 €)
+    trial: true,
     mensual: { setup: 0, setupBefore: 350, monthly: 69, badge: 'Instalación gratis' },
     anual:   { total: 699 },
   },
@@ -203,6 +206,10 @@ export default function AppointDate() {
               <strong>AppointDate</strong> es un sistema integral de gestión de reservas y citas
               diseñado para negocios que quieren trabajar sin fricción. Desde la primera cita hasta
               la factura final, todo automatizado en un solo lugar.
+            </p>
+            <p className="ad-hero-offer">
+              Instalación del sistema gratis y <strong>un mes de prueba sin coste</strong>.
+              Si no te convence, lo dejamos y no pagas nada.
             </p>
             <div className="ad-hero-actions">
               <a className="ad-btn ad-btn-primary" href="#ad-precios">Ver precios</a>
@@ -331,10 +338,21 @@ export default function AppointDate() {
                   <Info size={14} strokeWidth={2} className="ad-note-icon" />
                   <span>Los precios son <strong>orientativos</strong>. Cada proyecto se estudia de forma individual.</span>
                 </p>
+                {currentPlan.trial && (
+                  <p>
+                    <Gift size={14} strokeWidth={2} className="ad-note-icon" />
+                    <span>
+                      <strong>Primer mes de prueba gratis.</strong> Si no te convence, lo dejas y no pagas nada
+                      {service === 'pack' ? ' por el sistema (la web sí se paga)' : ''}.
+                    </span>
+                  </p>
+                )}
                 {cycle === 'mensual' && (
                   <p>
                     <Lock size={14} strokeWidth={2} className="ad-note-icon" />
-                    <span>La permanencia mínima es de <strong>1 año</strong>.</span>
+                    <span>
+                      {currentPlan.trial ? 'Si continúas tras la prueba, la' : 'La'} permanencia mínima es de <strong>1 año</strong>.
+                    </span>
                   </p>
                 )}
               </div>
@@ -459,10 +477,6 @@ export default function AppointDate() {
               <p className="ad-form-aside-title">Contacto directo</p>
               <a href="mailto:appointdatesoftware@gmail.com">appointdatesoftware@gmail.com</a>
               <p>Sevilla, España</p>
-              <div className="ad-social-links">
-                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
-                <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer">TikTok</a>
-              </div>
             </aside>
           </div>
         </section>

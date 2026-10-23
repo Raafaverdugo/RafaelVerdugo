@@ -8,7 +8,7 @@ Zona: Sevilla y alrededores (incluida Dos Hermanas) y toda España en remoto
 ## Páginas
 
 - [Inicio: diseño y desarrollo web en Sevilla](https://rafaelverdugo.com/): resumen de servicios, proyectos realizados y proceso de trabajo.
-- [AppointDate](https://rafaelverdugo.com/AppointDate/): software de gestión de citas, clientes, empleados, facturación y reservas online, con planes y precios. Oferta actual: instalación del sistema gratis, desde 69 €/mes.
+- [AppointDate](https://rafaelverdugo.com/AppointDate/): software de gestión de citas, clientes, empleados, facturación y reservas online, con planes y precios. Oferta actual: instalación del sistema gratis, primer mes de prueba sin coste y desde 69 €/mes.
 
 ## Servicios
 

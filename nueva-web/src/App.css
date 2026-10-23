@@ -672,6 +672,13 @@
 .reveal-right    { transform: translateX(40px); }
 .reveal-zoom     { transform: scale(0.92); }
 
+/* En el móvil las entradas laterales sacaban el bloque 40px de la pantalla
+   (scroll horizontal): ahí entran desde abajo */
+@media (max-width: 768px) {
+  .reveal-left,
+  .reveal-right { transform: translateY(28px); }
+}
+
 /* ── Estado visible ── */
 .reveal.is-visible,
 .reveal-left.is-visible,
