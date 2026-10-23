@@ -584,3 +584,18 @@
   box-sizing: border-box;
   max-width: 100%;
 }
+
+/* Aviso de cookies: el ancho incluye el relleno (antes se salía por la izquierda en móvil) */
+.cookie-banner {
+  box-sizing: border-box;
+}
+
+@media (max-width: 720px) {
+  .cookie-banner {
+    left: 12px;
+    right: 12px;
+    bottom: max(12px, env(safe-area-inset-bottom));
+    width: auto;
+    padding: 16px;
+  }
+}
