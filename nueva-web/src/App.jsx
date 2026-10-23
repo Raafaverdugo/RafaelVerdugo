@@ -16,7 +16,7 @@ const translations = {
       cta: 'Solicitar propuesta',
     },
     hero: {
-      eyebrow: 'Desarrollador web freelance en Sevilla',
+      eyebrow: 'Diseñador web freelance en Sevilla',
       h1: 'Diseño web en Sevilla con una estética potente y una base técnica seria.',
       text: 'Creo páginas pensadas para vender mejor tu servicio, transmitir más nivel de marca y cargar rápido desde el primer clic. Todo en una web clara, elegante y lista para crecer contigo.',
       btnPrimary: 'Empezar proyecto',

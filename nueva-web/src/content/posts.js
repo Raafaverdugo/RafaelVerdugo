@@ -386,8 +386,8 @@ export const posts = [
     path: '/blog/como-aparecer-en-google-maps/',
     title: 'Cómo aparecer en Google Maps con tu negocio: guía paso a paso',
     seo: {
-      title: 'Cómo aparecer en Google Maps con tu negocio (paso a paso)',
-      description: 'Guía para crear y verificar tu ficha de Google Business y aparecer en Google Maps: categoría, zona de servicio, fotos, reseñas y errores a evitar.',
+      title: 'Cómo aparecer en Google Maps con tu negocio gratis',
+      description: 'Cómo salir en Google Maps con tu negocio paso a paso: ficha de Google Business gratis, verificación, reseñas y cómo anunciarte si quieres pagar.',
     },
     excerpt:
       'Cómo crear, verificar y completar tu ficha de Google Business para que tu negocio salga en Google Maps y en las búsquedas de tu zona.',
@@ -468,6 +468,17 @@ export const posts = [
       {
         p: 'Publica de vez en cuando desde la sección **«Publicaciones»**: un trabajo terminado, una novedad o un artículo de tu blog. Sube fotos nuevas y revisa cada mes la sección **«Rendimiento»** para ver cuántas personas te encuentran, te llaman o visitan tu web desde la ficha.',
       },
+      { h2: '¿Se puede pagar para anunciarse en Google Maps?' },
+      {
+        p: 'Sí. Aparecer en Google Maps con tu ficha es **gratis**, pero también puedes **anunciarte** para salir destacado. Se hace desde **Google Ads**, vinculando tu ficha de Google Business a una campaña (mediante los recursos de ubicación). Tu anuncio puede aparecer en Maps y en las búsquedas locales con la etiqueta «Patrocinado», y pagas cuando alguien hace clic.',
+      },
+      {
+        ul: [
+          '**Cuándo tiene sentido**: si necesitas contactos ya, mientras tu ficha gana reseñas y posiciones de forma gratuita.',
+          '**Qué no hace**: no mejora tu posición gratuita. Si dejas de pagar, el anuncio desaparece y te quedas con lo que hayas conseguido con la ficha.',
+          '**Consejo**: no empieces a pagar con una ficha a medias. Completa primero la ficha y consigue tus primeras reseñas; el anuncio funcionará mejor.',
+        ],
+      },
       { h2: 'Errores que te pueden costar la ficha' },
       {
         ul: [
@@ -481,6 +492,23 @@ export const posts = [
       {
         p: 'Que la ficha aparezca cuando te buscan por tu nombre suele llevar días o pocas semanas. Aparecer en el mapa para búsquedas competidas, como «servicio + ciudad», depende sobre todo de las reseñas, de lo completa que esté la ficha y de tu cercanía a quien busca, y suele llevar meses. Si quieres trabajarlo a fondo, mira el servicio de [posicionamiento web en Sevilla](/seo-sevilla/).',
       },
+      { h2: 'Preguntas frecuentes' },
+      { h3: '¿Cuánto cuesta salir en Google Maps?' },
+      {
+        p: 'Nada. Crear y mantener la ficha de Google Business es gratis. Solo pagas si decides anunciarte con Google Ads.',
+      },
+      { h3: '¿Puedo salir en Google Maps si no tengo local?' },
+      {
+        p: 'Sí. Si eres un negocio de servicios, defines una zona de servicio y Google no muestra tu dirección. Es lo que hago yo.',
+      },
+      { h3: '¿Cómo salgo el primero en Google Maps?' },
+      {
+        p: 'No hay atajos: una ficha completa, la categoría correcta, reseñas reales y frecuentes, y una web que confirme los mismos datos. La cercanía de quien busca también influye, y esa no la controlas.',
+      },
+      { h3: '¿Cómo hago que mi negocio aparezca en Google Maps si ya tengo ficha?' },
+      {
+        p: 'Comprueba que esté **verificada** (si no, no aparece), que no tenga datos incompletos y que la categoría principal sea la adecuada. Si todo está bien, el siguiente paso son las reseñas.',
+      },
     ],
   },
   {
@@ -488,8 +516,8 @@ export const posts = [
     path: '/blog/cuanto-cuesta-una-landing-page/',
     title: '¿Cuánto cuesta el diseño de una landing page?',
     seo: {
-      title: '¿Cuánto cuesta el diseño de una landing page? Desde 199 €',
-      description: 'Cuánto cuesta diseñar una landing page: precio desde 199 €, qué incluye, qué hace que suba el precio y qué gastos tiene después. Sin letra pequeña.',
+      title: 'Precio de una landing page: ¿cuánto cuesta? Desde 199 €',
+      description: 'Precio de una landing page: desde 199 € más mantenimiento desde 40 €/mes. Qué incluye, qué hace que suba el precio y cómo pedir presupuesto.',
     },
     excerpt:
       'Mi precio de partida para una landing page, qué incluye, qué hace que el precio suba y qué gastos tiene una vez publicada.',
@@ -499,7 +527,7 @@ export const posts = [
       {
         p: 'Si vas a lanzar una campaña, un servicio nuevo o un evento, necesitas una página que convierta las visitas en contactos. Antes de pedir presupuestos, esto es lo que conviene saber sobre el precio de una landing page.',
       },
-      { h2: 'Mi precio: desde 199 €' },
+      { h2: 'Precio de una landing page: desde 199 €' },
       {
         p: 'Diseño y desarrollo landing pages **desde 199 €**. Es un precio de partida: el precio final depende de lo que necesite tu página, y siempre te lo doy cerrado en la propuesta antes de empezar. Como el resto de mis proyectos, lleva además un **mantenimiento mensual desde 40 €/mes**, que te detallo en la propuesta. Lo explico en [cuánto cuesta mantener una página web](/blog/cuanto-cuesta-mantener-una-pagina-web/).',
       },
@@ -802,6 +830,10 @@ export const posts = [
       { h2: 'Cómo funciona el mantenimiento' },
       {
         p: 'Cada proyecto lleva su **cuota mensual de mantenimiento**: desde **40 €/mes** para una landing page, desde **49 €/mes** para una web corporativa y desde **69 €/mes** para una tienda online o un software a medida. No hay una tarifa única porque cada mantenimiento es un mundo; en la propuesta te detallo qué cubre la cuota de tu proyecto. Lo explico con más detalle en [cuánto cuesta mantener una página web al mes](/blog/cuanto-cuesta-mantener-una-pagina-web/).',
+      },
+      { h2: 'Precio de una página web en Sevilla' },
+      {
+        p: 'Si tu negocio está en Sevilla o alrededores, los precios son los mismos: **web corporativa desde 249 €**, **landing page desde 199 €** y **tienda online desde 299 €**. La diferencia es que, si lo prefieres, podemos vernos en persona para hablar del proyecto. Puedes ver qué incluye una web en [páginas web para empresas en Sevilla](/paginas-web-empresas-sevilla/).',
       },
       { h2: 'Qué hace que el precio suba' },
       {
