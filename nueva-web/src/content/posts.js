@@ -3,6 +3,212 @@
 
 export const posts = [
   {
+    slug: 'como-conseguir-resenas-en-google',
+    path: '/blog/como-conseguir-resenas-en-google/',
+    title: 'Cómo conseguir reseñas en Google para tu negocio',
+    seo: {
+      title: 'Cómo conseguir reseñas en Google para tu negocio',
+      description: 'Cómo pedir reseñas en Google a tus clientes, cuándo hacerlo, cómo responderlas y qué no hacer nunca para que Google no te penalice la ficha.',
+    },
+    excerpt:
+      'Cómo pedir reseñas en Google a tus clientes de forma sencilla, cómo responderlas y los errores que te pueden costar la ficha.',
+    datePublished: '2026-10-26',
+    readingMinutes: 6,
+    blocks: [
+      {
+        p: 'Las reseñas son una de las señales que más pesan para aparecer en Google Maps y en las búsquedas de tu zona. Y, además de a Google, convencen a quien está dudando entre tu negocio y el de al lado. La buena noticia es que conseguirlas no requiere trucos: requiere pedirlas bien y de forma constante.',
+      },
+      { h2: '1. Consigue tu enlace para pedir reseñas' },
+      {
+        p: 'En el panel de tu ficha de Google Business, pulsa **«Pedir una reseña»**. Google te da un enlace corto que abre directamente la ventana para puntuar y escribir. Guárdalo a mano: lo vas a usar mucho. Si aún no tienes ficha, empieza por [cómo aparecer en Google Maps](/blog/como-aparecer-en-google-maps/).',
+      },
+      { h2: '2. Pide la reseña en el mejor momento' },
+      {
+        p: 'El mejor momento es **justo después de terminar un trabajo**, cuando el cliente acaba de comprobar el resultado y está contento. Si dejas pasar semanas, la probabilidad de que la escriba cae mucho.',
+      },
+      { h2: '3. Pídela de forma personal y sencilla' },
+      {
+        p: 'Un mensaje corto por WhatsApp o email, con el enlace, funciona mejor que cualquier campaña. Por ejemplo:',
+      },
+      {
+        note: '«¡Hola, Marta! Me alegra mucho que te haya gustado el resultado. Si tienes un minuto, me ayudaría mucho que dejaras una reseña en Google contando tu experiencia: [enlace]. ¡Gracias!»',
+      },
+      {
+        ul: [
+          '**Usa su nombre** y menciona el trabajo concreto.',
+          '**Pon el enlace directo**: cada paso de más hace que la gente lo deje para luego.',
+          'Si no contesta, **un único recordatorio** amable pasados unos días es suficiente.',
+        ],
+      },
+      { h2: '4. Ponlo fácil en tu negocio y en tu web' },
+      {
+        ul: [
+          '**Código QR** con el enlace de reseñas en el mostrador, en la factura o en la tarjeta de visita.',
+          '**Enlace en tu web**, por ejemplo en la página de contacto o en el pie, con un texto del tipo «¿Ya hemos trabajado juntos? Déjame una reseña».',
+          '**En la firma de tu email**, si tratas mucho con clientes por correo.',
+        ],
+      },
+      {
+        cta: {
+          title: '¿Quieres que tu ficha y tu web trabajen juntas?',
+          text: 'Te ayudo a dejar la ficha completa y la web preparada para que las reseñas se noten en Google.',
+        },
+      },
+      { h2: '5. Responde a todas las reseñas' },
+      {
+        p: 'Responder demuestra que hay alguien detrás y anima a otros clientes a escribir. A las positivas, basta con agradecer de forma personal. A las negativas, responde con calma, sin discutir, reconociendo lo que haya que reconocer y ofreciendo una solución por privado. Quien lea la respuesta valorará más cómo reaccionas que la propia crítica.',
+      },
+      { h2: 'Lo que nunca debes hacer' },
+      {
+        ul: [
+          '**Comprar reseñas** o pedirlas a familiares y amigos que no son clientes.',
+          '**Ofrecer algo a cambio**: descuentos, regalos o sorteos por dejar una reseña van contra las normas de Google.',
+          '**Pedirlas solo a quien sabes que pondrá cinco estrellas** después de filtrar a los descontentos.',
+          '**Escribirlas tú** desde otras cuentas.',
+        ],
+      },
+      {
+        p: 'Google detecta estos patrones y puede borrar las reseñas o suspender la ficha. Diez reseñas reales valen mucho más que cincuenta sospechosas.',
+      },
+      { h2: '¿Cuántas reseñas necesito?' },
+      {
+        p: 'No hay un número mágico. Lo que importa es tener **más y más recientes que tus competidores directos** en tu zona, y que sigan llegando con regularidad. Busca en Google tu servicio y tu ciudad, mira cuántas tienen los negocios del mapa y marca ese número como primer objetivo. Si quieres trabajar el posicionamiento de tu negocio a fondo, mira el servicio de [posicionamiento web en Sevilla](/seo-sevilla/).',
+      },
+    ],
+  },
+  {
+    slug: 'seo-o-google-ads',
+    path: '/blog/seo-o-google-ads/',
+    title: 'SEO o Google Ads: qué le conviene a un negocio local',
+    seo: {
+      title: 'SEO o Google Ads: qué le conviene a un negocio local',
+      description: 'Diferencias entre SEO y Google Ads para un negocio local: coste, plazos y resultados de cada uno, y cuándo conviene combinarlos.',
+    },
+    excerpt:
+      'Qué ofrece cada uno, cuánto tardan en dar resultados y cuándo merece la pena combinarlos si tienes un negocio local.',
+    datePublished: '2026-10-26',
+    readingMinutes: 5,
+    blocks: [
+      {
+        p: 'Cuando quieres que tu negocio aparezca en Google, hay dos caminos: el **SEO**, que es trabajar tu web y tu ficha para aparecer en los resultados gratuitos, y **Google Ads**, que es pagar para aparecer en los anuncios. No son excluyentes, pero funcionan de forma muy distinta.',
+      },
+      { h2: 'Qué es cada uno' },
+      {
+        ul: [
+          '**SEO (posicionamiento orgánico)**: optimizas tu web, tu contenido y tu ficha de Google Business para que Google te muestre en los resultados normales y en el mapa. No pagas por cada visita.',
+          '**Google Ads**: pagas para que tu anuncio salga en las búsquedas que eliges, marcado como «Patrocinado». Pagas cada vez que alguien hace clic.',
+        ],
+      },
+      { h2: 'Comparativa rápida' },
+      {
+        ul: [
+          '**Rapidez**: Ads da visitas desde el primer día; el SEO tarda semanas o meses en notarse.',
+          '**Coste a largo plazo**: con Ads, si dejas de pagar, desapareces; con el SEO, lo conseguido se mantiene si cuidas la web.',
+          '**Confianza**: mucha gente se salta los anuncios y hace clic en los resultados orgánicos y en el mapa.',
+          '**Control**: con Ads eliges exactamente por qué búsquedas sales y cuándo; con el SEO dependes de que Google te considere relevante.',
+          '**Medición**: Ads te dice al céntimo cuánto te cuesta cada contacto; el SEO se mide con Search Console y Analytics.',
+        ],
+      },
+      {
+        cta: {
+          title: '¿No sabes por cuál empezar?',
+          text: 'Cuéntame tu negocio y tu situación y te digo qué te conviene más ahora mismo.',
+        },
+      },
+      { h2: 'Cuándo empezar por el SEO' },
+      {
+        ul: [
+          'Tu negocio es **local** y la gente te busca por «servicio + ciudad».',
+          'No tienes prisa extrema y quieres construir algo que **no dependa de pagar cada mes**.',
+          'Tu presupuesto es ajustado: una buena web y una ficha completa son la base de todo.',
+        ],
+      },
+      { h2: 'Cuándo tiene sentido Google Ads' },
+      {
+        ul: [
+          'Necesitas **contactos ya**, por ejemplo al abrir el negocio o lanzar un servicio.',
+          'Quieres **probar** qué búsquedas traen clientes antes de invertir en contenido.',
+          'Tienes una **oferta o temporada concreta**: rebajas, campaña de verano, plazas limitadas.',
+        ],
+      },
+      { h2: 'La combinación que suele funcionar' },
+      {
+        p: 'Para un negocio local que empieza, lo más sensato suele ser: **primero, una web rápida y una ficha de Google completa** (sin eso, los anuncios rinden peor), y después, si necesitas contactos mientras el SEO madura, una campaña de Ads pequeña y bien acotada a tu zona. Cuando el SEO empieza a traer clientes, puedes reducir lo que inviertes en anuncios.',
+      },
+      {
+        p: 'Si te interesa la parte de Google Maps, lo explico en [cómo aparecer en Google Maps](/blog/como-aparecer-en-google-maps/), y si quieres trabajar el SEO de tu web, mira [posicionamiento web en Sevilla](/seo-sevilla/).',
+      },
+    ],
+  },
+  {
+    slug: 'que-preguntar-antes-de-contratar-un-disenador-web',
+    path: '/blog/que-preguntar-antes-de-contratar-un-disenador-web/',
+    title: 'Qué preguntar antes de contratar a un diseñador web',
+    seo: {
+      title: 'Qué preguntar antes de contratar a un diseñador web',
+      description: '10 preguntas para hacer antes de contratar a un diseñador web o una agencia: qué incluye el precio, de quién es la web, plazos, SEO y mantenimiento.',
+    },
+    excerpt:
+      'Las preguntas que conviene hacer antes de encargar tu web para evitar sorpresas con el precio, los plazos o la propiedad de la web.',
+    datePublished: '2026-10-26',
+    readingMinutes: 6,
+    blocks: [
+      {
+        p: 'Encargar una web es una inversión, y la mayoría de problemas aparecen por cosas que no se hablaron al principio: qué incluía el precio, de quién es el dominio o quién hace los cambios después. Estas son las preguntas que yo haría, también si me fueras a contratar a mí.',
+      },
+      { h2: '1. ¿Puedo ver trabajos reales?' },
+      {
+        p: 'Pide **webs publicadas**, no solo capturas. Entra en ellas desde el móvil, comprueba que cargan rápido y que se ven bien. Si puedes, habla con alguno de esos clientes.',
+      },
+      { h2: '2. ¿Quién va a hacer el trabajo?' },
+      {
+        p: 'Con un freelance hablas con quien hace la web. En una agencia, conviene saber quién será tu interlocutor y si parte del trabajo se subcontrata.',
+      },
+      { h2: '3. ¿Qué incluye exactamente el precio?' },
+      {
+        p: 'Número de páginas, si los textos los escribes tú o te ayudan, formulario de contacto, adaptación a móvil, SEO básico, analítica, textos legales… Cuanto más detallada sea la propuesta, menos sorpresas habrá después.',
+      },
+      { h2: '4. ¿El dominio y la web serán míos?' },
+      {
+        p: 'Es la pregunta más importante y la que menos se hace. Asegúrate de que el **dominio está a tu nombre** y de qué pasa con la web si un día quieres cambiar de proveedor.',
+      },
+      { h2: '5. ¿Cuánto tarda y qué necesitas de mí?' },
+      {
+        p: 'Un plazo realista y claro, y qué tienes que aportar tú (textos, fotos, logotipo, accesos). Muchos retrasos vienen de que el cliente no sabía qué tenía que entregar.',
+      },
+      {
+        cta: {
+          title: '¿Quieres hacerme estas preguntas a mí?',
+          text: 'Escríbeme y te respondo a cada una con claridad, antes de que decidas nada.',
+        },
+      },
+      { h2: '6. ¿La web estará preparada para Google?' },
+      {
+        p: 'Pregunta si incluye títulos y descripciones por página, sitemap, velocidad, datos estructurados y alta en Google Search Console. Una web bonita que Google no encuentra no te traerá clientes. Si quieres entender por qué, lo explico en [por qué mi web no aparece en Google](/blog/por-que-mi-web-no-aparece-en-google/).',
+      },
+      { h2: '7. ¿Podré cambiar cosas yo?' },
+      {
+        p: 'Según el proyecto, puede interesarte editar textos y fotos tú mismo o que te los cambie el profesional. Lo importante es saberlo antes y que encaje con cómo quieres trabajar.',
+      },
+      { h2: '8. ¿Qué pasa después del lanzamiento?' },
+      {
+        p: 'Mantenimiento, actualizaciones, copias de seguridad, soporte y cambios. Pregunta qué cubre la cuota mensual, si la hay, y qué se cobra aparte. Tienes más detalle en [cuánto cuesta mantener una página web](/blog/cuanto-cuesta-mantener-una-pagina-web/).',
+      },
+      { h2: '9. ¿Con qué tecnología trabajas y por qué?' },
+      {
+        p: 'No necesitas entender de código, pero sí saber si la web será en WordPress, en una plataforma como Shopify o a medida, y qué implica cada opción para ti. Lo comparo en [WordPress o web a medida](/blog/wordpress-o-web-a-medida/).',
+      },
+      { h2: '10. ¿Qué opinan otros clientes?' },
+      {
+        p: 'Mira sus **reseñas en Google** y en otras plataformas. Unas pocas opiniones reales y recientes dicen mucho más que cualquier promesa en la web.',
+      },
+      { h2: 'Una última recomendación' },
+      {
+        p: 'Desconfía de quien te promete el primer puesto en Google en pocas semanas o de un precio muy por debajo del resto sin explicar qué incluye. Y si tienes dudas sobre qué tipo de web necesitas, empieza por [landing page o web corporativa](/blog/landing-page-o-web-corporativa/).',
+      },
+    ],
+  },
+  {
     slug: 'como-elegir-software-gestion-citas',
     path: '/blog/como-elegir-software-gestion-citas/',
     title: 'Cómo elegir un software de gestión de citas para tu negocio',

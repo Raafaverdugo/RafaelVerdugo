@@ -81,7 +81,7 @@ export const services = [
       },
     ],
     relatedProjects: ['the-shelter', 'licencia-de-armas-facil', 'ies-margarita-salas'],
-    relatedPosts: ['wordpress-o-web-a-medida', 'cuanto-cuesta-una-pagina-web-en-sevilla', 'por-que-mi-web-no-aparece-en-google', 'que-debe-tener-la-web-de-un-negocio-local'],
+    relatedPosts: ['que-preguntar-antes-de-contratar-un-disenador-web', 'wordpress-o-web-a-medida', 'cuanto-cuesta-una-pagina-web-en-sevilla', 'que-debe-tener-la-web-de-un-negocio-local'],
   },
   {
     slug: 'tiendas-online-sevilla',
@@ -277,7 +277,7 @@ export const services = [
       },
     ],
     relatedProjects: ['ies-margarita-salas'],
-    relatedPosts: ['como-aparecer-en-google-maps', 'por-que-mi-web-no-aparece-en-google', 'que-debe-tener-la-web-de-un-negocio-local'],
+    relatedPosts: ['como-aparecer-en-google-maps', 'como-conseguir-resenas-en-google', 'seo-o-google-ads', 'por-que-mi-web-no-aparece-en-google'],
   },
   {
     slug: 'software-a-medida',
