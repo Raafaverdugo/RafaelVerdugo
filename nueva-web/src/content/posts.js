@@ -1057,6 +1057,10 @@ export const posts = [
           text: 'Cuéntame qué necesitas y te paso una propuesta con precio y plazo, sin compromiso.',
         },
       },
+      { h2: 'Cómo pedir presupuesto de una página web' },
+      {
+        p: 'Para darte un presupuesto cerrado necesito saber poco: a qué se dedica tu negocio, cuántas páginas o secciones imaginas, si tienes textos, fotos y logotipo, si necesitas algo especial (reservas, pagos, área privada) y para cuándo la quieres. Con eso te paso una propuesta con precio y plazo. Puedes [pedírmelo aquí](/contacto/) o por WhatsApp.',
+      },
       { h2: 'Gastos aparte' },
       {
         ul: [

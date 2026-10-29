@@ -219,7 +219,7 @@ export const services = [
     navLabel: 'Posicionamiento web',
     serviceType: 'Posicionamiento web y SEO local',
     seo: {
-      title: 'Posicionamiento web en Sevilla y SEO local | Rafael Verdugo',
+      title: 'Posicionamiento web en Sevilla | Consultor SEO freelance',
       description:
         'Mejoro el posicionamiento web de tu negocio en Sevilla: auditoría SEO, indexación, velocidad y SEO local con Google Business. Cambios aplicados.',
     },
@@ -245,6 +245,17 @@ export const services = [
           '**Visibilidad en buscadores con IA** como ChatGPT o Perplexity: acceso de sus rastreadores y contenido fácil de citar.',
         ],
       },
+      { h2: 'Consultor SEO en Sevilla: trabajas directamente conmigo' },
+      {
+        p: 'No soy una agencia con cuentas que pasan de mano en mano: soy un consultor SEO freelance en Sevilla y hago yo mismo la auditoría, las recomendaciones y los cambios. Eso significa que sabes en todo momento quién está tocando tu web, qué se ha hecho y por qué, y que el plan SEO se adapta a tu negocio y a tu zona en lugar de ser una plantilla.',
+      },
+      {
+        ul: [
+          '**Auditoría y plan SEO** con prioridades claras: qué arreglar primero y qué puede esperar.',
+          '**Posicionamiento SEO local**: ficha de Google Business, reseñas, datos locales y páginas por servicio.',
+          '**Implementación**: no te dejo un PDF; los cambios los aplico yo o junto a quien mantenga tu web.',
+        ],
+      },
       { h2: 'Un ejemplo: mi propia web' },
       {
         p: 'Esta misma web es el mejor ejemplo. Estaba hecha en React y el HTML que recibía Google llegaba vacío; cualquier dirección inventada devolvía la portada en lugar de un error, y la versión con www no redirigía. Lo corregí con pre-renderizado, errores 404 reales, redirecciones 301, imágenes de 2 MB reducidas a menos de 40 KB y datos estructurados completos. Es el mismo trabajo que hago en las webs de mis clientes.',
@@ -266,6 +277,10 @@ export const services = [
       {
         q: '¿En cuánto tiempo se notan los resultados?',
         a: 'Los arreglos técnicos (indexación, errores, velocidad) suelen notarse en unas semanas, cuando Google vuelve a rastrear la web. Subir posiciones en búsquedas competidas es un trabajo de meses que depende también del contenido y de la competencia.',
+      },
+      {
+        q: '¿Qué incluye un plan SEO?',
+        a: 'Una auditoría de tu web y de tu presencia en Google, una lista de mejoras ordenadas por impacto, la implementación de los cambios técnicos y de contenido, el trabajo de SEO local (ficha de Google, reseñas, directorios) y un seguimiento con datos de Search Console. Te paso un presupuesto cerrado según lo que necesite tu web.',
       },
       {
         q: '¿Me garantizas el primer puesto en Google?',

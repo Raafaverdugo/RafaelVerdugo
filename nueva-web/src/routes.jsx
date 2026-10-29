@@ -33,7 +33,7 @@ export const routes = [
       buildHead({
         title: 'Software de gestión de citas y reservas | AppointDate',
         description:
-          'AppointDate, software de gestión de citas para negocios: agenda, clientes, facturación y reservas online 24/7. Instalación gratis, un mes de prueba y desde 69 €/mes.',
+          'Software de gestión de citas y cita previa: agenda, clientes, facturación y reservas online. Instalación gratis, un mes de prueba y desde 69 €/mes.',
         path: '/AppointDate/',
         ogImage: '/images/AppointDate.png',
         schema: [
