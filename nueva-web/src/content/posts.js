@@ -1028,6 +1028,7 @@ export const posts = [
           '[Tienda online](/tiendas-online-sevilla/): desde **299 €**.',
           '[Software a medida](/software-a-medida/): desde **99 €**. Si buscas un sistema de citas ya hecho, mira [AppointDate](/AppointDate/).',
           '**Automatizaciones** (tareas repetitivas, conexiones entre herramientas, avisos automáticos…): desde **79 €**.',
+          '[Auditoría SEO](/seo-sevilla/): desde **99 €**, y plan SEO mensual desde **149 €/mes**.',
         ],
       },
       {

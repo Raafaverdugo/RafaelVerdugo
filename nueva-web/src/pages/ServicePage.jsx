@@ -19,7 +19,7 @@ export default function ServicePage({ service }) {
         <p className="content-lead">{service.intro}</p>
         {service.price ? (
           <p className="service-price">
-            <strong>{service.price}</strong> + mantenimiento desde {service.maintenanceFrom} €/mes.{' '}
+            <strong>{service.price}</strong> {service.priceJoin || '+'} {service.monthlyLabel || 'mantenimiento'} desde {service.maintenanceFrom} €/mes.{' '}
             <a href="/blog/cuanto-cuesta-una-pagina-web-en-sevilla/">Ver precios</a>
           </p>
         ) : null}

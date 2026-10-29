@@ -215,6 +215,12 @@ export const services = [
   },
   {
     slug: 'seo-sevilla',
+    priceFrom: 99,
+    price: 'Auditoría SEO desde 99 €',
+    maintenanceFrom: 149,
+    monthlyLabel: 'plan SEO mensual',
+    // Auditoría y plan mensual son alternativas, no se suman
+    priceJoin: 'o',
     path: '/seo-sevilla/',
     navLabel: 'Posicionamiento web',
     serviceType: 'Posicionamiento web y SEO local',
@@ -255,6 +261,16 @@ export const services = [
           '**Posicionamiento SEO local**: ficha de Google Business, reseñas, datos locales y páginas por servicio.',
           '**Implementación**: no te dejo un PDF; los cambios los aplico yo o junto a quien mantenga tu web.',
         ],
+      },
+      { h2: 'Precios: auditoría SEO y plan mensual' },
+      {
+        ul: [
+          '**Auditoría SEO básica: desde 99 €.** Reviso tu web en Search Console (indexación, errores y búsquedas por las que ya apareces), los títulos y descripciones, la velocidad en móvil, los datos estructurados y tu ficha de Google Business. Te entrego un informe corto con las mejoras ordenadas por impacto y te lo explico en una videollamada de 30 minutos.',
+          '**Plan SEO mensual: desde 149 €/mes.** Aplico las mejoras, trabajo el SEO local (ficha de Google, reseñas y directorios), el contenido y hago seguimiento cada mes con los datos de Search Console.',
+        ],
+      },
+      {
+        note: 'Precios de partida, en euros. La auditoría básica no incluye aplicar los cambios: puedes hacerlo tú, encargármelo aparte o pasar al plan mensual.',
       },
       { h2: 'Un ejemplo: mi propia web' },
       {

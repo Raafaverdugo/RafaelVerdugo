@@ -31,7 +31,7 @@ export default function ServicesIndex() {
             <p>{service.seo.description}</p>
             {service.priceFrom ? (
               <p className="service-card-price">
-                Desde {service.priceFrom} € · mantenimiento desde {service.maintenanceFrom} €/mes
+                Desde {service.priceFrom} € · {service.monthlyLabel || 'mantenimiento'} desde {service.maintenanceFrom} €/mes
               </p>
             ) : null}
             <a className="card-link" href={service.path}>
