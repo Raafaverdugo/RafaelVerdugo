@@ -10,7 +10,16 @@ const dist = path.join(root, 'dist')
 const { render, routes } = await import(pathToFileURL(path.join(root, 'dist-ssr', 'entry-server.js')).href)
 
 const SITE = 'https://rafaelverdugo.com'
-const template = fs.readFileSync(path.join(dist, 'index.html'), 'utf8')
+// Precarga de las dos tipografías que se pintan primero (texto y títulos)
+const assets = fs.readdirSync(path.join(dist, 'assets'))
+const preloadFonts = ['manrope-latin-500-normal', 'syne-latin-700-normal']
+  .map((name) => assets.find((f) => f.startsWith(name) && f.endsWith('.woff2')))
+  .filter(Boolean)
+  .map((f) => `<link rel="preload" href="/assets/${f}" as="font" type="font/woff2" crossorigin />`)
+  .join('\n    ')
+const template = fs
+  .readFileSync(path.join(dist, 'index.html'), 'utf8')
+  .replace('<!--font-preload-->', preloadFonts)
 const SEO_BLOCK = /<!--seo:start-->[\s\S]*?<!--seo:end-->/
 
 for (const route of routes) {

@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
+import './fonts.js'
 import './index.css'
 import AppRoutes from './AppRoutes.jsx'
 
