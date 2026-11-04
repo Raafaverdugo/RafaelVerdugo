@@ -13,6 +13,7 @@ export const posts = [
     excerpt:
       'Cómo pedir reseñas en Google a tus clientes de forma sencilla, cómo responderlas y los errores que te pueden costar la ficha.',
     datePublished: '2026-10-26',
+    dateModified: '2026-11-04',
     readingMinutes: 6,
     blocks: [
       {
@@ -74,6 +75,14 @@ export const posts = [
       {
         p: 'No hay un número mágico. Lo que importa es tener **más y más recientes que tus competidores directos** en tu zona, y que sigan llegando con regularidad. Busca en Google tu servicio y tu ciudad, mira cuántas tienen los negocios del mapa y marca ese número como primer objetivo. Si quieres trabajar el posicionamiento de tu negocio a fondo, mira el servicio de [posicionamiento web en Sevilla](/seo-sevilla/).',
       },
+      { h2: 'Fuentes oficiales' },
+      {
+        ul: [
+          '[Google: consejos para conseguir más reseñas](https://support.google.com/business/answer/3474122?hl=es)',
+          '[Google: contenido prohibido y restringido en las reseñas de Maps](https://support.google.com/contributionpolicy/answer/7400114?hl=es)',
+          '[Google: consejos para mejorar el posicionamiento local](https://support.google.com/business/answer/7091?hl=es)',
+        ],
+      },
     ],
   },
   {
@@ -87,6 +96,7 @@ export const posts = [
     excerpt:
       'Qué ofrece cada uno, cuánto tardan en dar resultados y cuándo merece la pena combinarlos si tienes un negocio local.',
     datePublished: '2026-10-26',
+    dateModified: '2026-11-04',
     readingMinutes: 5,
     blocks: [
       {
@@ -137,6 +147,13 @@ export const posts = [
       },
       {
         p: 'Si te interesa la parte de Google Maps, lo explico en [cómo aparecer en Google Maps](/blog/como-aparecer-en-google-maps/), y si quieres trabajar el SEO de tu web, mira [posicionamiento web en Sevilla](/seo-sevilla/).',
+      },
+      { h2: 'Fuentes oficiales' },
+      {
+        ul: [
+          '[Google Search Central: guía de SEO para principiantes](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=es)',
+          '[Google: consejos para mejorar el posicionamiento local](https://support.google.com/business/answer/7091?hl=es)',
+        ],
       },
     ],
   },
@@ -598,6 +615,7 @@ export const posts = [
     excerpt:
       'Cómo crear, verificar y completar tu ficha de Google Business para que tu negocio salga en Google Maps y en las búsquedas de tu zona.',
     datePublished: '2026-10-18',
+    dateModified: '2026-11-04',
     readingMinutes: 7,
     blocks: [
       {
@@ -715,6 +733,14 @@ export const posts = [
       {
         p: 'Comprueba que esté **verificada** (si no, no aparece), que no tenga datos incompletos y que la categoría principal sea la adecuada. Si todo está bien, el siguiente paso son las reseñas.',
       },
+      { h2: 'Fuentes oficiales' },
+      {
+        ul: [
+          '[Google: consejos para mejorar el posicionamiento local](https://support.google.com/business/answer/7091?hl=es)',
+          '[Google: directrices para mostrar tu empresa en Google](https://support.google.com/business/answer/3038177?hl=es)',
+          '[Google: consejos para conseguir más reseñas](https://support.google.com/business/answer/3474122?hl=es)',
+        ],
+      },
     ],
   },
   {
@@ -791,6 +817,7 @@ export const posts = [
     excerpt:
       'Las causas técnicas y de contenido más habituales por las que una web no sale en Google, cómo comprobar cada una y qué hacer para solucionarlo.',
     datePublished: '2026-10-05',
+    dateModified: '2026-11-04',
     readingMinutes: 7,
     blocks: [
       {
@@ -856,6 +883,14 @@ export const posts = [
       { h2: '¿Y ahora qué?' },
       {
         p: 'Si has encontrado alguna de estas causas en tu web, ya sabes por dónde empezar. Si prefieres que la revise yo, en el servicio de [SEO técnico](/seo-sevilla/) hago una auditoría completa, te explico qué falla en lenguaje claro y, si quieres, lo arreglo.',
+      },
+      { h2: 'Fuentes oficiales' },
+      {
+        ul: [
+          '[Google Search Central: cómo funciona la Búsqueda de Google](https://developers.google.com/search/docs/fundamentals/how-search-works?hl=es)',
+          '[Ayuda de Search Console: herramienta de inspección de URLs](https://support.google.com/webmasters/answer/9012289?hl=es)',
+          '[Google Search Central: guía de SEO para principiantes](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=es)',
+        ],
       },
     ],
   },
@@ -943,6 +978,7 @@ export const posts = [
     excerpt:
       'Una lista práctica para revisar tu web: lo que tus clientes esperan encontrar, lo que necesita Google y lo que exige la ley.',
     datePublished: '2026-10-05',
+    dateModified: '2026-11-04',
     readingMinutes: 6,
     blocks: [
       {
@@ -1000,6 +1036,15 @@ export const posts = [
       { h2: '¿Te falta algo de la lista?' },
       {
         p: 'Si has marcado menos de la mitad, tu web probablemente te esté haciendo perder clientes. Puedo ayudarte tanto a [diseñar una web nueva](/paginas-web-empresas-sevilla/) como a [mejorar la que ya tienes](/seo-sevilla/).',
+      },
+      { h2: 'Fuentes oficiales' },
+      {
+        ul: [
+          '[Google: consejos para mejorar el posicionamiento local](https://support.google.com/business/answer/7091?hl=es)',
+          '[Google Search Central: indexación centrada en móviles](https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing?hl=es)',
+          '[Google Search Central: Métricas web principales](https://developers.google.com/search/docs/appearance/core-web-vitals?hl=es)',
+          '[Google Search Central: datos estructurados de empresa local](https://developers.google.com/search/docs/appearance/structured-data/local-business?hl=es)',
+        ],
       },
     ],
   },
