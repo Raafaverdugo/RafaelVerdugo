@@ -3,6 +3,186 @@
 
 export const posts = [
   {
+    slug: 'como-aparecer-en-google',
+    path: '/blog/como-aparecer-en-google/',
+    title: 'Cómo aparecer en Google con tu negocio: guía paso a paso',
+    seo: {
+      title: 'Cómo aparecer en Google con tu negocio, paso a paso',
+      description: 'Cómo aparecer en Google con tu negocio: ficha en Google Maps, web que Google pueda leer, reseñas y contenido útil. Pasos gratis y cuánto se tarda.',
+    },
+    excerpt:
+      'Las tres formas de salir en Google (resultados normales, mapa y anuncios) y los pasos para que tu negocio aparezca cuando te buscan.',
+    datePublished: '2026-11-09',
+    readingMinutes: 7,
+    blocks: [
+      {
+        p: 'Cuando alguien busca lo que vendes, Google le enseña tres cosas: **anuncios**, un **mapa con negocios cercanos** y los **resultados normales** (las webs). Aparecer en el mapa y en los resultados normales es gratis; solo pagas si quieres salir en los anuncios. Esta guía explica qué hacer para aparecer en cada sitio, en el orden en que te recomiendo hacerlo.',
+      },
+      { h2: '1. Crea y completa tu ficha de Google Business' },
+      {
+        p: 'Es lo más rápido y lo que más rinde para un negocio local. La ficha es lo que sale en Google Maps y en el mapa de los resultados cuando alguien busca «servicio + ciudad». Es gratis: la creas, la verificas y la completas con categoría, zona, horario, teléfono, web y fotos. Lo explico paso a paso en [cómo aparecer en Google Maps](/blog/como-aparecer-en-google-maps/).',
+      },
+      { h2: '2. Ten una web que Google pueda leer' },
+      {
+        p: 'Para salir en los resultados normales necesitas una web, y que Google pueda **rastrearla e indexarla**. Muchas webs no aparecen por problemas técnicos que su dueño ni conoce: páginas bloqueadas, contenido que solo carga con JavaScript, errores o una web nueva que Google aún no ha descubierto.',
+      },
+      {
+        ul: [
+          '**Da de alta tu web en Google Search Console** (gratis). Es la herramienta de Google para ver qué páginas tiene indexadas y por qué búsquedas apareces.',
+          '**Envía tu sitemap**, el archivo con la lista de páginas de tu web, para que Google las encuentre todas.',
+          '**Usa la inspección de URLs** para comprobar una página concreta y pedir que la indexen.',
+        ],
+      },
+      {
+        p: 'Si tu web ya existe y no sale, repasa las causas más habituales en [por qué mi web no aparece en Google](/blog/por-que-mi-web-no-aparece-en-google/).',
+      },
+      { h2: '3. Dile a Google qué haces y dónde' },
+      {
+        p: 'Google tiene que entender, sin dudas, qué ofreces y en qué zona. Para un negocio local esto se traduce en:',
+      },
+      {
+        ul: [
+          '**Una página por cada servicio importante**, en lugar de meterlo todo en la portada.',
+          '**Títulos claros** que digan el servicio y la ciudad: «Fisioterapia deportiva en Sevilla» funciona mejor que «Bienvenidos».',
+          '**Los mismos datos en todas partes**: nombre, teléfono y zona iguales en tu web, tu ficha de Google y los directorios donde aparezcas.',
+          '**Datos estructurados**: un código invisible para el visitante que le dice a Google quién eres, qué ofreces y dónde.',
+        ],
+      },
+      {
+        p: 'En [qué debe tener la web de un negocio local](/blog/que-debe-tener-la-web-de-un-negocio-local/) tienes la lista completa.',
+      },
+      {
+        cta: {
+          title: '¿Quieres saber por qué no apareces?',
+          text: 'Reviso tu web y tu ficha de Google y te digo qué falla y por dónde empezar.',
+        },
+      },
+      { h2: '4. Consigue reseñas de clientes reales' },
+      {
+        p: 'Para el mapa, las reseñas son de lo que más pesa. Google valora cuántas tienes, su puntuación y que sigan llegando. Pídelas a cada cliente al terminar un trabajo, con el enlace directo de tu ficha. Te cuento cómo hacerlo, y qué no hacer nunca, en [cómo conseguir reseñas en Google](/blog/como-conseguir-resenas-en-google/).',
+      },
+      { h2: '5. Responde a las preguntas de tus clientes' },
+      {
+        p: 'Cada pregunta que te hacen tus clientes («¿cuánto cuesta…?», «¿qué es mejor…?», «¿cuánto se tarda…?») es una búsqueda que alguien hace en Google. Si tu web la responde bien, puedes aparecer cuando la buscan y ganarte su confianza antes de que te llamen. No hace falta publicar mucho: es mejor un artículo útil al mes que diez escritos para rellenar.',
+      },
+      { h2: '6. Si tienes prisa: anuncios de Google' },
+      {
+        p: 'Con Google Ads puedes salir arriba desde el primer día, pero solo mientras pagas. Lo sensato suele ser combinar: anuncios pequeños y bien acotados a tu zona al principio, mientras los pasos anteriores empiezan a dar resultado. Lo comparo en [SEO o Google Ads](/blog/seo-o-google-ads/).',
+      },
+      { h2: 'Preguntas frecuentes' },
+      { h3: '¿Cuánto tarda mi negocio en aparecer en Google?' },
+      {
+        p: 'La ficha de Google suele mostrarse en cuanto se verifica. Una web nueva tarda desde unos días hasta varias semanas en indexarse, y subir posiciones en búsquedas con competencia es cuestión de meses.',
+      },
+      { h3: '¿Cuesta dinero aparecer en Google?' },
+      {
+        p: 'No. Aparecer en los resultados normales y en Google Maps es gratis. Solo pagas si te anuncias con Google Ads o si encargas a alguien el trabajo de web y posicionamiento.',
+      },
+      { h3: '¿Cómo hago para que salga mi negocio cuando buscan mi nombre?' },
+      {
+        p: 'Con la ficha de Google verificada y una web con tu nombre en el título de la portada, lo normal es aparecer en pocas semanas al buscar el nombre exacto. Lo difícil no es eso, sino aparecer cuando buscan tu servicio sin conocerte.',
+      },
+      { h3: '¿Puedo pagar a Google para salir el primero sin anuncios?' },
+      {
+        p: 'No. Los resultados normales y el mapa no se pueden comprar; desconfía de quien te lo prometa. Lo único que se paga son los anuncios, que salen marcados como «Patrocinado».',
+      },
+      { h2: 'Fuentes oficiales' },
+      {
+        ul: [
+          '[Google Search Central: cómo aparecer en Google](https://developers.google.com/search/docs/fundamentals/get-on-google?hl=es)',
+          '[Google Search Central: cómo funciona la Búsqueda de Google](https://developers.google.com/search/docs/fundamentals/how-search-works?hl=es)',
+          '[Google: consejos para mejorar el posicionamiento local](https://support.google.com/business/answer/7091?hl=es)',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'cuanto-cuesta-el-seo',
+    path: '/blog/cuanto-cuesta-el-seo/',
+    title: '¿Cuánto cuesta el SEO? Precio del posicionamiento web',
+    seo: {
+      title: 'Cuánto cuesta el SEO: precio del posicionamiento web',
+      description: 'Cuánto cuesta el SEO: formas de cobro, qué sube el precio y señales de alarma. Mis precios: auditoría SEO desde 99 € y plan mensual desde 149 €/mes.',
+    },
+    excerpt:
+      'Cómo se cobra el posicionamiento web, qué hace que el precio suba, qué señales deben hacerte desconfiar y cuánto cuesta conmigo.',
+    datePublished: '2026-11-09',
+    readingMinutes: 6,
+    blocks: [
+      {
+        p: 'El precio del SEO varía muchísimo porque bajo el mismo nombre se venden cosas muy distintas: desde un informe automático hasta meses de trabajo técnico y de contenido. Antes de comparar presupuestos, conviene saber qué estás comprando.',
+      },
+      { h2: 'Cómo se cobra el SEO' },
+      {
+        ul: [
+          '**Auditoría puntual**: un pago único por revisar tu web y decirte qué falla y qué arreglar primero. Útil para saber dónde estás.',
+          '**Cuota mensual**: un trabajo continuo de mejoras, contenido, SEO local y seguimiento. Es la forma más habitual, porque el posicionamiento se construye mes a mes.',
+          '**Proyecto cerrado**: un precio por un trabajo concreto, como migrar una web sin perder posiciones o corregir problemas técnicos.',
+          '**Por horas**: para consultas o ajustes sueltos.',
+        ],
+      },
+      { h2: 'Mis precios de SEO' },
+      {
+        ul: [
+          '**Auditoría SEO básica: desde 99 €.** Reviso tu web en Search Console (indexación, errores y búsquedas por las que ya apareces), los títulos y descripciones, la velocidad en móvil, los datos estructurados y tu ficha de Google Business. Te entrego un informe corto con las mejoras ordenadas por impacto y te lo explico en una videollamada de 30 minutos.',
+          '**Plan SEO mensual: desde 149 €/mes.** Aplico las mejoras, trabajo el SEO local (ficha de Google, reseñas y directorios), el contenido y hago seguimiento cada mes con los datos de Search Console.',
+        ],
+      },
+      {
+        p: 'Son precios de partida, en euros: el precio final depende de tu web y te lo doy cerrado antes de empezar. Tienes todos los detalles en el servicio de [posicionamiento web en Sevilla](/seo-sevilla/).',
+      },
+      {
+        cta: {
+          title: '¿Quieres saber cuánto costaría en tu caso?',
+          text: 'Cuéntame qué negocio tienes y en qué zona trabajas, y te paso un precio cerrado sin compromiso.',
+        },
+      },
+      { h2: 'Qué hace que el precio suba' },
+      {
+        ul: [
+          '**El tamaño de la web**: no es lo mismo revisar una web de cinco páginas que una tienda con cientos de productos.',
+          '**El estado técnico**: si la web tiene errores graves de indexación o velocidad, hay más trabajo al principio.',
+          '**La competencia**: posicionar «abogado en Sevilla» exige más trabajo que un servicio poco disputado en un pueblo.',
+          '**El alcance**: SEO local para una ciudad no es lo mismo que competir en toda España.',
+          '**El contenido**: si hay que escribir páginas y artículos nuevos o si ya los tienes.',
+        ],
+      },
+      { h2: 'Señales de alarma al contratar SEO' },
+      {
+        ul: [
+          '**Te garantizan el primer puesto.** Nadie controla el algoritmo de Google; la propia Google lo advierte en su guía para contratar SEO.',
+          '**Venden cientos de enlaces por poco dinero.** Comprar enlaces va contra las normas de Google y puede hundir tu web.',
+          '**No te explican qué hacen.** Cada mes deberías saber qué se ha cambiado y qué resultados ha tenido.',
+          '**Te piden permanencias largas** sin un plan claro ni informes.',
+        ],
+      },
+      { h2: '¿Merece la pena pagar por SEO?' },
+      {
+        p: 'Si tus clientes te buscan en Google, sí: una vez que tu web está bien posicionada, las visitas siguen llegando sin pagar por cada clic. Pero no es inmediato. Los arreglos técnicos se notan en semanas y las posiciones en búsquedas competidas tardan meses. Si necesitas contactos ya, lo explico en [SEO o Google Ads](/blog/seo-o-google-ads/). Y si antes quieres hacer tú lo básico, empieza por [cómo aparecer en Google](/blog/como-aparecer-en-google/).',
+      },
+      { h2: 'Preguntas frecuentes' },
+      { h3: '¿Cuánto cuesta una auditoría SEO?' },
+      {
+        p: 'Conmigo, desde 99 €. El precio depende del tamaño de la web y de si incluye solo el informe o también aplicar los cambios.',
+      },
+      { h3: '¿Cuánto cuesta el SEO al mes?' },
+      {
+        p: 'Mi plan SEO mensual empieza desde 149 €/mes. Desconfía tanto de precios muy bajos, que suelen ser informes automáticos, como de cuotas altas sin un plan claro de qué se va a hacer.',
+      },
+      { h3: '¿Puedo hacer el SEO yo mismo?' },
+      {
+        p: 'Lo básico, sí: crear tu ficha de Google, dar de alta la web en Search Console, pedir reseñas y escribir sobre lo que preguntan tus clientes. La parte técnica y la estrategia es donde un profesional ahorra más tiempo y errores.',
+      },
+      { h2: 'Fuentes oficiales' },
+      {
+        ul: [
+          '[Google Search Central: consejos para contratar a un experto en SEO](https://developers.google.com/search/docs/fundamentals/do-i-need-seo?hl=es)',
+          '[Google Search Central: políticas de spam de la Búsqueda](https://developers.google.com/search/docs/essentials/spam-policies?hl=es)',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'como-conseguir-resenas-en-google',
     path: '/blog/como-conseguir-resenas-en-google/',
     title: 'Cómo conseguir reseñas en Google para tu negocio',

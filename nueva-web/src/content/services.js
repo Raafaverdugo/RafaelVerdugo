@@ -308,7 +308,7 @@ export const services = [
       },
     ],
     relatedProjects: ['ies-margarita-salas'],
-    relatedPosts: ['como-aparecer-en-google-maps', 'como-conseguir-resenas-en-google', 'seo-o-google-ads', 'por-que-mi-web-no-aparece-en-google'],
+    relatedPosts: ['cuanto-cuesta-el-seo', 'como-aparecer-en-google', 'como-aparecer-en-google-maps', 'por-que-mi-web-no-aparece-en-google'],
   },
   {
     slug: 'software-a-medida',
