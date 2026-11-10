@@ -211,7 +211,7 @@ export const services = [
       },
     ],
     relatedProjects: ['licencia-de-armas-facil'],
-    relatedPosts: ['cuanto-cuesta-una-landing-page', 'cuanto-cuesta-una-pagina-web-en-sevilla', 'landing-page-o-web-corporativa'],
+    relatedPosts: ['que-debe-tener-una-landing-page', 'cuanto-cuesta-una-landing-page', 'landing-page-o-web-corporativa'],
   },
   {
     slug: 'seo-sevilla',
@@ -308,7 +308,7 @@ export const services = [
       },
     ],
     relatedProjects: ['ies-margarita-salas'],
-    relatedPosts: ['cuanto-cuesta-el-seo', 'como-aparecer-en-google', 'como-aparecer-en-google-maps', 'por-que-mi-web-no-aparece-en-google'],
+    relatedPosts: ['cuanto-cuesta-el-seo', 'cuanto-tarda-el-seo-en-dar-resultados', 'como-aparecer-en-google', 'como-aparecer-en-google-maps'],
   },
   {
     slug: 'software-a-medida',

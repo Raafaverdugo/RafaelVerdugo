@@ -3,6 +3,163 @@
 
 export const posts = [
   {
+    slug: 'que-debe-tener-una-landing-page',
+    path: '/blog/que-debe-tener-una-landing-page/',
+    title: 'Qué debe tener una landing page para conseguir clientes',
+    seo: {
+      title: 'Qué debe tener una landing page para conseguir clientes',
+      description: 'Las partes de una landing page que convierte: titular, beneficios, pruebas de confianza, una sola llamada a la acción y formulario corto. Con ejemplos.',
+    },
+    excerpt:
+      'Las partes que no pueden faltar en una landing page, en qué orden ponerlas y los errores que hacen que las visitas se vayan sin contactar.',
+    datePublished: '2026-11-10',
+    readingMinutes: 6,
+    blocks: [
+      {
+        p: 'Una landing page tiene un único trabajo: que quien llega haga una cosa concreta, como pedir presupuesto, reservar o apuntarse. Todo lo que hay en ella debe empujar hacia esa acción. Estas son las partes que no pueden faltar, en el orden en que suelen funcionar mejor.',
+      },
+      { h2: '1. Un titular que diga qué ofreces y para quién' },
+      {
+        p: 'La primera pantalla decide si la visita se queda. El titular tiene que responder en segundos a «¿esto es para mí?». Mejor algo concreto como **«Reformas de baño en Sevilla en 10 días»** que algo genérico como «Calidad y confianza». Debajo, una frase que amplíe la promesa y el botón principal ya visible, sin tener que bajar.',
+      },
+      { h2: '2. Beneficios, no características' },
+      {
+        p: 'Al cliente le importa lo que gana, no la lista técnica. «Agenda online para que tus pacientes reserven a cualquier hora» convence más que «sistema de reservas con calendario integrado». Tres o cuatro beneficios claros, con un icono o una imagen cada uno, suelen bastar.',
+      },
+      { h2: '3. Pruebas de confianza' },
+      {
+        ul: [
+          '**Opiniones reales** de clientes, mejor con nombre y, si puede ser, enlazadas a tus reseñas de Google.',
+          '**Casos o ejemplos** de trabajos hechos, con fotos o resultados.',
+          '**Datos verificables**: años de experiencia, clientes atendidos, garantías.',
+        ],
+      },
+      {
+        p: 'Nunca inventes opiniones ni cifras: además de engañar al cliente, si se descubre pierdes justo lo que querías ganar, la confianza.',
+      },
+      {
+        cta: {
+          title: '¿Tienes una campaña en mente?',
+          text: 'Te ayudo a diseñar una landing con un objetivo claro y medible. Cuéntame qué quieres conseguir.',
+        },
+      },
+      { h2: '4. Una sola llamada a la acción' },
+      {
+        p: 'Elige **una acción** y repítela en los puntos clave: después del titular, tras los beneficios y al final. Si pones a la vez «Llámanos», «Descarga el catálogo», «Síguenos en Instagram» y «Pide presupuesto», el visitante duda y no hace ninguna. Por eso las landing pages no suelen llevar el menú completo de la web.',
+      },
+      { h2: '5. Un formulario corto' },
+      {
+        p: 'Pide solo lo imprescindible para contactar: nombre, teléfono o email y, como mucho, una pregunta. Cada campo de más reduce los envíos. Añadir un botón de **WhatsApp** junto al formulario suele ayudar en negocios locales, porque mucha gente prefiere escribir por ahí.',
+      },
+      { h2: '6. Que cargue rápido en el móvil' },
+      {
+        p: 'La mayoría de visitas llegan desde el móvil, y muchas desde anuncios que estás pagando. Si la página tarda en cargar, parte de esas visitas se van antes de verla. Imágenes optimizadas y código ligero son parte del diseño, no un detalle técnico.',
+      },
+      { h2: '7. Medición' },
+      {
+        p: 'Sin datos no sabes si la landing funciona. Como mínimo, mide cuántas visitas recibe y cuántas terminan en contacto. Si haces anuncios, configura las conversiones en la plataforma para que las campañas se optimicen solas.',
+      },
+      { h2: 'Errores habituales' },
+      {
+        ul: [
+          '**Mandar los anuncios a la portada** de la web en lugar de a una página específica.',
+          '**Textos genéricos** que podrían ser de cualquier negocio.',
+          '**Demasiadas opciones** y enlaces que sacan al visitante de la página.',
+          '**Formularios largos** que piden datos que no necesitas para el primer contacto.',
+        ],
+      },
+      {
+        p: 'Si quieres saber cuánto cuesta, lo explico en [precio de una landing page](/blog/cuanto-cuesta-una-landing-page/), y si dudas entre una landing y una web completa, en [landing page o web corporativa](/blog/landing-page-o-web-corporativa/). El servicio completo está en [diseño de landing pages](/landing-pages/).',
+      },
+      { h2: 'Fuentes oficiales' },
+      {
+        ul: [
+          '[Google Search Central: qué es la experiencia en las páginas](https://developers.google.com/search/docs/appearance/page-experience?hl=es)',
+          '[Google Search Central: Métricas web principales](https://developers.google.com/search/docs/appearance/core-web-vitals?hl=es)',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'cuanto-tarda-el-seo-en-dar-resultados',
+    path: '/blog/cuanto-tarda-el-seo-en-dar-resultados/',
+    title: '¿Cuánto tarda el SEO en dar resultados? Un caso real',
+    seo: {
+      title: '¿Cuánto tarda el SEO en dar resultados? Un caso real',
+      description: 'Cuánto tarda el SEO en notarse, qué pasa en cada fase y los datos reales de mi propia web en su primer mes: indexación, impresiones y clics.',
+    },
+    excerpt:
+      'Qué esperar del posicionamiento web semana a semana, con los datos reales de mi propia web desde que la relancé.',
+    datePublished: '2026-11-10',
+    readingMinutes: 6,
+    blocks: [
+      {
+        p: 'Es la pregunta que más me hacen antes de contratar SEO, y la respuesta honesta es: **depende, pero casi nunca es inmediato**. Para que no se quede en teoría, te enseño lo que ha pasado con mi propia web desde que la relancé a principios de octubre de 2026.',
+      },
+      { h2: 'Las fases del SEO' },
+      { h3: 'Semanas 1 a 4: Google descubre e indexa' },
+      {
+        p: 'Lo primero es que Google encuentre tus páginas y las guarde en su índice. Con Search Console y un sitemap, una web pequeña puede estar indexada en pocas semanas. Los arreglos técnicos (errores, redirecciones, velocidad) también empiezan a notarse aquí.',
+      },
+      { h3: 'Meses 1 a 3: aparecen las impresiones' },
+      {
+        p: 'Google empieza a enseñar tu web en muchas búsquedas, pero en posiciones lejanas: página 3, 4 o 5. Ves impresiones en Search Console pero casi ningún clic. Es normal y es buena señal: Google está probando dónde encajas.',
+      },
+      { h3: 'A partir del mes 3: subir a la primera página' },
+      {
+        p: 'Aquí entran el contenido útil, las reseñas, los enlaces de otras webs y la constancia. En búsquedas con poca competencia puede llegar antes; en búsquedas muy disputadas, puede llevar bastante más.',
+      },
+      { h2: 'Mi caso real: el primer mes y pico' },
+      {
+        ul: [
+          '**Indexación**: tras relanzar la web, a finales de octubre Google tenía 23 páginas indexadas, y a principios de noviembre, 28.',
+          '**Artículos nuevos**: los últimos que publiqué, pidiendo la indexación en Search Console, estaban indexados al día siguiente.',
+          '**Impresiones**: en los 28 días hasta el 29 de octubre la web tuvo 748 impresiones. En la semana del 2 al 8 de noviembre ya fueron 566, en unas 80 búsquedas distintas.',
+          '**Clics**: todavía muy pocos, porque la mayoría de esas búsquedas aún están lejos de la primera página.',
+        ],
+      },
+      {
+        p: 'Es decir, estoy justo en la segunda fase: Google ya me conoce y me enseña, pero aún toca trabajo para llegar arriba. Iré actualizando este artículo con la evolución.',
+      },
+      {
+        cta: {
+          title: '¿Quieres saber en qué fase está tu web?',
+          text: 'Reviso tu Search Console y te digo qué está frenando tu posicionamiento y qué hacer primero.',
+        },
+      },
+      { h2: 'Qué hace que tarde más o menos' },
+      {
+        ul: [
+          '**La competencia** de las búsquedas: no es lo mismo «abogado en Sevilla» que un servicio poco disputado.',
+          '**El estado técnico** de la web: si Google no puede leerla bien, nada de lo demás funciona.',
+          '**La antigüedad y la confianza**: una web nueva parte de cero; una con años y enlaces, no.',
+          '**El contenido**: páginas que respondan de verdad a lo que busca tu cliente.',
+          '**Las reseñas y la ficha de Google**, que pesan mucho en las búsquedas locales.',
+        ],
+      },
+      { h2: 'Cómo acelerarlo sin trampas' },
+      {
+        ul: [
+          '**Arregla primero lo técnico** y pide la indexación de las páginas importantes en Search Console.',
+          '**Completa tu ficha de Google** y pide reseñas a cada cliente. Lo explico en [cómo aparecer en Google Maps](/blog/como-aparecer-en-google-maps/).',
+          '**Publica con criterio**: artículos que respondan búsquedas por las que ya empiezas a aparecer.',
+          '**Si necesitas clientes ya**, combina con anuncios mientras el SEO madura: [SEO o Google Ads](/blog/seo-o-google-ads/).',
+        ],
+      },
+      {
+        p: 'Desconfía de quien te prometa resultados en días o el primer puesto garantizado. Si quieres ver cuánto cuesta hacerlo bien, lo cuento en [cuánto cuesta el SEO](/blog/cuanto-cuesta-el-seo/), y el servicio está en [posicionamiento web en Sevilla](/seo-sevilla/).',
+      },
+      { h2: 'Fuentes oficiales' },
+      {
+        ul: [
+          '[Google Search Central: cómo funciona la Búsqueda de Google](https://developers.google.com/search/docs/fundamentals/how-search-works?hl=es)',
+          '[Ayuda de Search Console: herramienta de inspección de URLs](https://support.google.com/webmasters/answer/9012289?hl=es)',
+          '[Google Search Central: consejos para contratar a un experto en SEO](https://developers.google.com/search/docs/fundamentals/do-i-need-seo?hl=es)',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'como-aparecer-en-google',
     path: '/blog/como-aparecer-en-google/',
     title: 'Cómo aparecer en Google con tu negocio: guía paso a paso',
