@@ -100,7 +100,7 @@ export const routes = [
     path: service.path,
     file: fileFor(service.path),
     element: <ServicePage service={service} />,
-    lastmod: '2026-10-05',
+    lastmod: service.lastmod || '2026-10-05',
     head: () =>
       buildHead({
         ...service.seo,

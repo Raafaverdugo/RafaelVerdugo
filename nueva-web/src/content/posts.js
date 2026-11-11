@@ -1111,7 +1111,7 @@ export const posts = [
         ],
       },
       {
-        p: 'Puedes ver el servicio completo en [diseño de landing pages](/landing-pages/).',
+        p: 'Puedes ver el servicio completo en [diseño de landing pages](/landing-pages/), y las partes que no pueden faltar en [qué debe tener una landing page](/blog/que-debe-tener-una-landing-page/).',
       },
       {
         cta: {
@@ -1299,7 +1299,7 @@ export const posts = [
         ],
       },
       {
-        p: 'Puedes ver en qué consiste cada servicio en [páginas web para empresas](/paginas-web-empresas-sevilla/) y [landing pages](/landing-pages/). Y si sigues con dudas, [escríbeme](/contacto/): te digo cuál encaja con tu caso, aunque al final no trabajemos juntos.',
+        p: 'Puedes ver en qué consiste cada servicio en [páginas web para empresas](/paginas-web-empresas-sevilla/) y [landing pages](/landing-pages/), y qué debe llevar una landing para funcionar en [qué debe tener una landing page](/blog/que-debe-tener-una-landing-page/). Y si sigues con dudas, [escríbeme](/contacto/): te digo cuál encaja con tu caso, aunque al final no trabajemos juntos.',
       },
     ],
   },

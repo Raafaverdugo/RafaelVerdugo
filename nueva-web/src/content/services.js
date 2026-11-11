@@ -222,12 +222,13 @@ export const services = [
     // Auditoría y plan mensual son alternativas, no se suman
     priceJoin: 'o',
     path: '/seo-sevilla/',
+    lastmod: '2026-11-11',
     navLabel: 'Posicionamiento web',
     serviceType: 'Posicionamiento web y SEO local',
     seo: {
       title: 'Posicionamiento web en Sevilla | Consultor SEO freelance',
       description:
-        'Mejoro el posicionamiento web de tu negocio en Sevilla: auditoría SEO, indexación, velocidad y SEO local con Google Business. Cambios aplicados.',
+        'Posicionamiento web y en Google en Sevilla: auditoría SEO desde 99 €, SEO local con Google Business y plan mensual desde 149 €/mes. Consultor freelance.',
     },
     eyebrow: 'Posicionamiento web en Sevilla',
     h1: 'Posicionamiento web en Sevilla para que Google te muestre a quien te está buscando.',
@@ -250,6 +251,10 @@ export const services = [
           '**SEO local**: coherencia de nombre, dirección y teléfono, ficha de Google Business y páginas por servicio y zona.',
           '**Visibilidad en buscadores con IA** como ChatGPT o Perplexity: acceso de sus rastreadores y contenido fácil de citar.',
         ],
+      },
+      { h2: 'Posicionamiento en Google y en buscadores en Sevilla' },
+      {
+        p: 'Cuando alguien busca «fontanero», «dentista» o «abogado» en Sevilla, Google le enseña primero el mapa con negocios cercanos y después las webs. Trabajo las dos cosas: el posicionamiento de tu web en los resultados normales y el de tu ficha de Google Business en el mapa. Y como cada vez más gente busca también en Bing o pregunta a asistentes como ChatGPT, preparo tu web para que la entiendan todos los buscadores, no solo Google.',
       },
       { h2: 'Consultor SEO en Sevilla: trabajas directamente conmigo' },
       {
@@ -290,6 +295,10 @@ export const services = [
       },
     ],
     faqs: [
+      {
+        q: '¿Cuánto cuesta una auditoría SEO en Sevilla?',
+        a: 'Mi auditoría SEO básica cuesta desde 99 €: reviso tu web, tu Search Console y tu ficha de Google y te explico las mejoras en una videollamada. Si prefieres que me encargue de todo, el plan SEO mensual es desde 149 €/mes.',
+      },
       {
         q: '¿En cuánto tiempo se notan los resultados?',
         a: 'Los arreglos técnicos (indexación, errores, velocidad) suelen notarse en unas semanas, cuando Google vuelve a rastrear la web. Subir posiciones en búsquedas competidas es un trabajo de meses que depende también del contenido y de la competencia.',
