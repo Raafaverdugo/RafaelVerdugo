@@ -28,8 +28,12 @@ export default function ProjectCarousel({ projects, labels, startIndex = 0 }) {
     const track = trackRef.current
     if (!track) return
     let frame = 0
+    let settleTimer = 0
+    let nearest = startIndex
+    let nearestDist = 0
     const update = () => {
       frame = 0
+      const gap = parseFloat(getComputedStyle(track).columnGap) || 0
       const center = track.scrollLeft + track.clientWidth / 2
       let best = 0
       let bestDist = Infinity
@@ -38,7 +42,7 @@ export default function ProjectCarousel({ projects, labels, startIndex = 0 }) {
         const dist = Math.abs(delta)
         // Posición relativa al centro en "tarjetas" (−1 izquierda, 0 centro, 1 derecha):
         // el CSS la usa para girar e inclinar cada tarjeta en 3D mientras se desliza
-        const o = Math.max(-2, Math.min(2, delta / (card.clientWidth + 22)))
+        const o = Math.max(-2, Math.min(2, delta / (card.clientWidth + gap)))
         card.style.setProperty('--o', o.toFixed(3))
         card.style.setProperty('--abs', Math.abs(o).toFixed(3))
         card.style.zIndex = String(10 - Math.round(Math.abs(o) * 4))
@@ -47,10 +51,21 @@ export default function ProjectCarousel({ projects, labels, startIndex = 0 }) {
           best = i
         }
       })
+      nearest = best
+      nearestDist = bestDist
       setActive(best)
+    }
+    // Cuando el scroll se detiene, si alguna tarjeta ha quedado a medio camino
+    // (trackpad, inercia, scroll-snap que no termina de encajar), la centramos
+    const settle = () => {
+      settleTimer = 0
+      update()
+      if (nearestDist > 2) goTo(nearest)
     }
     const onScroll = () => {
       if (!frame) frame = requestAnimationFrame(update)
+      clearTimeout(settleTimer)
+      settleTimer = setTimeout(settle, 160)
     }
     // Empieza en la tarjeta central para que haya proyectos a ambos lados
     const first = track.children[startIndex]
@@ -62,8 +77,9 @@ export default function ProjectCarousel({ projects, labels, startIndex = 0 }) {
       track.removeEventListener('scroll', onScroll)
       window.removeEventListener('resize', onScroll)
       if (frame) cancelAnimationFrame(frame)
+      clearTimeout(settleTimer)
     }
-  }, [startIndex])
+  }, [startIndex, goTo])
 
   // Avance automático: solo si se ve en pantalla, sin hover/foco y sin "reducir movimiento"
   useEffect(() => {

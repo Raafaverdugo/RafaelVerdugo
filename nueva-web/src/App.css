@@ -905,6 +905,7 @@
 }
 
 .carousel-track {
+  position: relative;
   perspective: 1500px;
   perspective-origin: 50% 45%;
 }
@@ -918,6 +919,7 @@
   --depth: -220px;
   flex: 0 0 var(--slide-w);
   scroll-snap-align: center;
+  scroll-snap-stop: always;
   display: flex;
   flex-direction: column;
   transform-origin: 50% 50%;
