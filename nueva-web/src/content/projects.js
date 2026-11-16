@@ -8,7 +8,7 @@ export const projects = [
     path: '/proyectos/enreo-corbatas/',
     name: 'Enreo Corbatas',
     url: 'https://enreocorbatas.com/',
-    image: '/images/Cap_enreo-800.webp',
+    image: '/images/Cap_enreo-1600.webp',
     imageAlt: 'Página de inicio de la tienda online de Enreo Corbatas, corbatas de seda de diseño propio hechas a mano',
     category: 'Tienda online con WordPress y WooCommerce',
     seo: {

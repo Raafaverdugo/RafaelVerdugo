@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './App.css'
 import { useScrollReveal, useStaggerReveal } from './hooks/useScrollReveal'
 import SiteFooter from './components/SiteFooter.jsx'
+import ProjectCarousel from './components/ProjectCarousel.jsx'
 
 // ── Traducciones ──────────────────────────────────────────────────────────────
 const translations = {
@@ -50,6 +51,10 @@ const translations = {
       verProyecto: 'Ver web',
       verCaso: 'Ver caso de estudio',
       verTodos: 'Ver todos los proyectos',
+      region: 'Proyectos destacados',
+      prev: 'Proyecto anterior',
+      next: 'Proyecto siguiente',
+      goTo: 'Ir al proyecto',
     },
     softwares: {
       verMas: 'Ver software a medida',
@@ -64,6 +69,7 @@ const translations = {
     projects: [
       { title: 'I.E.S. Margarita Salas', image: '/images/Cap_MargaritaSalas-800.webp', description: 'Sitio informativo para un centro educativo con arquitectura clara, navegación sencilla y foco en la matriculación.', url: 'https://ies-margarita-salas.vercel.app/', caseStudy: '/proyectos/ies-margarita-salas/' },
       { title: 'Licencia de Armas Fácil', image: '/images/Cap_licencia-800.webp', description: 'Plataforma de formación y venta online con una propuesta visual directa y una experiencia pensada para convertir.', url: 'https://licenciadearmasfacil.es/', caseStudy: '/proyectos/licencia-de-armas-facil/' },
+      { title: 'Enreo Corbatas', image: '/images/Cap_enreo-1600.webp', description: 'Tienda online en WordPress y WooCommerce para una marca de corbatas de seda hechas a mano, que sus dueños gestionan sin depender de nadie.', url: 'https://enreocorbatas.com/', caseStudy: '/proyectos/enreo-corbatas/' },
       { title: 'FXPro Trading Course', image: '/images/Cap_fxpro-800.webp', description: 'Proyecto comercial para un infoproducto con una estructura clara para presentar valor, autoridad y llamada a la acción.', url: 'https://programafxpro.infinityfreeapp.com/' },
       { title: 'The Shelter', image: '/images/Cap_TheShelter-800.webp', description: 'Plataforma completa para protectora con gestión de animales, solicitudes y panel de administración.', url: 'https://theshelter.es/', caseStudy: '/proyectos/the-shelter/' },
     ],
@@ -140,6 +146,10 @@ const translations = {
       verProyecto: 'View site',
       verCaso: 'Read case study',
       verTodos: 'See all projects',
+      region: 'Featured projects',
+      prev: 'Previous project',
+      next: 'Next project',
+      goTo: 'Go to project',
     },
     softwares: {
       verMas: 'See custom software',
@@ -154,6 +164,7 @@ const translations = {
     projects: [
       { title: 'I.E.S. Margarita Salas', image: '/images/Cap_MargaritaSalas-800.webp', description: 'Informational site for a school with a clear architecture, simple navigation and a focus on enrollment.', url: 'https://ies-margarita-salas.vercel.app/', caseStudy: '/proyectos/ies-margarita-salas/' },
       { title: 'Licencia de Armas Fácil', image: '/images/Cap_licencia-800.webp', description: 'Online training and sales platform with a direct visual proposal and an experience designed to convert.', url: 'https://licenciadearmasfacil.es/', caseStudy: '/proyectos/licencia-de-armas-facil/' },
+      { title: 'Enreo Corbatas', image: '/images/Cap_enreo-1600.webp', description: 'WordPress and WooCommerce online store for a brand of handmade silk ties, which the owners manage on their own.', url: 'https://enreocorbatas.com/', caseStudy: '/proyectos/enreo-corbatas/' },
       { title: 'FXPro Trading Course', image: '/images/Cap_fxpro-800.webp', description: 'Commercial project for a digital product with a clear structure to present value, authority and a call to action.', url: 'https://programafxpro.infinityfreeapp.com/' },
       { title: 'The Shelter', image: '/images/Cap_TheShelter-800.webp', description: 'Full platform for an animal shelter with animal management, applications and an admin panel.', url: 'https://theshelter.es/', caseStudy: '/proyectos/the-shelter/' },
     ],
@@ -207,7 +218,7 @@ function App() {
   const servicesTitleRef = useScrollReveal()
   const servicesGridRef  = useStaggerReveal(120)
   const portfolioTitleRef  = useScrollReveal()
-  const projectsGridRef    = useStaggerReveal(130)
+  const projectsGridRef    = useScrollReveal()
   const softwaresTitleRef  = useScrollReveal()
   const softwaresGridRef   = useStaggerReveal(120)
   const processTitleRef    = useScrollReveal()
@@ -379,29 +390,8 @@ function App() {
             <h2>{t.portfolio.h2}</h2>
           </div>
 
-          <div ref={projectsGridRef} className="project-grid stagger-children">
-            {t.projects.map((project) => (
-              <article className="project-card" key={project.title}>
-                <img
-                  src={project.image}
-                  alt={`Captura de la web ${project.title} diseñada por Rafael Verdugo`}
-                  width="800"
-                  height="500"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <div className="project-body">
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                  <div className="project-links">
-                    {project.caseStudy ? <a href={project.caseStudy}>{t.portfolio.verCaso}</a> : null}
-                    <a href={project.url} target="_blank" rel="noreferrer">
-                      {t.portfolio.verProyecto}
-                    </a>
-                  </div>
-                </div>
-              </article>
-            ))}
+          <div ref={projectsGridRef} className="reveal">
+            <ProjectCarousel projects={t.projects} labels={t.portfolio} startIndex={2} />
           </div>
         </section>
 
