@@ -919,7 +919,17 @@
   --depth: -220px;
   flex: 0 0 var(--slide-w);
   scroll-snap-align: center;
-  scroll-snap-stop: always;
+  display: flex;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.carousel-slide.is-active {
+  cursor: default;
+}
+
+.carousel-card {
+  flex: 1;
   display: flex;
   flex-direction: column;
   transform-origin: 50% 50%;
@@ -929,15 +939,13 @@
     rotateY(calc(var(--o) * var(--turn)));
   opacity: calc(1 - var(--abs) * 0.42);
   filter: brightness(calc(1 - var(--abs) * 0.3)) saturate(calc(1 - var(--abs) * 0.45));
-  cursor: pointer;
   will-change: transform;
   transition:
     border-color 0.5s ease,
     box-shadow 0.5s ease;
 }
 
-.carousel-slide.is-active {
-  cursor: default;
+.carousel-slide.is-active .carousel-card {
   border-color: rgba(211, 155, 99, 0.38);
   box-shadow:
     0 28px 60px rgba(0, 0, 0, 0.36),
@@ -945,7 +953,7 @@
     0 0 48px rgba(211, 155, 99, 0.1);
 }
 
-.carousel-slide .project-body {
+.carousel-card .project-body {
   flex: 1;
 }
 

@@ -10,12 +10,17 @@ export default function ProjectCarousel({ projects, labels, startIndex = 0 }) {
   const [active, setActive] = useState(startIndex)
   const [autoplay, setAutoplay] = useState(true)
   const pausedRef = useRef(false)
+  // Destino de una navegación en curso (flechas, puntos, autoplay): mientras dura el
+  // desplazamiento suave, el "recentrado" no debe devolver el carrusel a la tarjeta de origen
+  const targetRef = useRef(null)
 
   const goTo = useCallback((index) => {
     const track = trackRef.current
     if (!track) return
     const total = track.children.length
-    const target = track.children[(index + total) % total]
+    const i = ((index % total) + total) % total
+    const target = track.children[i]
+    targetRef.current = { index: i, until: performance.now() + 3000 }
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     track.scrollTo({
       left: target.offsetLeft - (track.clientWidth - target.clientWidth) / 2,
@@ -60,12 +65,23 @@ export default function ProjectCarousel({ projects, labels, startIndex = 0 }) {
     const settle = () => {
       settleTimer = 0
       update()
+      const target = targetRef.current
+      if (target) {
+        // Navegación propia en curso: esperamos a que llegue a su destino
+        if (nearest === target.index && nearestDist <= 2) targetRef.current = null
+        else if (performance.now() < target.until) {
+          settleTimer = setTimeout(settle, 200)
+          return
+        } else {
+          targetRef.current = null
+        }
+      }
       if (nearestDist > 2) goTo(nearest)
     }
     const onScroll = () => {
       if (!frame) frame = requestAnimationFrame(update)
       clearTimeout(settleTimer)
-      settleTimer = setTimeout(settle, 160)
+      settleTimer = setTimeout(settle, 250)
     }
     // Empieza en la tarjeta central para que haya proyectos a ambos lados
     const first = track.children[startIndex]
@@ -101,6 +117,12 @@ export default function ProjectCarousel({ projects, labels, startIndex = 0 }) {
   }, [autoplay, active, goTo])
 
   const stopAutoplay = () => setAutoplay(false)
+  // Paso relativo: si ya hay un desplazamiento en marcha, cuenta desde su destino
+  // (dos clics rápidos avanzan dos tarjetas)
+  const step = (dir) => {
+    const base = targetRef.current ? targetRef.current.index : active
+    goTo(base + dir)
+  }
 
   return (
     <div
@@ -115,19 +137,24 @@ export default function ProjectCarousel({ projects, labels, startIndex = 0 }) {
       onPointerDown={stopAutoplay}
       onWheel={stopAutoplay}
       onKeyDown={(e) => {
-        if (e.key === 'ArrowRight') { e.preventDefault(); stopAutoplay(); goTo(active + 1) }
-        if (e.key === 'ArrowLeft') { e.preventDefault(); stopAutoplay(); goTo(active - 1) }
+        if (e.key === 'ArrowRight') { e.preventDefault(); stopAutoplay(); step(1) }
+        if (e.key === 'ArrowLeft') { e.preventDefault(); stopAutoplay(); step(-1) }
       }}
     >
       <div className="carousel-track" ref={trackRef}>
         {projects.map((project, i) => (
-          <article
-            className={`project-card carousel-slide${i === active ? ' is-active' : ''}`}
+          // El marco (.carousel-slide) no se transforma: es el punto de parada del
+          // scroll-snap. Solo la tarjeta interior gira en 3D; si girase el marco, el
+          // navegador movería los puntos de parada mientras se desliza.
+          <div
+            className={`carousel-slide${i === active ? ' is-active' : ''}`}
             key={project.title}
+            role="group"
             aria-roledescription="diapositiva"
             aria-label={`${i + 1} / ${projects.length}: ${project.title}`}
             onClick={() => { if (i !== active) { stopAutoplay(); goTo(i) } }}
           >
+          <article className="project-card carousel-card">
             <div className="carousel-media">
               <img
                 src={project.image}
@@ -151,6 +178,7 @@ export default function ProjectCarousel({ projects, labels, startIndex = 0 }) {
               </div>
             </div>
           </article>
+          </div>
         ))}
       </div>
 
@@ -159,7 +187,7 @@ export default function ProjectCarousel({ projects, labels, startIndex = 0 }) {
           type="button"
           className="carousel-arrow"
           aria-label={labels.prev}
-          onClick={() => { stopAutoplay(); goTo(active - 1) }}
+          onClick={() => { stopAutoplay(); step(-1) }}
         >
           <span aria-hidden="true">←</span>
         </button>
@@ -179,7 +207,7 @@ export default function ProjectCarousel({ projects, labels, startIndex = 0 }) {
           type="button"
           className="carousel-arrow"
           aria-label={labels.next}
-          onClick={() => { stopAutoplay(); goTo(active + 1) }}
+          onClick={() => { stopAutoplay(); step(1) }}
         >
           <span aria-hidden="true">→</span>
         </button>
