@@ -131,7 +131,7 @@ export const routes = [
     path: '/proyectos/',
     file: fileFor('/proyectos/'),
     element: <ProjectsIndex />,
-    lastmod: '2026-10-05',
+    lastmod: '2026-11-16',
     head: () =>
       buildHead({
         title: 'Proyectos de diseño y desarrollo web | Rafael Verdugo',
@@ -156,7 +156,7 @@ export const routes = [
     path: project.path,
     file: fileFor(project.path),
     element: <ProjectPage project={project} />,
-    lastmod: '2026-10-05',
+    lastmod: project.lastmod || '2026-10-05',
     head: () =>
       buildHead({
         ...project.seo,

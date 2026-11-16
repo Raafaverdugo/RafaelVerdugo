@@ -86,6 +86,7 @@ export const services = [
   },
   {
     slug: 'tiendas-online-sevilla',
+    lastmod: '2026-11-16',
     priceFrom: 299,
     price: 'Tienda online desde 299 €',
     maintenanceFrom: 69,
@@ -116,7 +117,7 @@ export const services = [
         ],
       },
       {
-        p: 'Un ejemplo real es [Licencia de Armas Fácil](/proyectos/licencia-de-armas-facil/), una plataforma de formación con venta online, pago único y área privada para los alumnos.',
+        p: 'Dos ejemplos reales: [Enreo Corbatas](/proyectos/enreo-corbatas/), una tienda en WordPress y WooCommerce para una marca de corbatas hechas a mano, y [Licencia de Armas Fácil](/proyectos/licencia-de-armas-facil/), una plataforma de formación con venta online, pago único y área privada para los alumnos.',
       },
       { h2: 'Lo que cuido en cada tienda' },
       {
@@ -147,7 +148,7 @@ export const services = [
         a: 'Tú gestionas los pedidos desde el panel de la tienda; yo te dejo todo configurado y te enseño a usarlo. Si algo falla o quieres una mejora, me escribes.',
       },
     ],
-    relatedProjects: ['licencia-de-armas-facil', 'the-shelter'],
+    relatedProjects: ['enreo-corbatas', 'licencia-de-armas-facil', 'the-shelter'],
     relatedPosts: ['como-crear-una-tienda-online', 'cuanto-cuesta-una-pagina-web-en-sevilla', 'landing-page-o-web-corporativa'],
   },
   {

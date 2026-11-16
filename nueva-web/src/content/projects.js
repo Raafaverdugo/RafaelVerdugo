@@ -3,6 +3,57 @@
 
 export const projects = [
   {
+    slug: 'enreo-corbatas',
+    lastmod: '2026-11-16',
+    path: '/proyectos/enreo-corbatas/',
+    name: 'Enreo Corbatas',
+    url: 'https://enreocorbatas.com/',
+    image: '/images/Cap_enreo-800.webp',
+    imageAlt: 'Página de inicio de la tienda online de Enreo Corbatas, corbatas de seda de diseño propio hechas a mano',
+    category: 'Tienda online con WordPress y WooCommerce',
+    seo: {
+      title: 'Enreo Corbatas: tienda online con WooCommerce | Proyecto',
+      description:
+        'Caso de estudio de Enreo Corbatas: tienda online en WordPress y WooCommerce para una marca de corbatas de seda hechas a mano, con su opinión real.',
+    },
+    summary:
+      'Tienda online para una marca de corbatas de seda de diseño propio y hechas a mano, un negocio llevado por dos hermanos.',
+    facts: [
+      { label: 'Tipo', value: 'Tienda online (WordPress + WooCommerce)' },
+      { label: 'Sector', value: 'Moda y complementos' },
+      { label: 'Web', value: 'enreocorbatas.com' },
+    ],
+    blocks: [
+      { h2: 'El proyecto' },
+      {
+        p: 'Enreo Corbatas es una marca de corbatas originales de seda, de diseño propio y hechas a mano, que llevan dos hermanos. Sus diseños tienen un estilo muy reconocible, con guiños al sur y mucho color, y cambian a lo largo del año, con algunas piezas en unidades limitadas.',
+      },
+      {
+        p: 'Necesitaban una tienda online propia para vender sus corbatas por internet, que transmitiera la personalidad de la marca y que ellos mismos pudieran gestionar en el día a día.',
+      },
+      { h2: 'Qué construí' },
+      {
+        ul: [
+          '**Tienda online con WordPress y WooCommerce**, con catálogo de productos, carrito y proceso de compra.',
+          '**Portada de marca** con su lema, «¿Quién dijo que vestir con corbata no era divertido?», y accesos directos a la tienda y a los productos destacados.',
+          '**Fichas de producto** para cada diseño, con su precio visible.',
+          '**Formación para que gestionen la tienda ellos mismos**: subir productos, hacer cambios y resolver dudas sin depender de nadie.',
+        ],
+      },
+      { h2: 'Enfoque de diseño' },
+      {
+        p: 'Una estética elegante pero desenfadada, como sus corbatas: tipografía con carácter, colores granate y crema, y fotos del producto como protagonistas. Los puntos fuertes de la marca (seda 100 %, diseños exclusivos y envío desde España) se ven nada más entrar.',
+      },
+      { h2: 'Lo que dice el cliente' },
+      {
+        note: '«Rafa ha sido muy profesional. Nos hizo nuestra web en tiempo y forma y siempre dispuesto a hacer los cambios necesarios en la web y con muy buena actitud y predisposición siempre. Aparte te explica cómo gestionar tu mismo los cambios y resuelve dudas cuando han hecho falta. 100% recomendable sin duda.» Ángel, de Enreo Corbatas (reseña en Google).',
+      },
+      {
+        p: '¿Quieres vender tus productos por internet? Mira el servicio de [diseño de tiendas online en Sevilla](/tiendas-online-sevilla/).',
+      },
+    ],
+  },
+  {
     slug: 'the-shelter',
     path: '/proyectos/the-shelter/',
     name: 'The Shelter',
