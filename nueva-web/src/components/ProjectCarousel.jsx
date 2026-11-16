@@ -34,7 +34,14 @@ export default function ProjectCarousel({ projects, labels, startIndex = 0 }) {
       let best = 0
       let bestDist = Infinity
       Array.from(track.children).forEach((card, i) => {
-        const dist = Math.abs(card.offsetLeft + card.clientWidth / 2 - center)
+        const delta = card.offsetLeft + card.clientWidth / 2 - center
+        const dist = Math.abs(delta)
+        // Posición relativa al centro en "tarjetas" (−1 izquierda, 0 centro, 1 derecha):
+        // el CSS la usa para girar e inclinar cada tarjeta en 3D mientras se desliza
+        const o = Math.max(-2, Math.min(2, delta / (card.clientWidth + 22)))
+        card.style.setProperty('--o', o.toFixed(3))
+        card.style.setProperty('--abs', Math.abs(o).toFixed(3))
+        card.style.zIndex = String(10 - Math.round(Math.abs(o) * 4))
         if (dist < bestDist) {
           bestDist = dist
           best = i

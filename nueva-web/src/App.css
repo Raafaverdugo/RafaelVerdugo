@@ -904,27 +904,37 @@
   display: none;
 }
 
+.carousel-track {
+  perspective: 1500px;
+  perspective-origin: 50% 45%;
+}
+
+/* Efecto 3D tipo "coverflow": --o es la distancia al centro en tarjetas
+   (la calcula el componente en cada frame de scroll), así el giro sigue al dedo */
 .carousel-slide {
+  --o: 0;
+  --abs: 0;
+  --turn: -38deg;
+  --depth: -220px;
   flex: 0 0 var(--slide-w);
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
-  opacity: 0.45;
-  transform: scale(0.9);
-  filter: saturate(0.6);
+  transform-origin: 50% 50%;
+  transform:
+    translateX(calc(var(--o) * -64px))
+    translateZ(calc(var(--abs) * var(--depth)))
+    rotateY(calc(var(--o) * var(--turn)));
+  opacity: calc(1 - var(--abs) * 0.42);
+  filter: brightness(calc(1 - var(--abs) * 0.3)) saturate(calc(1 - var(--abs) * 0.45));
   cursor: pointer;
+  will-change: transform;
   transition:
-    opacity 0.5s cubic-bezier(0.22, 0.61, 0.36, 1),
-    transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1),
-    filter 0.5s cubic-bezier(0.22, 0.61, 0.36, 1),
     border-color 0.5s ease,
     box-shadow 0.5s ease;
 }
 
 .carousel-slide.is-active {
-  opacity: 1;
-  transform: none;
-  filter: none;
   cursor: default;
   border-color: rgba(211, 155, 99, 0.38);
   box-shadow:
@@ -954,9 +964,6 @@
     transform: scale(1.04);
   }
 
-  .carousel-slide:not(.is-active):hover {
-    opacity: 0.7;
-  }
 }
 
 .carousel-controls {
@@ -1030,11 +1037,17 @@
   }
 
   .carousel-slide {
-    transform: scale(0.94);
+    --turn: -26deg;
+    --depth: -120px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .carousel-slide {
+    --turn: 0deg;
+    --depth: -60px;
+  }
+
   .carousel-slide,
   .carousel-media img,
   .carousel-dot {
