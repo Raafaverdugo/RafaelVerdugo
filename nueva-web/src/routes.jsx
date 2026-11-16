@@ -186,7 +186,7 @@ export const routes = [
     path: '/blog/',
     file: fileFor('/blog/'),
     element: <BlogIndex />,
-    lastmod: '2026-10-05',
+    lastmod: posts.map((p) => p.dateModified || p.datePublished).sort().at(-1),
     head: () =>
       buildHead({
         title: 'Blog de diseño web y SEO para negocios | Rafael Verdugo',

@@ -3,6 +3,163 @@
 
 export const posts = [
   {
+    slug: 'como-anunciarse-en-google-maps',
+    path: '/blog/como-anunciarse-en-google-maps/',
+    title: 'Cómo anunciarse en Google Maps: gratis y con Google Ads',
+    seo: {
+      title: 'Cómo anunciarse en Google Maps: gratis y con Google Ads',
+      description: 'Cómo anunciar tu negocio en Google Maps: la opción gratuita con tu ficha de Google y los anuncios de pago con Google Ads, qué tipos hay y cómo empezar.',
+    },
+    excerpt:
+      'Las dos formas de anunciar tu negocio en Google Maps, la gratuita y la de pago, qué tipos de anuncio existen y por cuál te conviene empezar.',
+    datePublished: '2026-11-16',
+    readingMinutes: 6,
+    blocks: [
+      {
+        p: 'Cuando alguien busca un negocio en Google Maps, ve dos tipos de resultados: las **fichas gratuitas** de los negocios y, a veces, **anuncios** marcados como «Patrocinado». Puedes estar en los dos. Te explico cómo funciona cada uno y por dónde empezar si tienes un negocio local.',
+      },
+      { h2: 'Opción 1: anunciarte gratis con tu ficha de Google' },
+      {
+        p: 'La forma gratuita de salir en Google Maps es tener una **ficha de Google Business Profile** creada, verificada y completa. No es un anuncio como tal, pero es lo que hace que tu negocio aparezca en el mapa cuando alguien busca lo que ofreces en tu zona. Es gratis y, además, es el requisito para la mayoría de los anuncios de pago.',
+      },
+      {
+        p: 'Explico el proceso completo en [cómo aparecer en Google Maps](/blog/como-aparecer-en-google-maps/). En resumen: crea la ficha, verifícala, rellena servicios, horarios y fotos reales, y consigue reseñas de clientes.',
+      },
+      { h2: 'Opción 2: anuncios de pago con Google Ads' },
+      {
+        p: 'Si quieres salir **destacado** por encima de las fichas gratuitas, tienes que anunciarte con **Google Ads**. No existe una plataforma separada «de Google Maps»: los anuncios de Maps se gestionan desde Google Ads, vinculando tu ficha de empresa a la cuenta.',
+      },
+      { h3: 'Qué tipos de anuncio aparecen en Google Maps' },
+      {
+        ul: [
+          '**Anuncios en los resultados de búsqueda del mapa**: aparecen arriba del todo cuando alguien busca en Maps, con la etiqueta «Patrocinado».',
+          '**Marcadores promocionados**: tu negocio aparece en el mapa con un icono destacado mientras la gente explora la zona o navega.',
+          '**Sugerencias al escribir**: en la aplicación del móvil, tu negocio puede salir como sugerencia mientras el usuario escribe su búsqueda.',
+          '**Anuncios en fichas de otros negocios**: en algunos sectores, tu anuncio puede aparecer dentro de la página de otro establecimiento.',
+        ],
+      },
+      {
+        note: 'Según la ayuda de Google Ads, hoy no se pueden publicar anuncios exclusivamente en Google Maps: las campañas se muestran también en otros sitios de Google, como el buscador.',
+      },
+      { h3: 'Qué necesitas para anunciarte en Maps' },
+      {
+        ol: [
+          'Una **ficha de Google Business verificada**.',
+          'Una **cuenta de Google Ads** vinculada a esa ficha.',
+          'Los **recursos de ubicación** activados en la cuenta, que son los que añaden tu dirección y la distancia a tus anuncios.',
+          'Una **campaña compatible**, como una de búsqueda o una de Máximo rendimiento con objetivo de visitas a tienda, segmentada a tu zona.',
+        ],
+      },
+      {
+        cta: {
+          title: '¿Quieres salir en Google Maps sin pagar de más?',
+          text: 'Reviso tu ficha y te digo si te conviene anunciarte o si primero hay que mejorarla.',
+        },
+      },
+      { h2: 'Cuánto cuesta anunciarse en Google Maps' },
+      {
+        p: 'No hay una tarifa fija. Tú decides un **presupuesto diario** y Google cobra **por clic o por visualización**, según el tipo de campaña. El precio de cada clic depende de tu sector y de cuánta competencia haya en tu zona: no cuesta lo mismo anunciar un cerrajero urgente que una tienda de barrio. Lo bueno es que puedes empezar con poco y subir si funciona.',
+      },
+      { h2: '¿Gratis o de pago? Por dónde empezar' },
+      {
+        ul: [
+          '**Empieza siempre por la ficha gratuita.** Si tu ficha está a medias o sin reseñas, el anuncio llevará a la gente a una ficha que no convence, y pagarás clics que no se convierten.',
+          '**Añade anuncios si necesitas clientes ya**, por ejemplo al abrir un negocio o en una temporada fuerte, mientras tu ficha gana reseñas y posiciones de forma natural.',
+          '**No esperes que el anuncio mejore tu posición gratuita**: son cosas separadas. Si dejas de pagar, el anuncio desaparece y te quedas con lo que hayas trabajado en la ficha.',
+        ],
+      },
+      {
+        p: 'Si dudas entre invertir en anuncios o en posicionamiento, lo comparo en [SEO o Google Ads](/blog/seo-o-google-ads/), y si quieres ayuda con tu ficha y tu posicionamiento local, mira el servicio de [posicionamiento web en Sevilla](/seo-sevilla/).',
+      },
+      { h2: 'Preguntas frecuentes' },
+      { h3: '¿Se puede anunciar un negocio en Google Maps gratis?' },
+      {
+        p: 'Sí, en el sentido de aparecer en el mapa: con una ficha de Google Business verificada y completa, tu negocio sale en Maps sin pagar nada. Para salir destacado como «Patrocinado» hay que usar Google Ads.',
+      },
+      { h3: '¿Necesito tener local para anunciarme en Google Maps?' },
+      {
+        p: 'No para tener ficha: los negocios de servicios pueden definir una zona en lugar de una dirección. Algunos formatos de anuncio, como los marcadores en el mapa, están pensados sobre todo para negocios con una ubicación física que se pueda visitar.',
+      },
+      { h2: 'Fuentes oficiales' },
+      {
+        ul: [
+          '[Ayuda de Google Ads: cómo anunciarse en Google Maps](https://support.google.com/google-ads/answer/16388390?hl=es)',
+          '[Ayuda de Google Ads: acerca de los recursos de ubicación](https://support.google.com/google-ads/answer/2404182?hl=es)',
+          '[Ayuda de Google Business Profile: consejos para mejorar el posicionamiento local](https://support.google.com/business/answer/7091?hl=es)',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'disenador-web-freelance-o-agencia-en-sevilla',
+    path: '/blog/disenador-web-freelance-o-agencia-en-sevilla/',
+    title: 'Diseñador web freelance o agencia en Sevilla: qué te conviene',
+    seo: {
+      title: 'Diseñador web freelance o agencia en Sevilla: qué te conviene',
+      description: 'Diferencias entre contratar a un diseñador web freelance o a una agencia en Sevilla: precio, trato, plazos y riesgos, y cómo elegir según tu negocio.',
+    },
+    excerpt:
+      'Qué cambia entre trabajar con un diseñador web freelance y con una agencia en Sevilla, cuándo encaja cada uno y qué comprobar antes de decidir.',
+    datePublished: '2026-11-16',
+    readingMinutes: 5,
+    blocks: [
+      {
+        p: 'Si tienes un negocio en Sevilla y necesitas una web, tarde o temprano te toca elegir: **¿un diseñador web freelance o una agencia?** Yo trabajo como freelance, así que tenlo en cuenta al leer, pero voy a intentar ser justo: hay casos en los que una agencia te encaja mejor.',
+      },
+      { h2: 'Las diferencias principales' },
+      { h3: 'Trato y comunicación' },
+      {
+        p: 'Con un freelance hablas siempre con la persona que diseña y programa tu web. No hay intermediarios ni mensajes que se pierden entre departamentos. En una agencia sueles tener un responsable de cuenta y un equipo detrás, lo que da más estructura pero también más capas.',
+      },
+      { h3: 'Precio' },
+      {
+        p: 'Un freelance tiene menos costes fijos (oficina, comerciales, gestores de proyecto), y eso suele notarse en el presupuesto. Para una web corporativa de un negocio local la diferencia puede ser grande. En mi caso, una [web corporativa](/paginas-web-empresas-sevilla/) parte desde 249 €; tienes todos mis precios en [cuánto cuesta una página web](/blog/cuanto-cuesta-una-pagina-web-en-sevilla/).',
+      },
+      { h3: 'Capacidad y plazos' },
+      {
+        p: 'Aquí la agencia gana: tiene más gente y puede llevar proyectos grandes o varios a la vez. Un freelance tiene una capacidad limitada, así que pregunta siempre el plazo de entrega y cuándo puede empezar.',
+      },
+      { h3: 'Especialidades' },
+      {
+        p: 'Una agencia puede ofrecerte en un mismo sitio diseño, redes sociales, fotografía, publicidad y vídeo. Un freelance suele estar centrado en lo suyo; si necesitas algo más, a veces trabaja con otros profesionales de confianza.',
+      },
+      {
+        cta: {
+          title: '¿Buscas diseñador web en Sevilla?',
+          text: 'Cuéntame tu proyecto y te digo con sinceridad si encaja conmigo, con precio y plazo cerrados.',
+        },
+      },
+      { h2: 'Cuándo te conviene un freelance' },
+      {
+        ul: [
+          'Eres un **negocio local, una pyme o un profesional** que necesita una web corporativa, una landing page o una [tienda online](/tiendas-online-sevilla/) de tamaño razonable.',
+          'Quieres **hablar siempre con la misma persona** y que las dudas se resuelvan rápido.',
+          'Tienes un **presupuesto ajustado** y prefieres que se vaya al trabajo y no a la estructura.',
+        ],
+      },
+      { h2: 'Cuándo te conviene una agencia' },
+      {
+        ul: [
+          'El proyecto es **grande**: muchas secciones, varios idiomas, integraciones complejas o plazos muy cortos.',
+          'Necesitas **muchos servicios a la vez** y de forma continua: campañas, redes, contenidos, fotografía…',
+          'Tu empresa necesita que **siempre haya alguien disponible**, aunque una persona del equipo esté de vacaciones.',
+        ],
+      },
+      { h2: 'Qué comprobar elijas a quien elijas' },
+      {
+        ul: [
+          '**Trabajos reales** que puedas visitar, no solo capturas.',
+          '**Opiniones verificables**, por ejemplo en su ficha de Google.',
+          'Que **el dominio y la web queden a tu nombre** y que puedas cambiar de proveedor si quieres.',
+          'Qué incluye exactamente el precio y **cuánto cuesta el mantenimiento** después.',
+        ],
+      },
+      {
+        p: 'Tienes una lista completa de preguntas en [qué preguntar antes de contratar a un diseñador web](/blog/que-preguntar-antes-de-contratar-un-disenador-web/). Y si quieres ver cómo trabajo yo, echa un vistazo a mis [proyectos](/proyectos/) o [escríbeme](/contacto/).',
+      },
+    ],
+  },
+  {
     slug: 'que-debe-tener-una-landing-page',
     path: '/blog/que-debe-tener-una-landing-page/',
     title: 'Qué debe tener una landing page para conseguir clientes',
@@ -952,7 +1109,7 @@ export const posts = [
     excerpt:
       'Cómo crear, verificar y completar tu ficha de Google Business para que tu negocio salga en Google Maps y en las búsquedas de tu zona.',
     datePublished: '2026-10-18',
-    dateModified: '2026-11-04',
+    dateModified: '2026-11-16',
     readingMinutes: 7,
     blocks: [
       {
@@ -1039,6 +1196,9 @@ export const posts = [
           '**Qué no hace**: no mejora tu posición gratuita. Si dejas de pagar, el anuncio desaparece y te quedas con lo que hayas conseguido con la ficha.',
           '**Consejo**: no empieces a pagar con una ficha a medias. Completa primero la ficha y consigue tus primeras reseñas; el anuncio funcionará mejor.',
         ],
+      },
+      {
+        p: 'Explico los tipos de anuncio, los requisitos y el coste en [cómo anunciarse en Google Maps](/blog/como-anunciarse-en-google-maps/).',
       },
       { h2: 'Errores que te pueden costar la ficha' },
       {
@@ -1243,6 +1403,7 @@ export const posts = [
     excerpt:
       'Qué es cada una, para qué sirve, cuándo te conviene y por qué muchas veces la respuesta es «las dos, pero no a la vez».',
     datePublished: '2026-10-05',
+    dateModified: '2026-11-16',
     readingMinutes: 5,
     blocks: [
       {
@@ -1388,9 +1549,9 @@ export const posts = [
   {
     slug: 'cuanto-cuesta-una-pagina-web-en-sevilla',
     path: '/blog/cuanto-cuesta-una-pagina-web-en-sevilla/',
-    title: '¿Cuánto cuesta una página web en 2026?',
+    title: '¿Cuánto cuesta una página web en Sevilla? Precios 2026',
     seo: {
-      title: '¿Cuánto cuesta una página web en 2026? Precios desde 199 €',
+      title: '¿Cuánto cuesta una página web en Sevilla? Precios 2026',
       description:
         'Cuánto cuesta una página web: landing page desde 199 €, web corporativa desde 249 €, tienda online desde 299 €. Qué influye en el precio.',
     },
@@ -1422,7 +1583,7 @@ export const posts = [
       },
       { h2: 'Precio de una página web en Sevilla' },
       {
-        p: 'Si tu negocio está en Sevilla o alrededores, los precios son los mismos: **web corporativa desde 249 €**, **landing page desde 199 €** y **tienda online desde 299 €**. La diferencia es que, si lo prefieres, podemos vernos en persona para hablar del proyecto. Puedes ver qué incluye una web en [páginas web para empresas en Sevilla](/paginas-web-empresas-sevilla/).',
+        p: 'Si tu negocio está en Sevilla o alrededores, los precios son los mismos: **web corporativa desde 249 €**, **landing page desde 199 €** y **tienda online desde 299 €**. La diferencia es que, si lo prefieres, podemos vernos en persona para hablar del proyecto. Puedes ver qué incluye una web en [páginas web para empresas en Sevilla](/paginas-web-empresas-sevilla/), y si dudas entre un profesional independiente y una empresa, en [diseñador web freelance o agencia en Sevilla](/blog/disenador-web-freelance-o-agencia-en-sevilla/).',
       },
       { h2: 'Qué hace que el precio suba' },
       {

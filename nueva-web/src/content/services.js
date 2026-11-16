@@ -4,6 +4,7 @@
 export const services = [
   {
     slug: 'paginas-web-empresas-sevilla',
+    lastmod: '2026-11-16',
     priceFrom: 249,
     price: 'Web corporativa desde 249 €',
     maintenanceFrom: 49,
@@ -81,7 +82,7 @@ export const services = [
       },
     ],
     relatedProjects: ['the-shelter', 'licencia-de-armas-facil', 'ies-margarita-salas'],
-    relatedPosts: ['que-preguntar-antes-de-contratar-un-disenador-web', 'wordpress-o-web-a-medida', 'cuanto-cuesta-una-pagina-web-en-sevilla', 'que-debe-tener-la-web-de-un-negocio-local'],
+    relatedPosts: ['disenador-web-freelance-o-agencia-en-sevilla', 'cuanto-cuesta-una-pagina-web-en-sevilla', 'que-preguntar-antes-de-contratar-un-disenador-web', 'wordpress-o-web-a-medida'],
   },
   {
     slug: 'tiendas-online-sevilla',
