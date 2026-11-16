@@ -17,7 +17,7 @@ export const projects = [
         'Caso de estudio de Enreo Corbatas: tienda online en WordPress y WooCommerce para una marca de corbatas de seda hechas a mano, con su opinión real.',
     },
     summary:
-      'Tienda online para una marca de corbatas de seda de diseño propio y hechas a mano, un negocio llevado por dos hermanos.',
+      'Tienda online para una marca de corbatas de seda de diseño propio y hechas a mano.',
     facts: [
       { label: 'Tipo', value: 'Tienda online (WordPress + WooCommerce)' },
       { label: 'Sector', value: 'Moda y complementos' },
@@ -26,7 +26,7 @@ export const projects = [
     blocks: [
       { h2: 'El proyecto' },
       {
-        p: 'Enreo Corbatas es una marca de corbatas originales de seda, de diseño propio y hechas a mano, que llevan dos hermanos. Sus diseños tienen un estilo muy reconocible, con guiños al sur y mucho color, y cambian a lo largo del año, con algunas piezas en unidades limitadas.',
+        p: 'Enreo Corbatas es una marca de corbatas originales de seda, de diseño propio y hechas a mano. Sus diseños tienen un estilo muy reconocible, con guiños al sur y mucho color, y cambian a lo largo del año, con algunas piezas en unidades limitadas.',
       },
       {
         p: 'Necesitaban una tienda online propia para vender sus corbatas por internet, que transmitiera la personalidad de la marca y que ellos mismos pudieran gestionar en el día a día.',
