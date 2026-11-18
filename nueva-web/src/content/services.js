@@ -86,7 +86,7 @@ export const services = [
   },
   {
     slug: 'tiendas-online-sevilla',
-    lastmod: '2026-11-16',
+    lastmod: '2026-11-18',
     priceFrom: 299,
     price: 'Tienda online desde 299 €',
     maintenanceFrom: 69,
@@ -96,7 +96,7 @@ export const services = [
     seo: {
       title: 'Diseño de tiendas online en Sevilla | Rafael Verdugo',
       description:
-        'Diseño y creación de tiendas online en Sevilla: catálogo, pago seguro y gestión de pedidos, rápidas y listas para vender. Desde 299 €.',
+        'Diseño de tiendas online en Sevilla con WooCommerce o a medida: catálogo, pago seguro y gestión de pedidos. Desde 299 €, con un caso real.',
     },
     eyebrow: 'Tiendas online en Sevilla',
     h1: 'Diseño de tiendas online en Sevilla pensadas para vender, con una compra sin fricciones.',
@@ -129,6 +129,40 @@ export const services = [
           '**Medición**: analítica configurada para saber de dónde vienen las ventas.',
         ],
       },
+      { h2: 'Caso real: la tienda de Enreo Corbatas' },
+      {
+        p: 'Enreo Corbatas vende corbatas de seda de diseño propio y hechas a mano. Les hice su tienda online con **WordPress y WooCommerce**: portada con la personalidad de la marca, catálogo con fichas de producto, carrito y proceso de compra. Además, les enseñé a gestionarla ellos mismos, para que puedan subir productos y hacer cambios sin depender de nadie.',
+      },
+      {
+        note: '«Siempre dispuesto a hacer los cambios necesarios […] Aparte te explica cómo gestionar tu mismo los cambios y resuelve dudas cuando han hecho falta. 100% recomendable sin duda.» Ángel, de Enreo Corbatas (reseña en Google).',
+      },
+      {
+        p: 'Tienes el proyecto completo en el [caso de estudio de Enreo Corbatas](/proyectos/enreo-corbatas/).',
+      },
+      { h2: 'WooCommerce, Shopify o tienda a medida' },
+      {
+        ul: [
+          '**WooCommerce** (sobre WordPress): la tienda es tuya, en tu propio hosting, sin cuota mensual de plataforma. Es la opción que usé en la tienda de Enreo.',
+          '**Shopify**: muy cómodo, pero pagas una cuota mensual a la plataforma y dependes de sus aplicaciones para muchas funciones.',
+          '**A medida**: tiene sentido cuando lo que vendes no encaja en una tienda estándar, como accesos a una plataforma de formación o reservas con pago.',
+        ],
+      },
+      {
+        p: 'Si quieres comparar con calma, lo explico en [cómo crear una tienda online: Shopify, WooCommerce o a medida](/blog/como-crear-una-tienda-online/).',
+      },
+      { h2: 'Cuánto cuesta una tienda online en Sevilla' },
+      {
+        p: 'Mis tiendas online parten de **299 €**, con un mantenimiento desde **69 €/mes**. Es un precio de partida: el precio final depende de lo que necesite tu tienda, y siempre te lo doy cerrado en la propuesta antes de empezar.',
+      },
+      {
+        ul: [
+          '**Lo que hace subir el precio**: muchos productos o variantes (tallas, colores), integraciones con otros programas, varios idiomas o funciones especiales como suscripciones.',
+          '**Gastos aparte**: el dominio, el hosting y las comisiones que cobra la pasarela de pago por cada venta.',
+        ],
+      },
+      {
+        p: 'Tienes todos mis precios en [cuánto cuesta una página web en Sevilla](/blog/cuanto-cuesta-una-pagina-web-en-sevilla/).',
+      },
       { h2: 'Cómo trabajamos' },
       {
         p: 'Empezamos por entender qué vendes, a quién y cómo gestionas hoy los pedidos. Con eso te propongo la solución que mejor encaja: a veces es una tienda completa y otras, para empezar a validar, basta con una página de venta bien hecha. Te paso una propuesta cerrada con plazos y precio antes de empezar.',
@@ -142,6 +176,18 @@ export const services = [
       {
         q: '¿Puedo empezar con pocos productos?',
         a: 'Sí, y muchas veces es lo más sensato. La tienda se construye para poder crecer: empezar con un catálogo pequeño te permite validar antes de invertir más.',
+      },
+      {
+        q: '¿Cuánto cuesta una tienda online?',
+        a: 'Mis tiendas online parten de 299 €, más un mantenimiento desde 69 €/mes. El precio final depende del número de productos y de las funciones que necesites, y te lo doy cerrado antes de empezar.',
+      },
+      {
+        q: '¿Qué plataforma usas, WooCommerce o Shopify?',
+        a: 'Para tiendas de catálogo suelo recomendar WooCommerce sobre WordPress, porque la tienda queda en tu hosting y no pagas cuota mensual a una plataforma. Si tu caso encaja mejor con Shopify o con algo a medida, te lo digo en la propuesta.',
+      },
+      {
+        q: '¿Puedo vender a toda España?',
+        a: 'Sí. Se configuran zonas de envío con sus tarifas (por ejemplo, península, Baleares o envío local), y puedes cambiarlas tú cuando quieras desde el panel.',
       },
       {
         q: '¿Me encargo yo de los pedidos?',
