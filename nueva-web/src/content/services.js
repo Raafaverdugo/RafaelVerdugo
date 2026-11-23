@@ -4,7 +4,7 @@
 export const services = [
   {
     slug: 'paginas-web-empresas-sevilla',
-    lastmod: '2026-11-16',
+    lastmod: '2026-11-23',
     priceFrom: 249,
     price: 'Web corporativa desde 249 €',
     maintenanceFrom: 49,
@@ -82,7 +82,7 @@ export const services = [
       },
     ],
     relatedProjects: ['the-shelter', 'licencia-de-armas-facil', 'ies-margarita-salas'],
-    relatedPosts: ['disenador-web-freelance-o-agencia-en-sevilla', 'cuanto-cuesta-una-pagina-web-en-sevilla', 'que-preguntar-antes-de-contratar-un-disenador-web', 'wordpress-o-web-a-medida'],
+    relatedPosts: ['disenador-web-freelance-o-agencia-en-sevilla', 'pagina-web-para-restaurantes-en-sevilla', 'cuanto-cuesta-una-pagina-web-en-sevilla', 'que-preguntar-antes-de-contratar-un-disenador-web'],
   },
   {
     slug: 'tiendas-online-sevilla',
@@ -270,7 +270,7 @@ export const services = [
     // Auditoría y plan mensual son alternativas, no se suman
     priceJoin: 'o',
     path: '/seo-sevilla/',
-    lastmod: '2026-11-11',
+    lastmod: '2026-11-23',
     navLabel: 'Posicionamiento web',
     serviceType: 'Posicionamiento web y SEO local',
     seo: {
@@ -365,7 +365,7 @@ export const services = [
       },
     ],
     relatedProjects: ['ies-margarita-salas'],
-    relatedPosts: ['cuanto-cuesta-el-seo', 'cuanto-tarda-el-seo-en-dar-resultados', 'como-aparecer-en-google', 'como-aparecer-en-google-maps'],
+    relatedPosts: ['que-hace-un-consultor-seo', 'cuanto-cuesta-el-seo', 'cuanto-tarda-el-seo-en-dar-resultados', 'como-aparecer-en-google-maps'],
   },
   {
     slug: 'software-a-medida',

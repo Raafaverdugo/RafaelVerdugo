@@ -3,6 +3,160 @@
 
 export const posts = [
   {
+    slug: 'que-hace-un-consultor-seo',
+    path: '/blog/que-hace-un-consultor-seo/',
+    title: '¿Qué hace un consultor SEO? Cuándo contratarlo y cuánto cuesta',
+    seo: {
+      title: '¿Qué hace un consultor SEO? Cuándo contratarlo y cuánto cuesta',
+      description: 'Qué hace un consultor SEO en el día a día, en qué se diferencia de una agencia, cuándo merece la pena contratarlo y qué preguntarle antes de hacerlo.',
+    },
+    excerpt:
+      'Las tareas reales de un consultor SEO, cuándo te conviene contratar uno, cuánto suele costar y las señales para detectar a quien no lo hará bien.',
+    datePublished: '2026-11-23',
+    readingMinutes: 6,
+    blocks: [
+      {
+        p: 'Un consultor SEO es la persona que se encarga de que tu web aparezca en Google cuando tus clientes buscan lo que ofreces. Suena sencillo, pero detrás hay un trabajo bastante concreto. Te explico qué hace exactamente, cuándo merece la pena contratar uno y qué preguntar antes de hacerlo. Me dedico a esto, así que tómalo como la visión de alguien de dentro.',
+      },
+      { h2: 'Qué hace un consultor SEO' },
+      { h3: '1. Diagnosticar: la auditoría' },
+      {
+        p: 'Lo primero es saber qué está pasando. El consultor revisa en **Search Console** qué páginas tiene Google indexadas y cuáles no, qué errores hay, por qué búsquedas apareces ya y en qué posición. También revisa títulos, velocidad en móvil, datos estructurados y, si eres un negocio local, tu ficha de Google.',
+      },
+      { h3: '2. Priorizar' },
+      {
+        p: 'Una auditoría puede sacar decenas de problemas, pero no todos importan igual. Parte del trabajo es decirte **qué arreglar primero** porque mueve la aguja y qué puede esperar. Un buen consultor te ahorra tiempo diciéndote lo que no merece la pena.',
+      },
+      { h3: '3. Aplicar las mejoras' },
+      {
+        p: 'Corregir errores técnicos, reescribir títulos y descripciones, mejorar la velocidad, enlazar mejor las páginas entre sí o crear contenido que responda a lo que busca tu cliente. Algunos consultores solo entregan el informe; otros, además, aplican los cambios.',
+      },
+      { h3: '4. SEO local' },
+      {
+        p: 'Para un negocio con clientes en su zona, una parte importante es la **ficha de Google Business**: que esté completa, coherente con la web y con reseñas reales. Lo explico en [cómo aparecer en Google Maps](/blog/como-aparecer-en-google-maps/).',
+      },
+      { h3: '5. Medir y ajustar' },
+      {
+        p: 'Cada mes, revisar en Search Console qué búsquedas suben, cuáles bajan y qué páginas no terminan de entrar en Google, y ajustar el plan con esos datos.',
+      },
+      {
+        cta: {
+          title: '¿Quieres saber qué le pasa a tu web?',
+          text: 'Reviso tu Search Console y tu ficha de Google y te digo qué arreglar primero.',
+        },
+      },
+      { h2: 'Consultor SEO o agencia' },
+      {
+        p: 'Con un consultor freelance hablas siempre con quien hace el trabajo, y suele salir más económico porque no hay estructura detrás. Una agencia tiene más manos y puede llevar a la vez SEO, publicidad y redes sociales. Para un negocio local o una pyme, un consultor suele ser suficiente; para una web grande con mucho contenido, puede hacer falta un equipo. Comparo las dos opciones para el diseño web en [diseñador web freelance o agencia](/blog/disenador-web-freelance-o-agencia-en-sevilla/), y la lógica es la misma.',
+      },
+      { h2: 'Cuándo merece la pena contratar un consultor SEO' },
+      {
+        ul: [
+          '**Tu web no aparece en Google** ni cuando buscan tu nombre, o hay páginas importantes que no se indexan.',
+          '**Has rediseñado o cambiado de web** y has perdido visitas.',
+          '**Dependes de los anuncios** para conseguir clientes y quieres una fuente que no se apague cuando dejas de pagar.',
+          '**Tu competencia sale antes que tú** en las búsquedas de tu zona y no sabes por qué.',
+        ],
+      },
+      {
+        p: 'Si tu web tiene pocas semanas, a veces basta con esperar a que Google la descubra. Lo explico en [por qué mi web no aparece en Google](/blog/por-que-mi-web-no-aparece-en-google/).',
+      },
+      { h2: 'Cuánto cuesta un consultor SEO' },
+      {
+        p: 'Depende de si contratas un diagnóstico puntual o un trabajo continuado. En mi caso, la **auditoría SEO parte de 99 €** y el **plan SEO mensual, de 149 €/mes**; tienes el detalle en [posicionamiento web en Sevilla](/seo-sevilla/). Explico de qué depende el precio en general en [cuánto cuesta el SEO](/blog/cuanto-cuesta-el-seo/).',
+      },
+      { h2: 'Qué preguntar antes de contratar' },
+      {
+        ul: [
+          '**¿Qué vas a hacer exactamente el primer mes?** La respuesta debe ser concreta, no «optimizar».',
+          '**¿Con qué datos me vas a enseñar los resultados?** Lo normal es Search Console, que es gratis y de Google.',
+          '**¿Los cambios los aplicas tú o solo me das el informe?**',
+          '**¿Tienes ejemplos reales** o una web propia que posicione?',
+        ],
+      },
+      {
+        note: 'Desconfía de quien te garantice el primer puesto en Google o resultados en pocos días. La propia Google advierte de que nadie puede garantizar una posición.',
+      },
+      {
+        p: 'Si buscas un consultor SEO en Sevilla, en [posicionamiento web en Sevilla](/seo-sevilla/) tienes cómo trabajo, qué incluye la auditoría y los precios.',
+      },
+      { h2: 'Fuentes oficiales' },
+      {
+        ul: [
+          '[Google Search Central: ¿necesitas un SEO?](https://developers.google.com/search/docs/fundamentals/do-i-need-seo?hl=es)',
+          '[Ayuda de Search Console: informe de rendimiento](https://support.google.com/webmasters/answer/7576553?hl=es)',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'pagina-web-para-restaurantes-en-sevilla',
+    path: '/blog/pagina-web-para-restaurantes-en-sevilla/',
+    title: 'Página web para restaurantes y bares en Sevilla: qué debe tener',
+    seo: {
+      title: 'Página web para restaurantes y bares en Sevilla: qué debe tener',
+      description: 'Qué debe tener la web de un restaurante o bar en Sevilla para llenar mesas: carta legible en el móvil, reservas, ficha de Google, fotos reales y más.',
+    },
+    excerpt:
+      'Lo que de verdad necesita la web de un restaurante o un bar en Sevilla, lo que sobra y cómo conectarla con Google Maps para que te encuentren.',
+    datePublished: '2026-11-23',
+    readingMinutes: 6,
+    blocks: [
+      {
+        p: 'En Sevilla, mucha gente elige dónde comer o tomar algo con el móvil en la mano y a pocos minutos de decidir: busca «restaurante cerca», mira el mapa, las fotos y las reseñas, y entra en la web para ver la carta. La web de un restaurante no tiene que ser complicada, pero sí tiene que resolver esas dudas en segundos. Esto es lo que no puede faltar.',
+      },
+      { h2: '1. La carta, fácil de leer en el móvil' },
+      {
+        p: 'Es lo que más se consulta. Mejor como **texto en la propia web** que como un PDF o una foto de la carta: se lee mejor en el móvil, carga más rápido y Google puede entender qué platos ofreces. Mantén los precios al día: pocas cosas generan peor impresión que un precio distinto al llegar.',
+      },
+      { h2: '2. Reservar en dos toques' },
+      {
+        p: 'Un botón de **reservar** siempre visible, que lleve a un formulario corto, a tu sistema de reservas o directamente a **WhatsApp** o a una llamada. Si para reservar hay que buscar el teléfono por la web, parte de esa gente se irá al restaurante de al lado.',
+      },
+      { h2: '3. Dirección, horario y cómo llegar' },
+      {
+        p: 'Dirección con mapa, horario real (también en festivos y en **Semana Santa y Feria**, cuando muchos horarios cambian) y, si ayuda, cómo aparcar o qué parada de metro o bus queda cerca. Estos datos deben coincidir exactamente con los de tu ficha de Google.',
+      },
+      {
+        cta: {
+          title: '¿Tu restaurante necesita web o mejorar la que tiene?',
+          text: 'Te ayudo a tener una web rápida, con carta y reservas, conectada con tu ficha de Google.',
+        },
+      },
+      { h2: '4. Fotos reales' },
+      {
+        p: 'Fotos de tus platos, del local y de la terraza, hechas con buena luz. Las fotos de banco de imágenes se notan y restan confianza. No hacen falta muchas: unas pocas buenas convencen más que una galería interminable.',
+      },
+      { h2: '5. Que cargue rápido' },
+      {
+        p: 'Quien busca dónde comer suele hacerlo en la calle, con datos móviles. Una web lenta, con un vídeo enorme de portada, hace que se vaya antes de ver la carta. Imágenes optimizadas y una web ligera son parte del servicio.',
+      },
+      { h2: '6. Conectada con tu ficha de Google' },
+      {
+        p: 'Para un restaurante, la **ficha de Google Business** es casi tan importante como la web: es lo que aparece en el mapa cuando alguien busca dónde comer en tu zona. Completa horario, fotos, carta y enlace a la web y a las reservas, y pide reseñas a tus clientes. Lo explico paso a paso en [cómo aparecer en Google Maps](/blog/como-aparecer-en-google-maps/) y en [cómo conseguir reseñas en Google](/blog/como-conseguir-resenas-en-google/).',
+      },
+      { h2: 'Lo que sobra' },
+      {
+        ul: [
+          '**Música o vídeos que se reproducen solos.**',
+          '**Ventanas emergentes** que tapan la carta nada más entrar.',
+          '**Textos largos sobre la historia del local** antes de enseñar la carta y el botón de reservar. Pueden estar, pero más abajo.',
+        ],
+      },
+      { h2: '¿Cuánto cuesta?' },
+      {
+        p: 'La web de un restaurante suele ser una web corporativa sencilla: portada, carta, reservas y contacto. Mis webs corporativas parten de **249 €**; tienes todos los precios en [cuánto cuesta una página web en Sevilla](/blog/cuanto-cuesta-una-pagina-web-en-sevilla/) y el servicio en [páginas web para empresas en Sevilla](/paginas-web-empresas-sevilla/). Si además necesitas gestionar reservas o turnos a medida, mira [software a medida](/software-a-medida/).',
+      },
+      { h2: 'Fuentes oficiales' },
+      {
+        ul: [
+          '[Ayuda de Google Business Profile: consejos para mejorar el posicionamiento local](https://support.google.com/business/answer/7091?hl=es)',
+          '[Google Search Central: Métricas web principales](https://developers.google.com/search/docs/appearance/core-web-vitals?hl=es)',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'como-anunciarse-en-google-maps',
     path: '/blog/como-anunciarse-en-google-maps/',
     title: 'Cómo anunciarse en Google Maps: gratis y con Google Ads',
