@@ -517,7 +517,7 @@ export const posts = [
         ],
       },
       {
-        p: 'En [qué debe tener la web de un negocio local](/blog/que-debe-tener-la-web-de-un-negocio-local/) tienes la lista completa.',
+        p: 'En [qué debe tener la web de un negocio local](/blog/que-debe-tener-la-web-de-un-negocio-local/) tienes la lista completa. Y si vendes productos, lo mismo vale para cada categoría y cada producto: necesitan su propia página con un texto propio, algo que cuido en las [tiendas online que hago en Sevilla](/tiendas-online-sevilla/).',
       },
       {
         cta: {
